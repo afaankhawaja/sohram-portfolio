@@ -12,6 +12,11 @@ body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
+.hidden-scrollbar {
+  overflow: auto;          /* Enable scrolling if content overflows */
+  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer and Edge */
+}
 
 @layer base {
   :root {
