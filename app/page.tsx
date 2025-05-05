@@ -4,6 +4,8 @@ import Services from "@/components/services"
 import Experience from "@/components/Experience"
 import PortfolioSection from "@/components/PortfolioSection"
 import Testimonial from "@/components/Testimonial"
+import Contact from "@/components/Contact"
+import FooterSection from "@/components/FooterSection"
 
 export default function Home() {
   return (
@@ -14,6 +16,8 @@ export default function Home() {
       <Experience/>
       <PortfolioSection/>
       <Testimonial/>
+      <Contact/>
+      <FooterSection/>
     </main>
   )
 }

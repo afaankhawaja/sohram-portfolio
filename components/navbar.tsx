@@ -18,8 +18,8 @@ export default function Navbar() {
   const [activeItem, setActiveItem] = useState("Home")
 
   return (
-    <div className="w-full items-center flex h-[86px] justify-center mt-[15px]">
-      <nav className="max-w-[1298px] pl-[10xp] pr-[31px] w-full h-full bg-black rounded-full flex items-center justify-between">
+    <div className="w-full items-center flex h-[86px] justify-center mt-[15px] px-4">
+      <nav className="max-w-[1298px] overflow-x-scroll hidden-scrollbar pl-[10xp] pr-[31px] w-full h-full bg-black rounded-full flex items-center justify-between">
         <ul className="flex items-center justify-between h-[64px] w-full space-x-8 font-inter pl-[10px]">
           {navItems.map((item) => (
             <li key={item.name}>

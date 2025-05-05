@@ -30,7 +30,7 @@ export default function Hero() {
         </h1>
 
         {/* Left side decoration */}
-        <div className="absolute z-10 left-[71px] h-full translate-y-1/2">
+        <div className="absolute z-10 left-4 xl:left-[71px] h-full translate-y-1/2">
           <div className="flex flex-col items-start gap-6 w-[368px]">
             <Image src={comma} alt=""/>
             <p className="text-[20px] font-medium text-[#344054] max-w-[380px]">
@@ -56,7 +56,7 @@ export default function Hero() {
         </div>
 
         {/* Right side rating */}
-        <div className="absolute right-[71px] h-full translate-y-1/2">
+        <div className="absolute right-4 xl:right-[71px] h-full translate-y-1/2">
           <Image
           src={stars}
           alt=""

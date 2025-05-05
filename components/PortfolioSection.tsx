@@ -9,7 +9,7 @@ export default function PortfolioSection() {
         <h2 className="text-[64px] w-[643px] -tracking-[1.5%] leading-[100%] md:text-5xl font-bold text-slate-800">
           Lets have a look at my <span className="text-[#AA253D]">Portfolio</span>
         </h2>
-        <Link href="#" className="bg-[#AA253D] hover:bg-[#AA253D] text-white px-6 py-3 rounded-full transition-colors">
+        <Link href="#" className="bg-[#AA253D] hover:bg-[#e6526d] text-white px-6 py-3 rounded-full text-nowrap transition-colors">
           See All
         </Link>
       </div>
@@ -44,9 +44,9 @@ export default function PortfolioSection() {
           <h3 className="text-3xl md:text-4xl font-bold text-slate-800">Lirante - Food Dilvery Solution</h3>
           <Link
             href="#"
-            className="bg-rose-700 hover:bg-rose-800 text-white p-2 rounded-full flex items-center justify-center transition-colors"
+            className="bg-[#AA253D] hover:bg-[#e6526d] text-white p-2 rounded-full flex items-center justify-center transition-colors rotate-45 hover:rotate-12"
           >
-            <ArrowUpRight className="w-5 h-5" />
+            <ArrowUpRight className="w-5 h-5 " />
           </Link>
         </div>
         <p className="text-slate-700 text-lg">
