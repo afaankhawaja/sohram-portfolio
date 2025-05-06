@@ -6,6 +6,8 @@ import PortfolioSection from "@/components/PortfolioSection"
 import Testimonial from "@/components/Testimonial"
 import Contact from "@/components/Contact"
 import FooterSection from "@/components/FooterSection"
+import MyWork from "@/components/MyWork"
+import HireMe from "@/components/HireMe"
 
 export default function Home() {
   return (
@@ -14,9 +16,11 @@ export default function Home() {
       <Hero />
       <Services />
       <Experience/>
+      <HireMe/>
       <PortfolioSection/>
       <Testimonial/>
       <Contact/>
+      <MyWork/>
       <FooterSection/>
     </main>
   )

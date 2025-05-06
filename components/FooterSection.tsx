@@ -1,12 +1,14 @@
 import Link from "next/link"
-import { ArrowUpRight, Linkedin, MessageCircle } from "lucide-react"
+import { ArrowUpRight} from "lucide-react"
 import Image from "next/image"
 import logo1 from "@/assets/whatsapp-icon.svg"
 import logo2 from "@/assets/mdi_linkedin.svg"
 import { log } from "node:util"
+import linkedin from "@/assets/mdi_linkedin 2.svg"
 export default function FooterSection() {
   return (
-    <footer className="bg-[#272727] mt-5 text-white py-12 rounded-t-[24px] w-full max-xl:px-5">
+    <footer className="w-full max-xl:px-5 mt-5">
+    <div className="bg-[#272727] text-white py-12 rounded-t-[24px] ">
       <div className=" max-w-[1298px] mx-auto">
         {/* Top section with heading and hire button */}
         <div className="flex justify-between items-center mb-8">
@@ -15,7 +17,7 @@ export default function FooterSection() {
             href="#contact"
             className="bg-rose-700 hover:bg-rose-800 text-white px-6 py-3 rounded-full flex items-center gap-2 transition-colors"
           >
-            Hire me <ArrowUpRight className="w-5 h-5" />
+            <span>Hire me</span> <ArrowUpRight className="w-5 h-5 rotate-45 hover:rotate-12" />
           </Link>
         </div>
 
@@ -74,6 +76,10 @@ export default function FooterSection() {
 
         {/* Bottom divider */}
         <div className="border-t-[2px] border-[#475467] mt-12"></div>
+      </div>   
+    </div>
+    <div className="h-[40px] flex justify-center bg-transparent">
+        <Image src={linkedin} alt="linkedin"/>
       </div>
     </footer>
   )

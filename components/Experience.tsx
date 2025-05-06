@@ -19,7 +19,7 @@ const Experience = () => {
             <Image src={logo2} alt=''/>
             <Image src={logo3} alt=''/>
         </div>
-        <div className="flex lg:w-[60%] lg:gap-x-[120px] max-lg:px-5 max-lg:gap-x-10">
+        <div className="flex lg:w-[60%] lg:gap-x-[177px] max-lg:px-5 max-lg:gap-x-10">
             <Image src={threeDots} alt=''/>
             <div className="flex-col space-y-6">
             <div className="flex-col">
@@ -28,7 +28,7 @@ const Experience = () => {
             </div>
 
             <div className="flex-col">
-                <h2 className='text-[40px] text-[#344054] -tracking-[1.5%] leading-[100%] font- mb-[14px]'>UI UX Designer</h2>
+                <h2 className='text-[40px] text-[#344054] -tracking-[1.5%] leading-[100%] font-semibold mb-[14px]'>UI UX Designer</h2>
                 <p className='text-[20px] font-medium text-[#98A2B3] -tracking-[1.5%] leading-[100%]'>Worked as a UI/UX Designer in Medianest.Ai alongside a team of senior designers on this AI-powered solution aimed at smarter, faster content creation.</p>
             </div>
 
