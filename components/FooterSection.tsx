@@ -5,6 +5,8 @@ import logo1 from "@/assets/whatsapp-icon.svg"
 import logo2 from "@/assets/mdi_linkedin.svg"
 import { log } from "node:util"
 import linkedin from "@/assets/mdi_linkedin 2.svg"
+import arow from "@/assets/up right.svg"
+
 export default function FooterSection() {
   return (
     <footer className="w-full max-xl:px-5 mt-5">
@@ -15,9 +17,13 @@ export default function FooterSection() {
           <h2 className="text-4xl md:text-5xl font-bold">Lets Connect there</h2>
           <Link
             href="#contact"
-            className="bg-rose-700 hover:bg-rose-800 text-white px-6 py-3 rounded-full flex items-center gap-2 transition-colors"
+            className="bg-rose-700 hover:bg-rose-800 text-white px-[43px] py-3 rounded-full flex items-center gap-2 transition-colors"
           >
-            <span>Hire me</span> <ArrowUpRight className="w-5 h-5 rotate-45 hover:rotate-12" />
+            <span className="text-[26px] leading-[100%] -tracking-[1.5%]">Hire us</span><Image
+            className="h-[42px] w-[42px]"
+          src={arow}
+          alt=""
+          />
           </Link>
         </div>
 

@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import logo1 from '@/assets/mail.svg'
 import logo2 from "@/assets/whatsapp.svg"
@@ -5,6 +6,9 @@ import Image from 'next/image'
 import star from "@/assets/star.svg"
 import tick from "@/assets/shield-tick.svg"
 import bg from "@/assets/contact-image.png"
+import { motion } from 'framer-motion';
+import loop1 from "@/assets/loop.png"
+
 
 const Contact = () => {
   return (
@@ -32,8 +36,25 @@ const Contact = () => {
         </div>
         </div>
 
-        <Image src={bg} alt='' className='w-screen h-fit'/>
-    </section>
+    <div className='no-scrollbar whitespace-nowrap scrollbar-hidden'>
+
+    
+    <motion.div
+        className="flex h-[147px] bg-[#AA253D]"
+        style={{ width: "200%" }}
+        initial={{ x: "0%" }}
+        animate={{ x: "-50%" }}
+        transition={{
+          duration: 10,    // 10s per loop
+          ease: "linear",  // constant speed
+          repeat: Infinity // endless
+        }}
+      >
+        <Image src={loop1} alt="scrolling bg" className="w-[100%]" />
+      </motion.div>
+      </div>
+
+          </section>
   )
 }
 

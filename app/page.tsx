@@ -8,11 +8,13 @@ import Contact from "@/components/Contact"
 import FooterSection from "@/components/FooterSection"
 import MyWork from "@/components/MyWork"
 import HireMe from "@/components/HireMe"
+import UIAndUX from "@/components/UIAndUX"
 
 export default function Home() {
   return (
     <main className="flex w-screen min-h-screen flex-col items-center max-xl:px-4">
       <Navbar />
+      <UIAndUX/>
       <Hero />
       <Services />
       <Experience/>
@@ -20,7 +22,7 @@ export default function Home() {
       <PortfolioSection/>
       <Testimonial/>
       <Contact/>
-      <MyWork/>
+      {/* <MyWork/> */}
       <FooterSection/>
     </main>
   )

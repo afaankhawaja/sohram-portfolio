@@ -6,10 +6,29 @@ import WelcomeImage from "@/assets/welome-text.svg"
 import sohram from "@/assets/sohram-hero.png"
 import stars from "@/assets/stars.png"
 import comma from '@/assets/quote-up.svg'
-import { useState } from "react"
+import { useEffect, useState } from "react"
+import clsx from "clsx"
+import arow from "@/assets/up right.svg"
 
 export default function Hero() {
-  const [activeTab,setActiveTab]=useState('Portfolio')
+  const [activeTab,setActiveTab]=useState("Portfolio")
+  const [hoverTab, setHoverTab] = useState(null);
+  
+  const isTabActive = (tabName) => {
+    if (hoverTab !== null) {
+      return hoverTab === tabName;
+    }
+    return activeTab === tabName;
+  };
+
+  useEffect(()=>{
+    console.log('hoverTab', hoverTab)
+  },[hoverTab])
+  // Build the Tailwind classes for each button
+  const buttonClasses = (tabName) =>
+    `${isTabActive(tabName) ? 'bg-[#AA253D]' : 'bg-transparent'}`
+
+
   return (
     <div className="w-full max-w-[1298px] flex flex-col items-center mt-[37px]">
       <div className="relative w-full flex flex-col items-center">
@@ -65,14 +84,57 @@ export default function Hero() {
         </div>
 
         {/* Action buttons */}
-        <div className="absolute bottom-10 flex gap-x-[10px] backdrop-blur-[15px] mt-8 border-[2px] border-[#C9C9C9] rounded-[50px] p-[10px] h-[82px] items-center transition-all duration-300">
+        {/* <div className="absolute bottom-10 flex gap-x-[10px] backdrop-blur-[15px] mt-8 border-[2px] border-[#C9C9C9] rounded-[50px] p-[10px] h-[82px] items-center transition-all duration-300">
           <button onClick={()=>setActiveTab('Portfolio')} className={`${activeTab ==="Portfolio" && 'bg-[#C30052]' } text-white rounded-full h-[62px] w-[208px] flex items-center justify-center gap-2`}>
             Portfolio <ArrowRight size={16} className={`${activeTab ==="Portfolio" && '-rotate-45 transition-all duration-200'} `} />
           </button>
           <button onClick={()=>setActiveTab('Hire me')} className={`${activeTab ==="Hire me" && 'bg-[#C30052]' } text-white backdrop-blur-[15px] rounded-full h-[62px] w-[129px] flex items-center justify-center gap-2 `}>
             Hire me 
           </button>
-        </div>
+        </div> */}
+        <div className="absolute bottom-10 flex gap-x-[10px] backdrop-blur-[15px] mt-8 border-[2px] text-[26px] font-medium leading-[100%] -tracking-[1.5%] border-[#C9C9C9] rounded-[50px] p-[10px] h-[82px] w-[367px]  transition-all duration-300">
+      <button
+        onMouseEnter={() => setHoverTab("Portfolio")}
+        onMouseLeave={() => setHoverTab(null)}
+        onClick={() => setActiveTab("Portfolio")}
+        className={clsx(buttonClasses("Portfolio"),`min-w-[135px] text-white rounded-full h-[62px] flex items-center justify-center gap-2 transition-all duration-300  text-nowrap hover:w-[208px] ${activeTab==="Portfolio" && "w-[208px]"} ${hoverTab==="Hire me" && "w-[135px]"}`)}
+      >
+        Portfolio
+        {
+          activeTab==="Portfolio" ? (hoverTab=="Portfolio" || hoverTab==null) && 
+          <Image
+          src={arow}
+          alt=""
+          /> :
+         (hoverTab=="Portfolio") &&  
+         <Image
+          src={arow}
+          alt=""
+          />
+        }
+      </button>
+
+      <button
+        onMouseEnter={() => setHoverTab("Hire me")}
+        onMouseLeave={() => setHoverTab(null)}
+        onClick={() => setActiveTab("Hire me")}
+        className={clsx(buttonClasses("Hire me"), `min-w-[129px] text-white rounded-full h-[62px] flex items-center justify-center gap-2 transition-all duration-300  text-nowrap hover:w-[202px] ${activeTab==="Hire me" && "w-[202px]"} ${hoverTab==="Portfolio" && "w-[129px]"}`)}
+      >
+        Hire me
+        {
+          activeTab==="Hire me" ? (hoverTab==="Hire me" || hoverTab==null) && <Image
+          src={arow}
+          alt=""
+          />
+        :(hoverTab==="Hire me") && <Image
+        src={arow}
+        alt=""
+        />
+        }
+       
+      </button>
+    </div>
+       
       </div>
     </div>
   )

@@ -3,15 +3,17 @@
 import { useState } from "react"
 import Link from "next/link"
 import { cn } from "@/lib/utils"
+import Image from "next/image"
+import icon from "@/assets/Ellipse 17576.svg"
 
 const navItems = [
   { name: "Home", href: "/" },
   { name: "About", href: "/" },
   { name: "Service", href: "/" },
-  { name: "UI UX Portfolio", href: "/", highlight: true },
-  { name: "Resume", href: "/" },
-  { name: "Blog", href: "/" },
-  { name: "Projects", href: "/" },
+  { name: "RedSpark Tech", href: "/", highlight: true },
+  { name: "Testimonials", href: "/" },
+  { name: "Introduction", href: "/" },
+  { name: "Lets connect", href: "/" ,icon:true},
 ]
 
 export default function Navbar() {
@@ -34,6 +36,9 @@ export default function Navbar() {
                 )}>
                 {
                   item.highlight && <div className="w-[46px] h-[46px] content-center bg-[#AA253D] px-[5px] py-[5px] text-white mr-[10.5px] rounded-[50px] text-[20px] -tracking-[1.5%]">SM</div>
+                }
+                {
+                  item.icon && <Image className="mr-[6px]" src={icon} alt={'icon'}/>
                 }
                 {item.name}
                 </div>
