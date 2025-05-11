@@ -10,15 +10,48 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
 }
 .hidden-scrollbar {
-  overflow: auto;          /* Enable scrolling if content overflows */
-  scrollbar-width: none;  /* Firefox */
+  overflow: auto; /* Enable scrolling if content overflows */
+  scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* Internet Explorer and Edge */
 }
 
-
+/* globals.css */
+.clip-custom {
+  /* your generated shape */
+  -webkit-clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 58%,
+    85.8% 58.3%,
+    72.6% 64.8%,
+    63% 74.9%,
+    57.7% 87.9%,
+    57.5% 100%,
+    0% 100%
+  );
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 58%,
+    85.8% 58.3%,
+    72.6% 64.8%,
+    63% 74.9%,
+    57.7% 87.9%,
+    57.5% 100%,
+    0% 100%
+  );
+}
+html {
+  scroll-behavior: smooth;
+}
 
 @layer base {
   :root {

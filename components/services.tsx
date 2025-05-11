@@ -1,5 +1,6 @@
-import Image from "next/image"
-import { ArrowUpRight } from "lucide-react"
+import Image from "next/image";
+import { ArrowUpRight } from "lucide-react";
+import ThreeLayerImage from "./ThreeLayerImage";
 
 const services = [
   {
@@ -17,25 +18,38 @@ const services = [
     image: "/service-userflow.png",
     alt: "User flow and Prototyping illustration",
   },
-]
+];
 
 export default function Services() {
   return (
-    <div className="w-full max-w-[1440px] bg-[#1E1E1E] rounded-t-3xl py-12 px-16">
+    <div
+      className="w-full max-w-[1440px] bg-[#1E1E1E] rounded-t-3xl py-12 px-16"
+      id="Service"
+    >
       <h2 className="text-3xl font-bold mb-2">
         My <span className="text-[#C30052]">Services</span>
       </h2>
       <p className="text-gray-300 mb-8 max-w-[600px]">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis felis velit, rhoncus vel volutpat vel, dignissim
-        non lacus.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis felis
+        velit, rhoncus vel volutpat vel, dignissim non lacus.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {services.map((service, index) => (
-          <div key={index} className="bg-[#2A2A2A] rounded-2xl p-6 flex flex-col">
-            <h3 className="text-xl font-medium text-white mb-4">{service.title}</h3>
+          <div
+            key={index}
+            className="bg-[#2A2A2A] rounded-2xl p-6 flex flex-col w-[416px]"
+          >
+            <h3 className="text-xl font-medium text-white mb-4">
+              {service.title}
+            </h3>
             <div className="relative flex-grow bg-white rounded-xl overflow-hidden h-[200px]">
-              <Image src={service.image || "/placeholder.svg"} alt={service.alt} fill className="object-cover" />
+              <Image
+                src={service.image || "/placeholder.svg"}
+                alt={service.alt}
+                fill
+                className="object-cover"
+              />
             </div>
             <div className="flex justify-end mt-4">
               <div className="w-10 h-10 bg-[#1E293B] rounded-full flex items-center justify-center">
@@ -52,6 +66,8 @@ export default function Services() {
         <div className="w-2 h-2 bg-white rounded-full"></div>
         <div className="w-2 h-2 bg-white rounded-full"></div>
       </div>
+
+      <ThreeLayerImage />
     </div>
-  )
+  );
 }

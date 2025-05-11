@@ -1,14 +1,13 @@
-import Navbar from '@/components/navbar'
-import UIAndUX from '@/components/UIAndUX'
-import React from 'react'
+import UIAndUX from "@/components/UIAndUX";
+import React from "react";
 
 const page = () => {
   return (
     <div>
-        <Navbar/>
-        <UIAndUX/>
+      {/* <Navbar/> */}
+      <UIAndUX />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;
