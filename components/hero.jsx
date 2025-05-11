@@ -9,11 +9,12 @@ import comma from '@/assets/quote-up.svg'
 import { useEffect, useState } from "react"
 import clsx from "clsx"
 import arow from "@/assets/up right.svg"
+import { useRouter } from "next/navigation"
 
 export default function Hero() {
   const [activeTab,setActiveTab]=useState("Portfolio")
   const [hoverTab, setHoverTab] = useState(null);
-  
+  const router=useRouter()
   const isTabActive = (tabName) => {
     if (hoverTab !== null) {
       return hoverTab === tabName;
@@ -117,7 +118,9 @@ export default function Hero() {
       <button
         onMouseEnter={() => setHoverTab("Hire me")}
         onMouseLeave={() => setHoverTab(null)}
-        onClick={() => setActiveTab("Hire me")}
+        onClick={() => {setActiveTab("Hire me")
+            router.push('/hire-us')
+        }}
         className={clsx(buttonClasses("Hire me"), `min-w-[129px] text-white rounded-full h-[62px] flex items-center justify-center gap-2 transition-all duration-300  text-nowrap hover:w-[202px] ${activeTab==="Hire me" && "w-[202px]"} ${hoverTab==="Portfolio" && "w-[129px]"}`)}
       >
         Hire me

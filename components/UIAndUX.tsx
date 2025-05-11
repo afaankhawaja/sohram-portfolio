@@ -6,7 +6,7 @@ import PricingPlans from './PricingPlans'
 
 const UIAndUX = () => {
   return (
-    <section className='max-w-[1246px] mb-[26px]'>
+    <section className='max-w-[1246px] mx-auto mb-[26px]'>
         <div className="flex justify-between ">
             <div className='text-[95.57px] leading-[100%] mt-[68px] -tracking-[1.5%] w-[523px] text-nowrap'>UI UX <span className='text-[#AA253D]'>Design</span></div>
             <div className="flex mt-[22px] gap-x-[26px]">
