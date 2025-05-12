@@ -37,7 +37,7 @@ export default function Hero() {
 
         {/* Main heading */}
 
-        <div className="flex justify-between mt-[25px]">
+        <div className="lg:flex max-lg:flex-col max-lg:space-y-4 max-lg:mx-auto lg:justify-between mt-[25px]">
           <div className="w-[531px]">
             <div className="text-[80px] font-semibold leading-[100%] -tracking-[0%] w-[531px] h-[384px]">
               A Design that delights &{" "}
@@ -57,7 +57,7 @@ export default function Hero() {
               alt="Sohram"
               width={627}
               height={524}
-              className="w-[627px]"
+              className="w-[627px] max-lg:mb-5"
             />
             <div className="absolute bottom-[38px] justify-center flex right-32  gap-x-[10px] backdrop-blur-[15px] mt-8 border-[2px] text-[26px] font-medium leading-[100%] -tracking-[1.5%] border-[#C9C9C9] rounded-[50px] p-[10px] h-[82px] w-[367px]  transition-all duration-300">
               <button

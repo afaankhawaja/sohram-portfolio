@@ -84,7 +84,7 @@ const Testimonial = () => {
         {/* Testimonials */}
         <div className="flex gap-x-6 w-full overflow-x-scroll hidden-scrollbar">
           {/* First testimonial */}
-          <div className="bg-gray-800 bg-opacity-70 px-[21px] pt-[12px]  relative min-w-[784px]  min-h-[262px] rounded-[24px]">
+          <div className="bg-gray-800 bg-opacity-70 px-[21px] pt-[12px]  relative min-w-[500px] lg:min-w-[784px]  min-h-[262px] rounded-[24px]">
             <div className="flex items-center justify-between mb-[14px]  ">
               <div className="flex gap-x-[12px]">
                 <div className="relative w-12 h-12 rounded-full overflow-hidden">
@@ -121,7 +121,7 @@ const Testimonial = () => {
           </div>
 
           {/* Second testimonial */}
-          <div className="bg-gray-800 bg-opacity-70 px-[21px] pt-[12px]  relative min-w-[784px] min-h-[262px] rounded-[24px]">
+          <div className="bg-gray-800 bg-opacity-70 px-[21px] pt-[12px]  relative min-w-[500px] lg:min-w-[784px] min-h-[262px] rounded-[24px]">
             <div className="flex items-center justify-between gap-x-3 mb-[14px]  ">
               <div className="flex gap-x-[12px]">
                 <div className="relative w-12 h-12 rounded-full overflow-hidden">
@@ -157,7 +157,7 @@ const Testimonial = () => {
             </p>
           </div>
 
-          <div className="bg-gray-800 bg-opacity-70 px-[21px] pt-[12px]  relative min-w-[784px] min-h-[262px] rounded-[24px]">
+          <div className="bg-gray-800 bg-opacity-70 px-[21px] pt-[12px]  relative min-w-[500px] lg:min-w-[784px] min-h-[262px] rounded-[24px]">
             <div className="flex items-center justify-between gap-3 mb-[14px]  ">
               <div className="flex gap-x-[12px]">
                 <div className="relative w-12 h-12 rounded-full overflow-hidden">

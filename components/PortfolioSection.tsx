@@ -5,7 +5,7 @@ import { ArrowUpRight } from "lucide-react";
 export default function PortfolioSection() {
   return (
     <section
-      className="max-w-[1298px]  w-full mx-auto mt-[97px] mb-[141px]"
+      className="max-w-[1298px]  w-full mx-auto mt-[97px] mb-[141px] max-lg:px-5"
       id="Portfolio"
     >
       <div className="flex justify-between w-full items-center mb-[92px]">

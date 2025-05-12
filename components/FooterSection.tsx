@@ -13,7 +13,7 @@ export default function FooterSection() {
   const [hover, setHover] = useState(false);
   return (
     <footer className="w-full max-xl:px-5 mt-5">
-      <div className="bg-[#272727] text-white py-12 rounded-t-[24px] ">
+      <div className="bg-[#272727] text-white py-12 rounded-t-[24px] max-lg:px-5 ">
         <div className=" max-w-[1298px] mx-auto">
           {/* Top section with heading and hire button */}
           <div className="flex justify-between items-center mb-8">

@@ -19,7 +19,7 @@ export default function Home() {
       </div>
       {/* <UIAndUX/> */}
       <Hero />
-      <Services />
+      {/* <Services /> */}
       {/* <Experience/> */}
       <HireMe />
       <PortfolioSection />

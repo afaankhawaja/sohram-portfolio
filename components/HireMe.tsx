@@ -4,17 +4,17 @@ import Image from "next/image";
 const HireMe = () => {
   return (
     <section id="Introduction">
-      <div className="h-[806px] bg-[#F2F4F7] rounded-[50px] mt-5 w-screen flex flex-row-reverse max-lg:flex-col max-lg:gap-y-5 justify-center items-center gap-x-2">
+      <div className="lg:h-[806px] bg-[#F2F4F7] rounded-[50px] mt-5 w-screen flex flex-row-reverse max-lg:flex-col max-lg:gap-y-5 justify-center items-center gap-x-2">
         {/* <Image width={603} height={600} src={logo} alt=''/> */}
 
-        <div className="flex w-[630px] h-[448px] rounded-lg">
+        <div className="flex w-[630px] h-[448px] rounded-lg max-lg:mt-10">
           <video
             poster="/assets/poster-image.png"
             controls
             className="rounded-[20px] h-[448px] w-[630px]"
           ></video>
         </div>
-        <div className="flex flex-col max-w-[696px]">
+        <div className="flex flex-col max-w-[696px] max-lg:mt-10 max-lg:mb-10">
           <div className="text-[64px] font-bold max-w-[800px] -tracking-[1.5%] leading-[100%] text-left">
             Our <span className="text-[#AA253D]">Introduction</span>
           </div>
