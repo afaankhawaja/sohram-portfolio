@@ -3,6 +3,7 @@ import bg from "@/assets/testimonial.jpg";
 import Image from "next/image";
 import { Star } from "lucide-react";
 import comma from "@/assets/quote-down-bg.png";
+import card from "@/assets/cards/testimonial1.svg"
 
 const Testimonial = () => {
   return (
@@ -82,9 +83,12 @@ const Testimonial = () => {
         </div>
 
         {/* Testimonials */}
-        <div className="flex gap-x-6 w-full overflow-x-scroll hidden-scrollbar">
+        <div className="flex gap-x-6 min-w-full min-h-[262px] items-center  overflow-x-scroll hidden-scrollbar">
+          <Image src={card} alt="" className="w-full h-full bg-[#FFFFFF24] rounded-[24px]"/>
+          <Image src={card} alt="" className="h-full w-full bg-[#FFFFFF24] rounded-[24px]"/>
+          <Image src={card} alt="" className="h-full w-full bg-[#FFFFFF24] rounded-[24px]"/>
           {/* First testimonial */}
-          <div className="bg-gray-800 bg-opacity-70 px-[21px] pt-[12px]  relative min-w-[500px] lg:min-w-[784px]  min-h-[262px] rounded-[24px]">
+          {/* <div className="bg-gray-800 bg-opacity-70 px-[21px] pt-[12px]  relative min-w-[500px] lg:min-w-[784px]  min-h-[262px] rounded-[24px]">
             <div className="flex items-center justify-between mb-[14px]  ">
               <div className="flex gap-x-[12px]">
                 <div className="relative w-12 h-12 rounded-full overflow-hidden">
@@ -118,10 +122,11 @@ const Testimonial = () => {
               elit. Sed lobortis orci elementum egestas lobortis.Sed lobortis
               orci elementum egestas lobortis.
             </p>
-          </div>
+          </div> */}
+          
 
           {/* Second testimonial */}
-          <div className="bg-gray-800 bg-opacity-70 px-[21px] pt-[12px]  relative min-w-[500px] lg:min-w-[784px] min-h-[262px] rounded-[24px]">
+          {/* <div className="bg-gray-800 bg-opacity-70 px-[21px] pt-[12px]  relative min-w-[500px] lg:min-w-[784px] min-h-[262px] rounded-[24px]">
             <div className="flex items-center justify-between gap-x-3 mb-[14px]  ">
               <div className="flex gap-x-[12px]">
                 <div className="relative w-12 h-12 rounded-full overflow-hidden">
@@ -191,7 +196,7 @@ const Testimonial = () => {
               elit. Sed lobortis orci elementum egestas lobortis.Sed lobortis
               orci elementum egestas lobortis.
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
