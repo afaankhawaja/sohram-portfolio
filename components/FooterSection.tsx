@@ -1,10 +1,8 @@
 "use client";
 import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import logo1 from "@/assets/whatsapp-icon.svg";
 import logo2 from "@/assets/mdi_linkedin.svg";
-import { log } from "node:util";
 import linkedin from "@/assets/mdi_linkedin 2.svg";
 import arow from "@/assets/up right.svg";
 import { useState } from "react";
@@ -28,7 +26,7 @@ export default function FooterSection() {
                 setHover(false);
               }}
               href="#contact"
-              className="bg-rose-700 hover:bg-rose-800 text-white px-[43px] py-3 rounded-full flex items-center gap-2 transition-colors"
+              className="bg-[#AA253D] hover:bg-[#94273b] text-white px-[43px] py-3 rounded-full flex items-center gap-2 transition-colors"
             >
               <span className="text-[26px] leading-[100%] -tracking-[1.5%]">
                 Hire us
@@ -50,7 +48,7 @@ export default function FooterSection() {
             <div>
               {/* Logo and name */}
               <div className="flex items-center gap-3 mb-6">
-                <div className="bg-rose-700 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold">
+                <div className="bg-[#AA253D] text-white rounded-full w-12 h-12 flex items-center justify-center font-bold">
                   SM
                 </div>
                 <span className="text-xl font-semibold">UI UX Portfolio</span>
@@ -80,7 +78,7 @@ export default function FooterSection() {
             {/* Right column */}
             <div className="flex justify-end">
               <div>
-                <h3 className="text-rose-500 text-xl font-semibold mb-6">
+                <h3 className="text-[#AA253D] text-xl font-semibold mb-6">
                   Contact
                 </h3>
                 <ul className="space-y-4 text-gray-300">

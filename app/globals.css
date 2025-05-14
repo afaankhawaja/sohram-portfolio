@@ -23,32 +23,10 @@ body {
   -ms-overflow-style: none; /* Internet Explorer and Edge */
 }
 
+
+
 /* globals.css */
-.clip-custom {
-  /* your generated shape */
-  -webkit-clip-path: polygon(
-    0% 0%,
-    100% 0%,
-    100% 58%,
-    85.8% 58.3%,
-    72.6% 64.8%,
-    63% 74.9%,
-    57.7% 87.9%,
-    57.5% 100%,
-    0% 100%
-  );
-  clip-path: polygon(
-    0% 0%,
-    100% 0%,
-    100% 58%,
-    85.8% 58.3%,
-    72.6% 64.8%,
-    63% 74.9%,
-    57.7% 87.9%,
-    57.5% 100%,
-    0% 100%
-  );
-}
+
 html {
   scroll-behavior: smooth;
 }

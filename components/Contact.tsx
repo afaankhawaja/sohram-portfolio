@@ -5,7 +5,6 @@ import logo2 from "@/assets/whatsapp.svg";
 import Image from "next/image";
 import star from "@/assets/star.svg";
 import tick from "@/assets/shield-tick.svg";
-import bg from "@/assets/contact-image.png";
 import { motion } from "framer-motion";
 import loop1 from "@/assets/loop.png";
 
@@ -17,10 +16,10 @@ const Contact = () => {
         <span className="text-[#AA253D]">Let’s Discuss </span>
       </div>
       <div className="flex justify-center gap-x-[34px] mt-[30px]">
-        <div className="w-[78px] h-[78px] flex justify-center items-center rounded-full bg-[#AA253D] hover:bg-[#e6526d]">
+        <div className="w-[78px] h-[78px] flex justify-center items-center rounded-full bg-[#AA253D] hover:bg-[#94273b]">
           <Image src={logo1} alt="" />
         </div>
-        <div className="w-[78px] h-[78px] flex justify-center items-center rounded-full bg-[#AA253D] hover:bg-[#e6526d]">
+        <div className="w-[78px] h-[78px] flex justify-center items-center rounded-full bg-[#AA253D] hover:bg-[#94273b]">
           <Image className="hover:text-[#AA253D]" src={logo2} alt="" />
         </div>
       </div>

@@ -42,7 +42,7 @@ const PricingPlans = () => {
               <span>Responsive Design</span>
             </li>
           </ul>
-          <button className="mt-[34px] mb-[35px] w-[220px] mx-auto py-3 rounded-full bg-[#872657] text-white hover:bg-[#a13b6c] transition-all duration-200">
+          <button className="mt-[34px] mb-[35px] w-[220px] mx-auto py-3 rounded-full bg-[#AA253D] text-white hover:bg-[#94273b] transition-all duration-200">
             Choose plan
           </button>
         </div>
@@ -80,7 +80,7 @@ const PricingPlans = () => {
               <span>Responsive Design</span>
             </li>
           </ul>
-          <button className="mt-[34px] w-[220px] mx-auto mb-[35px] py-3 rounded-full bg-[#872657] text-white hover:bg-[#a13b6c] transition-all duration-200">
+          <button className="mt-[34px] w-[220px] mx-auto mb-[35px] py-3 rounded-full bg-[#AA253D] text-white hover:bg-[#94273b] transition-all duration-200">
             Choose plan
           </button>
         </div>
@@ -172,7 +172,7 @@ const PricingPlans = () => {
             </span>
           </li>
         </ul>
-        <button className="mt-[24px] w-[220px] ml-[24px]  mb-[35px] py-3 rounded-full bg-[#872657] text-white hover:bg-[#a13b6c] transition-all duration-200">
+        <button className="mt-[24px] w-[220px] ml-[24px]  mb-[35px] py-3 rounded-full bg-[#AA253D] text-white hover:bg-[#94273b] transition-all duration-200">
           Choose plan
         </button>
       </div>

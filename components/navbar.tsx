@@ -29,7 +29,7 @@ export default function Navbar() {
                 <div
                   className={cn(
                     "px-4 rounded-full text-white text-[20px] justify-center text-nowrap flex items-center h-[64px] min-w-[132px] text-center leading-[100%] -tracking-[1.5%] transition-colors",
-                    activeItem === item.name ? "bg-[#C30052]  text-white" : "",
+                    activeItem === item.name ? "bg-[#AA253D]  text-white" : "",
                   )}
                 >
                   {item.highlight && (

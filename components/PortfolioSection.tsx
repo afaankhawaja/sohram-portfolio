@@ -15,7 +15,7 @@ export default function PortfolioSection() {
         </h2>
         <Link
           href="#"
-          className="bg-[#AA253D] hover:bg-[#e6526d] text-white px-6 py-3 rounded-full text-nowrap transition-colors"
+          className="bg-[#AA253D] hover:bg-[#94273b] text-white px-6 py-3 rounded-full text-nowrap transition-colors"
         >
           See All
         </Link>
@@ -62,7 +62,7 @@ export default function PortfolioSection() {
           </h3>
           <Link
             href="#"
-            className="bg-[#AA253D] hover:bg-[#e6526d] text-white p-2 rounded-full flex items-center justify-center transition-colors rotate-45 hover:rotate-12"
+            className="bg-[#AA253D] hover:bg-[#94273b] text-white p-2 rounded-full flex items-center justify-center transition-colors rotate-45 hover:rotate-12"
           >
             <ArrowUpRight className="w-5 h-5 " />
           </Link>
