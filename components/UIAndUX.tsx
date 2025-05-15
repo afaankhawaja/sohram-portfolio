@@ -5,40 +5,27 @@ import svg1 from "@/assets/Frame (1).svg";
 import svg2 from "@/assets/Frame.svg";
 import PricingPlans from "./PricingPlans";
 import { useRouter } from "next/navigation";
+import back from "@/assets/cards/ep_back.svg"
 
 const UIAndUX = () => {
   const Router = useRouter();
   return (
-    <section className="max-w-[1246px] mt-10 mx-auto mb-[26px]">
+    <section className="max-w-[1246px] mt-10 mx-auto mb-[26px] max-xl:px-10">
       <button
         onClick={() => {
           Router.push("/");
         }}
-        className="mt-2 flex cursor-pointer items-center gap-x-[10px] font-semibold bg-[#AA253D] text-white w-fit px-3 py-2 rounded-xl"
+        className="mt-2 flex cursor-pointer items-center gap-x-[7px] w-[172px] h-[58px] bg-[#AA253D] hover:bg-[#94273b] text-white text-[24px] font-semibold  pl-4 pr-[21px] py-2 rounded-[30px]"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="32"
-          height="32"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="#fff"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          className="lucide lucide-undo2-icon lucide-undo-2"
-        >
-          <path d="M9 14 4 9l5-5" />
-          <path d="M4 9h10.5a5.5 5.5 0 0 1 5.5 5.5a5.5 5.5 0 0 1-5.5 5.5H11" />
-        </svg>
+        <Image src={back} alt="" className="py-[10px]"/>
         Go back
       </button>
 
-      <div className="flex justify-between ">
+      <div className="flex justify-between max-xl:flex-col ">
         <div className="text-[95.57px] leading-[100%] mt-[68px] -tracking-[1.5%] w-[523px] text-nowrap">
           UI UX <span className="text-[#AA253D]">Design</span>
         </div>
-        <div className="flex mt-[22px] gap-x-[26px]">
+        <div className="flex mt-[22px] gap-x-[26px] max-xl:justify-end max-md:flex-col gap-y-[23px]">
           <Image src={svg2} alt="" />
           <Image src={svg1} alt="" />
         </div>
@@ -51,28 +38,6 @@ const UIAndUX = () => {
         user-centered products from concept to completion.
       </div>
       <PricingPlans />
-      <button
-        onClick={() => {
-          Router.push("/");
-        }}
-        className="mt-2 flex justify-end w-full cursor-pointer"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="32"
-          height="32"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="#AA253D"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          className="lucide lucide-undo2-icon lucide-undo-2"
-        >
-          <path d="M9 14 4 9l5-5" />
-          <path d="M4 9h10.5a5.5 5.5 0 0 1 5.5 5.5a5.5 5.5 0 0 1-5.5 5.5H11" />
-        </svg>
-      </button>
     </section>
   );
 };

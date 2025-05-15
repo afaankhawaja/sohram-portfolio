@@ -10,7 +10,7 @@ export default function PortfolioSection() {
     >
       <div className="flex justify-between w-full items-center mb-[92px]">
         <h2 className="text-[64px] w-[643px] -tracking-[1.5%] leading-[100%] md:text-5xl font-bold text-slate-800">
-          Lets have a look at my{" "}
+          Lets have a look at our{" "}
           <span className="text-[#AA253D]">Portfolio</span>
         </h2>
         <Link
@@ -57,20 +57,13 @@ export default function PortfolioSection() {
 
       <div className="max-w-3xl mx-auto text-center">
         <div className="flex justify-center items-center gap-3 mb-4">
-          <h3 className="text-3xl md:text-4xl font-bold text-slate-800">
-            Lirante - Food Dilvery Solution
+          <h3 className="text-[#344054] font-bold text-[48px] leading-[100%] -tracking-[1.5%]">
+          Our message
           </h3>
-          <Link
-            href="#"
-            className="bg-[#AA253D] hover:bg-[#94273b] text-white p-2 rounded-full flex items-center justify-center transition-colors rotate-45 hover:rotate-12"
-          >
-            <ArrowUpRight className="w-5 h-5 " />
-          </Link>
+
         </div>
-        <p className="text-slate-700 text-lg">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue
-          interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit. Sed lobortis orci elementum egestas lobortis.
+        <p className="text-[#344054] font-normal text-[20px] leading-[100%] -tracking-[1.5%]">
+        We pour our hearts into every project at our agency. we're a team of  passionate UI/UX designers and full-stack developers dedicated to crafting impactful digital solutions. We believe in thoughtful design and meticulous coding to build meaningful user interfaces and seamless user journeys for exceptional web and mobile experiences. Let's bring your vision to life with heart and expertise.
         </p>
       </div>
     </section>

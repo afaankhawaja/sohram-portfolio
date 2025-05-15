@@ -2,6 +2,9 @@ import React from "react";
 import bg from "@/assets/testimonial.jpg";
 import Image from "next/image";
 import { Star } from "lucide-react";
+import star1 from "@/assets/cards/Vector (1).svg"
+import star2 from "@/assets/cards/Vector.svg"
+import vector from "@/assets/cards/Vector 1.svg"
 import comma from "@/assets/quote-down-bg.png";
 import card from "@/assets/cards/testimonial1.svg"
 
@@ -31,54 +34,22 @@ const Testimonial = () => {
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
-        {/* Star decoration left */}
-        <div className="absolute left-16 top-1/4">
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
-              fill="rgba(255,255,255,0.2)"
-              stroke="rgba(255,255,255,0.3)"
-              strokeWidth="1"
-            />
-          </svg>
-        </div>
 
-        {/* Star decoration right */}
-        <div className="absolute right-16 top-1/3">
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
-              fill="rgba(255,255,255,0.2)"
-              stroke="rgba(255,255,255,0.3)"
-              strokeWidth="1"
-            />
-          </svg>
-        </div>
 
         {/* Heading */}
-        <div className="text-center mb-[96px] max-w-3xl mx-auto">
-          <h2 className="text-[48px] -tracking-[1.5%] leading-[100%] md:text-5xl font-medium text-white mb-4">
+        <div className="text-center mb-[96px] mx-auto max-w-[1299px] min-h-[191px]">
+          <h2 className="relative text-[48px] -tracking-[1.5%] leading-[100%] font-medium text-white mb-4 max-w-[430px] mx-auto">
             Testimonials That{" "}
             <span className="inline-block">
-              Speak to <span className="text-rose-500">My Results</span>
+              Speak to <span className="text-rose-500">our Results</span>
             </span>
+            <Image src={vector} alt="" className="absolute -top-5 -right-5"/>
           </h2>
-          <p className="text-[#F9FAFB] text-[20px] -tracking-[1.5%] leading-[100%] ">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue
-            interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Sed lobortis orci elementum egestas lobortis.
+          <p className="relative text-[#F9FAFB] text-[20px] -tracking-[1.5%] leading-[100%] min-w-full max-w-[742px] mx-auto">
+          We're proud of the strong relationships we've built with our clients. Hear firsthand how our UI/UX design and development services have helped them succeed.
+          <Image src={star1} alt="star" className="absolute -bottom-8"/>
+          <Image src={star2} alt="star" className="absolute -right-8 max-lg:-right-2 -top-8"/>
+
           </p>
         </div>
 

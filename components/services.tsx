@@ -33,29 +33,29 @@ export default function Services() {
   const [hover,setHover]=useState<number|null>()
   return (
     <div
-      className="relative w-full max-w-[1440px] "
+      className="relative w-full max-w-[1440px] min-h-full"
       id="Service"
     >
       <Image
         src={bg}
         alt=""
-        className="rounded-[50px] absolute h-[878px] object-cover"
+        className="rounded-[50px] absolute min-h-full xl:h-[878px] object-cover"
       />
       <div className="px-[60px]">
-     <div className="flex justify-between">
-     <h2 className="text-[48px] text-white font-bold leading-[100%] -tracking-[1.5%] relative mt-[116px] pl-[10.5px] mb-[86px]">
+     <div className="flex justify-between max-lg:flex-col max-lg:items-center gap-y-5 max-lg:mb-14">
+     <h2 className="text-[48px] text-white font-bold leading-[100%] -tracking-[1.5%] relative mt-[116px] pl-[10.5px] lg:mb-[86px]">
         Our <span className="text-[#C30052]">Services</span>
       </h2>
-      <p className="text-white text-[20px] font-medium leading-[100%] -tracking-[1.5%] mt-[97px] max-w-[675px] relative">
+      <p className="text-white text-[20px] font-medium leading-[100%] -tracking-[1.5%] lg:mt-[97px] max-w-[675px] relative">
       We deliver exceptional user experiences for web, web applications, and mobile. Our expert UI/UX design seamlessly integrates with full-stack development for both web and mobile platforms, creating powerful and intuitive digital solutions.
       </p>
      </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 h-full pb-10 pr-10">
         {services.map((service, index) => (
           <div
             key={index}
-            className="relative rounded-2xl flex flex-col w-[416px] h-[508px]"
+            className="relative rounded-2xl flex flex-col max-w-[416px] w-auto lg:w-full min-w-[370px] h-[508px] min- mx-auto"
           >
             <div className={`relative flex-grow  rounded-[35px] overflow-hidden h-[30%]`}
             onMouseEnter={()=>setHover(service.id)}
