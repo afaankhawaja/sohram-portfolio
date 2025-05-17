@@ -10,8 +10,8 @@ import loop1 from "@/assets/loop.png";
 
 const Contact = () => {
   return (
-    <section>
-      <div className="mt-[98px] text-[64px] max-w-[800px] -tracking-[1.5%] leading-[100%] text-center mx-auto">
+    <section className="max-w-[1440px] max-md:w-[95%]">
+      <div className="mt-[98px] text-[42px] md:text-[64px] max-w-[800px] -tracking-[1.5%] leading-[100%] text-center mx-auto">
         Have an Awsome Project Idea?{" "}
         <span className="text-[#AA253D]">Let’s Discuss </span>
       </div>
@@ -24,12 +24,12 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="flex gap-x-[37px] mt-[50px] justify-center mb-[45px]">
-        <div className="flex gap-x-1">
+      <div className="flex gap-x-[37px] mt-[50px] justify-center mb-[45px] max-md:px-5">
+        <div className="md:flex gap-x-1">
           <Image src={star} alt="" />
           <span>4.9/5 Average Ratings</span>
         </div>
-        <div className="flex gap-x-1">
+        <div className="md:flex gap-x-1">
           <Image src={tick} alt="" />
           <span>Certified Product Designer</span>
         </div>
@@ -47,7 +47,7 @@ const Contact = () => {
             repeat: Infinity, // endless
           }}
         >
-          <Image src={loop1} alt="scrolling bg" className="w-[100%]" />
+          <Image src={loop1} alt="scrolling bg" className="w-[100%] max-md:w-[90%]" />
         </motion.div>
       </div>
     </section>

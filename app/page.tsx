@@ -12,15 +12,14 @@ import UIAndUX from "@/components/UIAndUX";
 
 export default function Home() {
   return (
-    <main className="flex relative w-screen min-h-screen flex-col items-center max-xl:px-4">
+    <main className=" md:w-screen w-screen min-h-screen  items-center max-xl:px-4">
       {/* <Navbar /> */}
-      <div className="sticky top-1 z-50 ">
+      <div className="sticky top-1 z-50 w-full h-full">
         <Navbar />
       </div>
-      {/* <UIAndUX/> */}
+      
       <Hero />
       <Services />
-      {/* <Experience/> */}
       <HireMe />
       <PortfolioSection />
       <Testimonial />

@@ -21,8 +21,8 @@ const UIAndUX = () => {
         Go back
       </button>
 
-      <div className="flex justify-between max-xl:flex-col ">
-        <div className="text-[95.57px] leading-[100%] mt-[68px] -tracking-[1.5%] w-[523px] text-nowrap">
+      <div className="flex justify-between max-xl:flex-col max-md:mb-4">
+        <div className="lg:text-[95.57px] text-[40px] leading-[100%] mt-[68px] -tracking-[1.5%] w-[523px] text-nowrap">
           UI UX <span className="text-[#AA253D]">Design</span>
         </div>
         <div className="flex mt-[22px] gap-x-[26px] max-xl:justify-end max-md:flex-col gap-y-[23px]">
@@ -30,7 +30,7 @@ const UIAndUX = () => {
           <Image src={svg1} alt="" />
         </div>
       </div>
-      <div className="flex text-[20px] leading-[100%] mt-[23px] mb-[21px] -tracking-[1.5%] text-[#98A2B3]">
+      <div className="flex text-[14px] md:text-[20px] leading-[100%] mt-[23px] mb-[21px] -tracking-[1.5%] text-[#98A2B3]">
         As a Lead UI/UX Designer, I manage the full product design lifecycle,
         including rigorous Design QA, functionality, and bug testing. I've led
         mobile app design for sensitive areas (ClearMinds w/ RAG AI) and

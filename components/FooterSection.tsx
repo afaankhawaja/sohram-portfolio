@@ -10,12 +10,12 @@ import { useState } from "react";
 export default function FooterSection() {
   const [hover, setHover] = useState(false);
   return (
-    <footer className="w-full max-xl:px-5 mt-5">
+    <footer className="w-full max-md:w-[95%] mt-5">
       <div className="bg-[#272727] text-white py-12 rounded-t-[24px] max-lg:px-5 ">
-        <div className=" max-w-[1298px] mx-auto">
+        <div className=" md:max-w-[1298px] mx-auto">
           {/* Top section with heading and hire button */}
-          <div className="flex justify-between items-center mb-8">
-            <h2 className="text-4xl md:text-5xl font-bold">
+          <div className="md:flex justify-between items-center mb-8">
+            <h2 className="text-4xl md:text-5xl font-bold max-md:mb-8">
               Lets Connect there
             </h2>
             <div
@@ -26,13 +26,13 @@ export default function FooterSection() {
                 setHover(false);
               }}
               
-              className="bg-[#AA253D] hover:bg-[#94273b] text-white px-[43px] py-3 rounded-full flex items-center gap-2 transition-all duration-200"
+              className="bg-[#AA253D] cursor-pointer hover:bg-[#94273b] text-white px-[10px] md:px-[43px] py-2 md:py-3 justify-center rounded-full flex items-center gap-2 transition-all duration-200"
             >
-              <span className="text-[26px] leading-[100%] -tracking-[1.5%]">
+              <div className="text-[26px] md:text-[26px] leading-[100%] text-nowrap -tracking-[1.5%]">
                 Hire us
-              </span>
+              </div>
               <Image
-                className={`h-[42px] w-[42px] rotate-45  ${hover && "-rotate-2"}`}
+                className={`md:h-[42px] md:w-[42px] rotate-45  ${hover && "rotate-2"}`}
                 src={arow}
                 alt=""
               />
@@ -76,7 +76,7 @@ export default function FooterSection() {
             </div>
 
             {/* Right column */}
-            <div className="flex justify-end">
+            <div className="flex md:justify-end justify-start">
               <div>
                 <h3 className="text-[#AA253D] text-xl font-semibold mb-6">
                   Contact

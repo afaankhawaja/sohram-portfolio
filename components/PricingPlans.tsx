@@ -10,7 +10,7 @@ const PricingPlans = () => {
       {/* Left 2 Cards: Intro + Base (merged container) */}
       <div className="flex flex-col max-xl:mb-10 lg:flex-row bg-white border border-r-0 max-xl:rounded-r-xl rounded-r-none rounded-xl overflow-hidden w-full h-[1000px] lg:h-[480px]  lg:min-w-[610px] shadow-md">
         {/* Intro Card */}
-        <div className="flex-1 p-[32px]">
+        <div className="flex-1 p-[10px] md:p-[32px]">
           <h3 className="mt-[17px] text-[28px] text-[#231D4F] leading-[100%]">
             $200 <span className="text-[17px]">/ Project</span>
           </h3>
@@ -42,13 +42,13 @@ const PricingPlans = () => {
               <span>Responsive Design</span>
             </li>
           </ul>
-          <button className="mt-[34px] mb-[35px] w-[220px] mx-auto py-3 rounded-full bg-[#AA253D] text-white hover:bg-[#94273b] transition-all duration-200">
+          <button className="mt-[34px] mb-[35px] w-full md:w-[220px] mx-auto py-3 rounded-full bg-[#AA253D] text-white hover:bg-[#94273b] transition-all duration-200">
             Choose plan
           </button>
         </div>
 
         {/* Base Card */}
-        <div className="flex-1 p-[32px]">
+        <div className="flex-1 p-[10px] md:p-[32px]">
           <h3 className="mt-[17px] text-[28px] text-[#231D4F] leading-[100%]">
             $312 <span className="text-[17px] font-normal">/ Project</span>
           </h3>
@@ -80,14 +80,14 @@ const PricingPlans = () => {
               <span>Responsive Design</span>
             </li>
           </ul>
-          <button className="mt-[34px] w-[220px] mx-auto mb-[35px] py-3 rounded-full bg-[#AA253D] text-white hover:bg-[#94273b] transition-all duration-200">
+          <button className="mt-[34px] w-full md:w-[220px] mx-auto mb-[35px] py-3 rounded-full bg-[#AA253D] text-white hover:bg-[#94273b] transition-all duration-200">
             Choose plan
           </button>
         </div>
       </div>
 
       {/* Pro Card (SEPARATE) */}
-      <div className="relative max-xl:mb-10 bg-gradient-to-b from-[#AA253D] to-[#5D0554] mb-2 text-white p-[32px] rounded-xl shadow-xl max-xl:w-[100%] min-w-[311px] h-[527px] flex flex-col justify-between scale-[1.03]">
+      <div className="relative max-xl:mb-10 bg-gradient-to-b from-[#AA253D] to-[#5D0554] mb-2 text-white p-[10px] md:p-[32px] rounded-xl shadow-xl max-xl:w-[100%] md:min-w-[311px] h-[527px] flex flex-col justify-between scale-[1.03]">
         <div className="absolute top-[18px] right-[18px]  bg-[#75112E] text-white px-3 py-1 rounded-full text-[10px] font-normal">
           MOST POPULAR
         </div>
@@ -132,13 +132,13 @@ const PricingPlans = () => {
             </li>
           </ul>
         </div>
-        <button className="mt-[54px] w-[220px] max-xl:w-full mx-auto -mb-[10px]  py-3 rounded-full text-[15px] font-normal border-white border text-white hover:border-[2px] transition-all duration-100 hover:bg-gradient-to-r from-[#dc2430] to-[#7b4397]">
+        <button className="mt-[54px] w-full md:w-[220px] max-xl:w-full mx-auto md:-mb-[10px] max-md:mb-10  py-3 rounded-full text-[15px] font-normal border-white border text-white hover:border-[2px] transition-all duration-100 hover:bg-gradient-to-r from-[#dc2430] to-[#7b4397]">
           Choose plan
         </button>
       </div>
 
       {/* Final Card (Enterprise) — continues merged layout */}
-      <div className="bg-white border rounded-xl border-l-0 rounded-l-none max-xl:rounded-l-xl p-[32px] w-full max-xl:w-[100%] xl:w-[46%] h-[480px] shadow-md">
+      <div className="bg-white border rounded-xl border-l-0 rounded-l-none max-xl:rounded-l-xl p-[10px] md:p-[32px] w-full max-xl:w-[100%] xl:w-[46%] md:h-[480px] shadow-md">
         <h3 className="mt-[17px] text-[28px] text-[#231D4F] leading-[100%]">
           $1200 <span className="text-[17px] font-normal">/ Project</span>
         </h3>
@@ -172,7 +172,7 @@ const PricingPlans = () => {
             </span>
           </li>
         </ul>
-        <button className="mt-[20px] w-[220px] max-xl:w-full max-xl:mx-auto ml-[24px]  mb-[35px] py-3 rounded-full bg-[#AA253D] text-white hover:bg-[#94273b] transition-all duration-200">
+        <button className="mt-[20px] w-full md:w-[220px] max-xl:w-full max-xl:mx-auto ml-[24px]  mb-[35px] max-md:mt-10 max-md:pb-[10px] py-3 rounded-full bg-[#AA253D] text-white hover:bg-[#94273b] transition-all duration-200">
           Choose plan
         </button>
       </div>

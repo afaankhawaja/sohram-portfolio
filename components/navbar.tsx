@@ -20,15 +20,15 @@ export default function Navbar() {
   const [activeItem, setActiveItem] = useState("Home");
 
   return (
-    <div className="w-screen overflow-scroll hidden-scrollbar relative items-center flex h-[86px] justify-center mt-[15px] px-4 ">
+    <div className="max-md:w-[95%] overflow-scroll hidden-scrollbar relative items-center flex h-[86px] justify-center mt-[15px] px-4 ">
       <nav className="max-w-[1298px] border-white border-[2px] overflow-x-scroll hidden-scrollbar pl-[10xp] pr-[31px] w-full h-full bg-black rounded-full flex items-center justify-between">
-        <ul className="flex items-center justify-between h-[64px] w-full space-x-8 font-inter pl-[10px]">
+        <ul className="flex items-center justify-between h-[50px] md:h-[64px] w-full space-x-8 font-inter pl-[10px]">
           {navItems.map((item) => (
             <li key={item.name}>
               <Link href={item.href} onClick={() => setActiveItem(item.name)}>
                 <div
                   className={cn(
-                    "px-4 rounded-full text-white text-[20px] justify-center text-nowrap flex items-center h-[64px] min-w-[132px] text-center leading-[100%] -tracking-[1.5%] transition-colors",
+                    "px-4 rounded-full text-white text-[12px]  md:text-[20px] justify-center text-nowrap flex items-center h-[50px] md:h-[64px] min-w-[132px] text-center leading-[100%] -tracking-[1.5%] transition-colors",
                     activeItem === item.name ? "bg-[#AA253D]  text-white" : "",
                   )}
                 >

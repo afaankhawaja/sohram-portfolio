@@ -28,7 +28,7 @@ export default function Hero() {
     `${isTabActive(tabName) ? "bg-[#AA253D]" : "bg-transparent"}`;
 
   return (
-    <div className="w-full max-w-[1298px] flex flex-col items-center mt-[37px]">
+    <div className="max-w-full w-[1298px] mx-auto max-md:w-[85%] max-md:px-0 flex flex-col items-center mt-[37px]">
       <div className="relative w-full flex flex-col">
         {/* Welcome text with decoration */}
         <div className="relative mb-2 mx-auto">
@@ -37,29 +37,29 @@ export default function Hero() {
 
         {/* Main heading */}
 
-        <div className="lg:flex max-lg:flex-col max-lg:space-y-4 max-lg:mx-auto lg:justify-between mt-[25px]">
-          <div className="w-[531px]">
-            <div className="text-[80px] font-semibold leading-[100%] -tracking-[0%] w-[531px] h-[384px]">
+        <div className="lg:flex max-lg:flex-col max-lg:space-y-4 max-lg:mx-auto lg:justify-between w-full mt-[25px]">
+          <div className="md:w-[531px]">
+            <div className="lg:text-[80px] text-[60px] font-semibold leading-[100%] -tracking-[0%] md:w-[531px] mb-5 h-full w-full lg:h-[384px]">
               A Design that delights &{" "}
               <span className="text-[#C30052]">a code that performs.</span>
               <br />
             </div>
-            <div className="text-[22px] leading-[37px] text-black">
+            <div className="text-[12px] md:text-[22px] md:leading-[37px] text-black max-md:mb-5 max-w-screen">
               Our Design agency helps businesses grow and succeed through a
               range of services including development services for web and
               applications .
             </div>
           </div>
 
-          <div className="relative mb-[74px] max-w-[627px]">
+          <div className="relative mb-[74px] mx-auto  md:max-w-[627px]">
             <Image
               src={bg}
               alt="Sohram"
               width={627}
               height={524}
-              className="w-[627px] max-lg:mb-5"
+              className="md:w-[627px] max-lg:mb-5 "
             />
-            <div className="absolute bottom-[38px] justify-center flex right-32  gap-x-[10px] backdrop-blur-[15px] mt-8 border-[2px] text-[26px] font-medium leading-[100%] -tracking-[1.5%] border-[#C9C9C9] rounded-[50px] p-[10px] h-[82px] w-[367px]  transition-all duration-300">
+            <div className="absolute bottom-[38px] justify-center items-center flex right-7 md:right-32  gap-x-[10px] backdrop-blur-[15px] mt-8 border-[2px]  text-[14px] md:text-[26px] font-medium leading-[100%] -tracking-[1.5%] border-[#C9C9C9] rounded-[50px] md:p-[10px] md:h-[82px] md:w-[367px] max-md:w-[80%]  transition-all duration-300">
               <button
                 onMouseEnter={() => setHoverTab("Portfolio")}
                 onMouseLeave={() => setHoverTab(null)}
@@ -69,15 +69,15 @@ export default function Hero() {
                 }}
                 className={clsx(
                   buttonClasses("Portfolio"),
-                  `min-w-[135px] text-white rounded-full h-[62px] flex items-center justify-center gap-2 transition-all duration-300  text-nowrap hover:w-[208px] ${
-                    activeTab === "Portfolio" && "w-[208px]"
-                  } ${hoverTab === "Hire me" && "w-[135px]"}`,
+                  `md:min-w-[135px] md:px-8 text-white rounded-full h-[62px] flex items-center justify-center gap-2 transition-all duration-300  text-nowrap hover:w-[208px] max-md:hover::w-fit${
+                    activeTab === "Portfolio" && "w-[208px] max-md:w-[135px]"
+                  } ${hoverTab === "Hire me" && "w-[135px] max-md:w-fit"}`,
                 )}
               >
                 Portfolio
                 {activeTab === "Portfolio"
                   ? (hoverTab == "Portfolio" || hoverTab == null) && (
-                      <Image src={arow} alt="" />
+                      <Image src={arow} alt="" className="max-md:hidden" />
                     )
                   : hoverTab == "Portfolio" && <Image src={arow} alt="" />}
               </button>
@@ -91,9 +91,9 @@ export default function Hero() {
                 }}
                 className={clsx(
                   buttonClasses("Hire me"),
-                  `min-w-[129px] text-white rounded-full h-[62px] flex items-center justify-center gap-2 transition-all duration-300  text-nowrap hover:w-[202px] ${
-                    activeTab === "Hire me" && "w-[202px]"
-                  } ${hoverTab === "Portfolio" && "w-[129px]"}`,
+                  `md:min-w-[129px] text-white rounded-full h-[62px] flex items-center justify-center gap-2 transition-all duration-300  text-nowrap hover:w-[202px] max-md:hover::w-fit${
+                    activeTab === "Hire me" && "w-[202px] max-md:w-fit"
+                  } ${hoverTab === "Portfolio" && "w-[129px] max-md:w-fit"}`,
                 )}
               >
                 Hire me
@@ -101,7 +101,7 @@ export default function Hero() {
                   ? (hoverTab === "Hire me" || hoverTab == null) && (
                       <Image src={arow} alt="" />
                     )
-                  : hoverTab === "Hire me" && <Image src={arow} alt="" />}
+                  : hoverTab === "Hire me" && <Image src={arow} alt="" className="max-md:hidden"/>}
               </button>
             </div>
           </div>
