@@ -5,6 +5,8 @@ import uiux from "@/assets/cards/UI UX glass mophism.svg";
 import appdev from "@/assets/cards/App development glass morphism.svg";
 import { useState } from "react";
 import bg from "@/assets/testimonial.jpg";
+import { useRouter } from 'next/navigation'
+
 
 
 const services = [
@@ -12,25 +14,29 @@ const services = [
     title: "UI UX Design",
     image: uiux,
     alt: "User flow and Prototyping illustration",
-    id:0
+    id:0,
+    path:"/hire-us/#UiUx"
   },
   {
     title: "Web Developement",
     image: webdev,
     alt: "Web Design illustration",
-    id:1
+    id:1,
+    path:"/hire-us/#web"
   },
   {
     title: "App Developement",
     image: appdev,
     alt: "Application Design illustration",
-    id:2
+    id:2,
+    path:"/hire-us/#",
   },
  
 ];
 
 export default function Services() {
   const [hover,setHover]=useState<number|null>()
+  const router=useRouter()
   return (
     <div
       className="relative w-full max-w-[1440px] min-h-full max-md:w-[95%]"
@@ -58,6 +64,7 @@ export default function Services() {
             className="relative rounded-2xl flex flex-col md:max-w-[416px] lg:w-full md:min-w-[370px] max-md:h-[400px] h-[508px] w-[100%] mx-auto"
           >
             <div className={`relative flex-grow  rounded-[35px] overflow-hidden h-[30%]`}
+            onClick={()=>{router.push(service.path)}}
             onMouseEnter={()=>setHover(service.id)}
             onMouseLeave={()=>setHover(null)}>
               <div className={`absolute inset-0 h-[50%] ${hover===index && "bg-[#AA253D]"}`}></div>
@@ -73,7 +80,9 @@ export default function Services() {
               </div>
               <div className="relative z-10 mt-[23px] w-full h-[2px] bg-[#F9FAFB4D]"> </div>
             </div>
-            <div className={`absolute md:w-[114px] w-[60px] flex justify-center items-center h-[60px] md:h-[114px] z-20 md:bottom-0 bottom-3 md:right-1 -right-5  rounded-[57px] bg-[#1D2939] hover:bg-[#AA253D] ${hover===index && "bg-[#AA253D]"}`}>
+            <div
+            onClick={()=>{router.push(service.path)}}
+             className={`absolute md:w-[114px] w-[60px] flex justify-center items-center h-[60px] md:h-[114px] z-20 md:bottom-0 bottom-3 md:right-1 -right-5  rounded-[57px] bg-[#1D2939] hover:bg-[#AA253D] ${hover===index && "bg-[#AA253D]"}`}>
               <svg
                 id="noName"
                 width="114"

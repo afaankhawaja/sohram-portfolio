@@ -1,17 +1,18 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import svg from "@/assets/cards/down-circle.svg"
-import svg1 from "@/assets/Frame (1).svg";
-import svg2 from "@/assets/Frame.svg";
-import PricingPlans from "./PricingPlans";
+import svg1 from "@/assets/cards/down-circle.svg";
+import svg2 from "@/assets/cards/Frame.svg";
+import PricingPlans from "@/app/web-developement/components/PricingPlans";
 import { useRouter } from "next/navigation";
 import back from "@/assets/cards/ep_back.svg"
 
-const UIAndUX = () => {
-  const Router = useRouter();
+const WebDevelopement = () => {
+      const Router = useRouter();
+    
   return (
-    <section className="max-w-[1246px] mt-10 mx-auto mb-[26px] max-xl:px-10" id="UiUx">
+    
+    <section className="max-w-[1246px] mt-10 mx-auto mb-[26px] max-xl:px-10" id="web">
       <button
         onClick={() => {
           Router.push("/#Service");
@@ -24,28 +25,21 @@ const UIAndUX = () => {
 
       <div className="flex justify-between max-xl:flex-col max-md:mb-4">
         <div className="lg:text-[95.57px] text-[40px] leading-[100%] mt-[68px] -tracking-[1.5%] w-[523px] text-nowrap">
-          UI UX <span className="text-[#AA253D]">Design</span>
+          Web <span className="text-[#AA253D]">Development</span>
         </div>
         <div className="flex mt-[22px] gap-x-[26px] max-xl:justify-end max-md:flex-col gap-y-[23px]">
           <Image src={svg2} alt="" />
-          <Image src={svg1} alt="" />
         </div>
       </div>
       <div className="flex text-[14px] md:text-[20px] leading-[100%] mt-[23px] mb-[21px] -tracking-[1.5%] text-[#98A2B3]">
-        As a Lead UI/UX Designer, I manage the full product design lifecycle,
-        including rigorous Design QA, functionality, and bug testing. I've led
-        mobile app design for sensitive areas (ClearMinds w/ RAG AI) and
-        contributed to AI platforms (Medianest). I deliver impactful,
-        user-centered products from concept to completion.
+      Invest in the Right Web Development Plan for Strategic Growth. We specialize in building functional and engaging user experiences that elevate your website and software, improving user satisfaction and contributing to your business objectives.
       </div>
       <PricingPlans />
-      <div  className="flex w-full justify-end">
-      <Image
-      onClick={()=>Router.push('/hire-us/#web')}
-       src={svg} alt="" className="mt-[43px]"/>
+      <div onClick={()=>Router.push('#')} className="flex w-full justify-end">
+      <Image src={svg1} alt="" className="mt-[43px]"/>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default UIAndUX;
+export default WebDevelopement
