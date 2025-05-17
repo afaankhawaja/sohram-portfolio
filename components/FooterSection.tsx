@@ -18,25 +18,25 @@ export default function FooterSection() {
             <h2 className="text-4xl md:text-5xl font-bold">
               Lets Connect there
             </h2>
-            <Link
+            <div
               onMouseEnter={() => {
                 setHover(true);
               }}
               onMouseLeave={() => {
                 setHover(false);
               }}
-              href="#contact"
-              className="bg-[#AA253D] hover:bg-[#94273b] text-white px-[43px] py-3 rounded-full flex items-center gap-2 transition-colors"
+              
+              className="bg-[#AA253D] hover:bg-[#94273b] text-white px-[43px] py-3 rounded-full flex items-center gap-2 transition-all duration-200"
             >
               <span className="text-[26px] leading-[100%] -tracking-[1.5%]">
                 Hire us
               </span>
               <Image
-                className={`h-[42px] w-[42px] rotate-45 hover:rotate-12 ${hover && "rotate-12"}`}
+                className={`h-[42px] w-[42px] rotate-45  ${hover && "-rotate-2"}`}
                 src={arow}
                 alt=""
               />
-            </Link>
+            </div>
           </div>
 
           {/* Divider */}
@@ -93,8 +93,8 @@ export default function FooterSection() {
           <div className="border-t-[2px] border-[#475467] mt-12"></div>
         </div>
       </div>
-      <div className="h-[40px] flex justify-center bg-transparent">
-        <Image src={linkedin} alt="linkedin" />
+      <div className="h-[120px] flex justify-center bg-white">
+        {/* <Image src={linkedin} alt="linkedin" /> */}
       </div>
     </footer>
   );
