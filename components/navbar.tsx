@@ -18,6 +18,7 @@ const navItems = [
 
 export default function Navbar() {
   const [activeItem, setActiveItem] = useState("Home");
+  const [hover,setHover]=useState(false)
 
   return (
     <div className="max-md:w-[95%] overflow-scroll hidden-scrollbar relative items-center flex h-[86px] justify-center mt-[15px] px-4 ">
@@ -27,20 +28,28 @@ export default function Navbar() {
             <li key={item.name}>
               <Link href={item.href} onClick={() => setActiveItem(item.name)}>
                 <div
+                onMouseEnter={()=>{
+                  item.highlight && setHover(true)}}
+                onMouseLeave={()=>setHover(false)}
                   className={cn(
                     "px-4 rounded-full text-white text-[12px]  md:text-[20px] justify-center text-nowrap flex items-center h-[50px] md:h-[64px] min-w-[132px] text-center leading-[100%] -tracking-[1.5%] transition-colors",
-                    activeItem === item.name ? "bg-[#AA253D]  text-white" : "",
+                    activeItem === item.name ? "bg-[#AA253D]  text-white" : "",item.highlight && 'w-[200px] text-left transition-all duration-500'
                   )}
                 >
                   {item.highlight && (
-                    <div className="w-[46px] h-[46px] content-center bg-[#AA253D] px-[5px] py-[5px] text-white mr-[10.5px] rounded-[50px] text-[20px] -tracking-[1.5%]">
+                    <div className="w-[46px] h-[46px] content-center bg-[#AA253D] px-[10px] flex items-center justify-center py-[5px] text-white mr-[10.5px] rounded-[50px] text-[20px] -tracking-[1.5%]">
                       SM
                     </div>
                   )}
                   {item.icon && (
                     <Image className="mr-[6px]" src={icon} alt={"icon"} />
                   )}
-                  {item.name}
+
+                  {item.highlight
+                   && hover ? (
+                     <> <div><div className="text-[12px] text-gray-500">Designed by</div>Sohram Malik</div></>):
+                    <div>{item.name}</div>
+                   }
                 </div>
               </Link>
             </li>

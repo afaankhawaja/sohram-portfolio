@@ -7,14 +7,14 @@ import PricingPlans from "@/app/web-developement/components/PricingPlans";
 import { useRouter } from "next/navigation";
 import back from "@/assets/cards/ep_back.svg"
 interface props{
-  setOpen:(e:boolean)=>void;
-}
-const WebDevelopement = ({setOpen}:props) => {
+    setOpen:(e:boolean)=>void;
+  }
+const AppDevelopement = ({setOpen}:props) => {
       const Router = useRouter();
     
   return (
     
-    <section className="max-w-[1246px] mt-10 mx-auto mb-[26px] max-xl:px-10" id="web">
+    <section className="max-w-[1246px] mt-10 mx-auto mb-[26px] max-xl:px-10" id="app">
       <button
         onClick={() => {
           Router.push("/#Service");
@@ -27,21 +27,20 @@ const WebDevelopement = ({setOpen}:props) => {
 
       <div className="flex justify-between max-xl:flex-col max-md:mb-4">
         <div className="lg:text-[95.57px] text-[40px] leading-[100%] mt-[68px] -tracking-[1.5%] w-[523px] text-nowrap">
-          Web <span className="text-[#AA253D]">Development</span>
+          App <span className="text-[#AA253D]">Development</span>
         </div>
         <div className="flex mt-[22px] gap-x-[26px] max-xl:justify-end max-md:flex-col gap-y-[23px]">
           <Image src={svg2} alt="" />
         </div>
       </div>
       <div className="flex text-[14px] md:text-[20px] leading-[100%] mt-[23px] mb-[21px] -tracking-[1.5%] text-[#98A2B3]">
-      Invest in the Right Web Development Plan for Strategic Growth. We specialize in building functional and engaging user experiences that elevate your website and software, improving user satisfaction and contributing to your business objectives.
-      </div>
-      <PricingPlans setOpen={setOpen} />
-      <div onClick={()=>Router.push('#')} className="flex w-full justify-end">
-      <Image src={svg1} alt="" className="mt-[43px]"/>
+      Drive strategic growth with an app development plan focused on functionality and engagement. We excel at creating user experiences that elevate your mobile app, resulting in improved user satisfaction and tangible progress towards your business objectives.      </div>
+      <PricingPlans setOpen={setOpen}/>
+      <div onClick={()=>Router.push('/hire-us/#UiUx')} className="flex w-full justify-end">
+      <Image src={svg1} alt="" className="mt-[43px] rotate-180"/>
       </div>
     </section>
   )
 }
 
-export default WebDevelopement
+export default AppDevelopement

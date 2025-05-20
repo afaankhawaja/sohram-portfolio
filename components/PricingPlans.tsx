@@ -3,8 +3,10 @@ import Image from "next/image";
 import active from "@/assets/check-circle-1.svg";
 import inactive from "@/assets/check-circle-2.svg";
 import check from "@/assets/Path.svg";
-
-const PricingPlans = () => {
+interface props{
+  setOpen:(e:boolean)=>void;
+}
+const PricingPlans = ({setOpen}:props) => {
   return (
     <div className="w-full max-w-[1246px] mx-auto py-10 flex flex-col xl:flex-row justify-between items-end">
       {/* Left 2 Cards: Intro + Base (merged container) */}
@@ -42,7 +44,7 @@ const PricingPlans = () => {
               <span>Responsive Design</span>
             </li>
           </ul>
-          <button className="mt-[34px] mb-[35px] w-full md:w-[220px] mx-auto py-3 rounded-full bg-[#AA253D] text-white hover:bg-[#94273b] transition-all duration-200">
+          <button onClick={()=>setOpen(true)} className="mt-[34px] mb-[35px] w-full md:w-[220px] mx-auto py-3 rounded-full bg-[#AA253D] text-white hover:bg-[#94273b] transition-all duration-200">
             Choose plan
           </button>
         </div>
@@ -80,7 +82,7 @@ const PricingPlans = () => {
               <span>Responsive Design</span>
             </li>
           </ul>
-          <button className="mt-[34px] w-full md:w-[220px] mx-auto mb-[35px] py-3 rounded-full bg-[#AA253D] text-white hover:bg-[#94273b] transition-all duration-200">
+          <button onClick={()=>setOpen(true)} className="mt-[34px] w-full md:w-[220px] mx-auto mb-[35px] py-3 rounded-full bg-[#AA253D] text-white hover:bg-[#94273b] transition-all duration-200">
             Choose plan
           </button>
         </div>
@@ -132,7 +134,7 @@ const PricingPlans = () => {
             </li>
           </ul>
         </div>
-        <button className="mt-[54px] w-full md:w-[220px] max-xl:w-full mx-auto md:-mb-[10px] max-md:mb-10  py-3 rounded-full text-[15px] font-normal border-white border text-white hover:border-[2px] transition-all duration-100 hover:bg-gradient-to-r from-[#dc2430] to-[#7b4397]">
+        <button onClick={()=>setOpen(true)} className="mt-[54px] w-full md:w-[220px] max-xl:w-full mx-auto md:-mb-[10px] max-md:mb-10  py-3 rounded-full text-[15px] font-normal border-white border text-white hover:border-[2px] transition-all duration-100 hover:bg-gradient-to-r from-[#dc2430] to-[#7b4397]">
           Choose plan
         </button>
       </div>
@@ -172,7 +174,7 @@ const PricingPlans = () => {
             </span>
           </li>
         </ul>
-        <button className="mt-[20px] w-full md:w-[220px] max-xl:w-full max-xl:mx-auto ml-[24px]  mb-[35px] max-md:mt-10 max-md:pb-[10px] py-3 rounded-full bg-[#AA253D] text-white hover:bg-[#94273b] transition-all duration-200">
+        <button onClick={()=>setOpen(true)} className="mt-[20px] w-full md:w-[220px] max-xl:w-full max-xl:mx-auto ml-[24px]  mb-[35px] max-md:mt-10 max-md:pb-[10px] py-3 rounded-full bg-[#AA253D] text-white hover:bg-[#94273b] transition-all duration-200">
           Choose plan
         </button>
       </div>

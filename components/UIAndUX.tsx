@@ -7,8 +7,11 @@ import svg2 from "@/assets/Frame.svg";
 import PricingPlans from "./PricingPlans";
 import { useRouter } from "next/navigation";
 import back from "@/assets/cards/ep_back.svg"
+interface props{
+  setOpen:(e:boolean)=>void;
+}
 
-const UIAndUX = () => {
+const UIAndUX = ({setOpen}:props) => {
   const Router = useRouter();
   return (
     <section className="max-w-[1246px] mt-10 mx-auto mb-[26px] max-xl:px-10" id="UiUx">
@@ -38,7 +41,7 @@ const UIAndUX = () => {
         contributed to AI platforms (Medianest). I deliver impactful,
         user-centered products from concept to completion.
       </div>
-      <PricingPlans />
+      <PricingPlans setOpen={setOpen}/>
       <div  className="flex w-full justify-end">
       <Image
       onClick={()=>Router.push('/hire-us/#web')}

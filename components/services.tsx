@@ -29,7 +29,7 @@ const services = [
     image: appdev,
     alt: "Application Design illustration",
     id:2,
-    path:"/hire-us/#",
+    path:"/hire-us/#app",
   },
  
 ];
