@@ -34,7 +34,7 @@ const AppDevelopement = ({setOpen}:props) => {
         </div>
       </div>
       <div className="flex text-[14px] md:text-[20px] leading-[100%] mt-[23px] mb-[21px] -tracking-[1.5%] text-[#98A2B3]">
-      Drive strategic growth with an app development plan focused on functionality and engagement. We excel at creating user experiences that elevate your mobile app, resulting in improved user satisfaction and tangible progress towards your business objectives.      </div>
+      Drive strategic growth with an app development plan focused on functionality and engagement. We excel at creating user experiences that elevate your mobile app, resulting in improved user satisfaction and tangible progress towards your business objectives.</div>
       <PricingPlans setOpen={setOpen}/>
       <div onClick={()=>Router.push('/hire-us/#UiUx')} className="flex w-full justify-end">
       <Image src={svg1} alt="" className="mt-[43px] rotate-180"/>

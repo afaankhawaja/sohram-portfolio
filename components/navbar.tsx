@@ -21,7 +21,7 @@ export default function Navbar() {
   const [hover,setHover]=useState(false)
 
   return (
-    <div className="max-md:w-[95%] overflow-scroll hidden-scrollbar relative items-center flex h-[86px] justify-center mt-[15px] px-4 ">
+    <div className="max-md:w-[95%] max-md:mx-auto overflow-scroll hidden-scrollbar relative items-center flex h-[86px] justify-center mt-[15px] px-4 ">
       <nav className="max-w-[1298px] border-white border-[2px] overflow-x-scroll hidden-scrollbar pl-[10xp] pr-[31px] w-full h-full bg-black rounded-full flex items-center justify-between">
         <ul className="flex items-center justify-between h-[50px] md:h-[64px] w-full space-x-8 font-inter pl-[10px]">
           {navItems.map((item) => (

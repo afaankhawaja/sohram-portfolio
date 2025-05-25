@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const HireMe = () => {
   return (
-    <section id="Introduction" className="w-full max-w-[1440px] max-md:w-[95%] h-full md:mt-20">
+    <section id="Introduction" className="w-full mx-auto max-w-[1440px] max-md:w-[95%] h-full md:mt-20">
       <div className="lg:h-[806px] bg-[#F2F4F7] rounded-[50px] mt-5 w-[95%] mx-auto flex flex-row-reverse max-lg:flex-col max-lg:gap-y-5 justify-center items-center gap-x-2">
         {/* <Image width={603} height={600} src={logo} alt=''/> */}
 
@@ -19,11 +19,7 @@ const HireMe = () => {
             Our <span className="text-[#AA253D]">Introduction</span>
           </div>
           <p className="my-[26px] text-[14px] md:text-[20px] text-[#98A2B3] -tracking-[1.5%] leading-[100%]">
-            As a Lead UI/UX Designer, I manage the full product design
-            lifecycle, including rigorous Design QA, functionality, and bug
-            testing. I've led mobile app design for sensitive areas (ClearMinds
-            w/ RAG AI) and contributed to AI platforms (Medianest). I deliver
-            impactful, user-centered products from concept to completion.
+          Watch how we craft impactful digital experiences. We are a dedicated UI/UX design and full-stack development agency, building intuitive web and mobile applications that drive results. See our passion for user-centered design and robust coding in action.
           </p>
           <div className="flex gap-x-2">
             <div className="flex flex-col gap-5 gap-y-[10px] w-[343px]">

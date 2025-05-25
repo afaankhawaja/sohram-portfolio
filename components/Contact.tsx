@@ -5,22 +5,26 @@ import logo2 from "@/assets/whatsapp.svg";
 import Image from "next/image";
 import star from "@/assets/star.svg";
 import tick from "@/assets/shield-tick.svg";
-import { motion } from "framer-motion";
-import loop1 from "@/assets/loop.png";
+
 
 const Contact = () => {
   return (
-    <section className="max-w-[1440px] max-md:w-[95%]">
+    <section className="max-w-[1440px] mx-auto max-md:w-[95%]">
       <div className="mt-[98px] text-[42px] md:text-[64px] max-w-[800px] -tracking-[1.5%] leading-[100%] text-center mx-auto">
         Have an Awsome Project Idea?{" "}
         <span className="text-[#AA253D]">Let’s Discuss </span>
       </div>
       <div className="flex justify-center gap-x-[34px] mt-[30px]">
         <div className="w-[78px] h-[78px] flex justify-center items-center rounded-full bg-[#AA253D] hover:bg-[#94273b]">
+        <a href="mailto:sohrammalik@gmail.com?body=My custom mail body" target="_blank"
+        rel="noopener noreferrer" >
           <Image src={logo1} alt="" />
+          </a>  
         </div>
         <div className="w-[78px] h-[78px] flex justify-center items-center rounded-full bg-[#AA253D] hover:bg-[#94273b]">
-          <Image className="hover:text-[#AA253D]" src={logo2} alt="" />
+          <a href="https://wa.me/923330542400" target="_blank"
+        rel="noopener noreferrer" >
+          <Image className="hover:text-[#AA253D]" src={logo2} alt="" /></a>
         </div>
       </div>
 
@@ -33,22 +37,6 @@ const Contact = () => {
           <Image src={tick} alt="" />
           <span>Certified Product Designer</span>
         </div>
-      </div>
-
-      <div className="no-scrollbar whitespace-nowrap scrollbar-hidden overflow-hidden">
-        <motion.div
-          className="flex h-[147px] bg-[#AA253D] "
-          style={{ width: "200%" }}
-          initial={{ x: "0%" }}
-          animate={{ x: "-50%" }}
-          transition={{
-            duration: 15, // 10s per loop
-            ease: "linear", // constant speed
-            repeat: Infinity, // endless
-          }}
-        >
-          <Image src={loop1} alt="scrolling bg" className="w-[100%] max-md:w-[90%]" />
-        </motion.div>
       </div>
     </section>
   );

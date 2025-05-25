@@ -1,5 +1,5 @@
 'use client'
-import AppDevelopement from "@/components/AppDevelopement";
+// import AppDevelopement from "@/components/AppDevelopement";
 import Modal from "@/components/Modal";
 import UIAndUX from "@/components/UIAndUX";
 import WebDevelopement from "@/components/WebDevelopement";
@@ -12,7 +12,7 @@ const page = () => {
       {/* <Navbar/> */}
       <UIAndUX setOpen={setOpen}/>
       <WebDevelopement setOpen={setOpen}/>
-      <AppDevelopement setOpen={setOpen}/>
+      {/* <AppDevelopement setOpen={setOpen}/> */}
       <Modal open={open} setOpen={setOpen}/>
     </div>
   );

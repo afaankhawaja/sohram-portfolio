@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import logo1 from "@/assets/whatsapp-icon.svg";
+import logo1 from "@/assets/cards/x.svg";
 import logo2 from "@/assets/mdi_linkedin.svg";
 import linkedin from "@/assets/mdi_linkedin 2.svg";
 import arow from "@/assets/up right.svg";
@@ -10,7 +10,7 @@ import { useState } from "react";
 export default function FooterSection() {
   const [hover, setHover] = useState(false);
   return (
-    <footer className="w-full max-md:w-[95%] mt-5">
+    <footer className="w-full max-md:mx-auto max-md:w-[95%] mt-5">
       <div className="bg-[#272727] text-white py-12 rounded-t-[24px] max-lg:px-5 ">
         <div className=" md:max-w-[1298px] mx-auto">
           {/* Top section with heading and hire button */}
@@ -47,23 +47,22 @@ export default function FooterSection() {
             {/* Left column */}
             <div>
               {/* Logo and name */}
-              <div className="flex items-center gap-3 mb-6">
-                <div className="bg-[#AA253D] text-white rounded-full w-12 h-12 flex items-center justify-center font-bold">
-                  SM
+              <div className="flex items-center gap-3 mb-[34px] text-[20px] leading-[100%] -tracking-[1.5%] h-[86px]">
+                <div className="bg-[#AA253D] text-white  rounded-full w-[46px] h-[46px] flex items-center justify-center font-bold">
+                  RS
                 </div>
-                <span className="text-xl font-semibold">UI UX Portfolio</span>
+                <span className="text-xl font-semibold">RedSpark Digital</span>
               </div>
 
               {/* Description */}
-              <p className="text-gray-300 mb-8 max-w-lg">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                congue interdum ligula a dignissim. Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Sed lobortis orci elementum egestas
-                lobortis.
+              <p className="text-[#FCFCFD] text-[20px] leading-[100%] -tracking-[1.5%]">
+              Follow our work and updates on our 
+              
               </p>
+              <p className="mb-8 text-[#FCFCFD] text-[20px] leading-[100%] -tracking-[1.5%]">LinkedIn and X accounts.</p>
 
               {/* Social icons */}
-              <div className="flex gap-1">
+              <div className="flex gap-x-[13px]">
                 <Link href="#" aria-label="WhatsApp">
                   {/* <MessageCircle className="w-5 h-5" /> */}
                   <Image src={logo1} alt={""} />
@@ -81,7 +80,7 @@ export default function FooterSection() {
                 <h3 className="text-[#AA253D] text-xl font-semibold mb-6">
                   Contact
                 </h3>
-                <ul className="space-y-4 text-gray-300">
+                <ul className="space-y-4 text-[#FCFCFD] text-[16px] leading-[100%] -tracking-[1.5%]">
                   <li>+92 333 0542400</li>
                   <li>sohrammalik@gmail.com</li>
                 </ul>

@@ -17,28 +17,28 @@ const PricingPlans = ({setOpen}:props) => {
             $800 <span className="text-[17px]">/ Project</span>
           </h3>
           <p className="mt-4 text-[28px] text-[#231D4F] leading-[100%] font-normal">
-            Intro
+            Intro <span className="ml-[19px] text-[15px] tracking-[0px] leading-[100%] text-[#AA253D]">5-day delivery</span>
           </p>
           <p className="text-[15px] text-[#848199] mt-[14px] mb-[24px] font-medium h-[54px]">
           best simple online presence for individuals, startups, or small businesses (info/portfolio).          </p>
           <ul className="space-y-[15px] text-[15px] text-[#848199] leading-[100%] tracking-[0px]">
-            <li className="flex items-start space-x-[10.65px] h-[22.5px]">
+            <li className="flex items-center space-x-[10.65px] h-[22.5px]">
               <Image src={active} alt="" />
               <span>Up to 10 static content pages</span>
             </li>
-            <li className="flex items-start space-x-[10.65px] h-[22.5px]">
+            <li className="flex items-center space-x-[10.65px] h-[22.5px]">
               <Image src={active} alt="" />{" "}
               <span className=" text-gray-400">Web app friendly design</span>
             </li>
-            <li className="flex items-start space-x-[10.65px] h-[22.5px]">
+            <li className="flex items-center space-x-[10.65px] h-[22.5px]">
               <Image src={active} alt="" />
               <span>Social media link integration</span>
             </li>
-            <li className="flex items-start space-x-[10.65px] h-[22.5px]">
+            <li className="flex items-center space-x-[10.65px] h-[22.5px]">
               <Image src={active} alt="" />
               <span className=" text-gray-400">Clean & Responsive layout</span>
             </li>
-            <li className="flex items-start space-x-[10.65px] h-[22.5px]">
+            <li className="flex items-center space-x-[10.65px] h-[22.5px]">
               <Image src={active} alt="" />
               <span>1 rerun on the design.</span>
             </li>
@@ -54,37 +54,37 @@ const PricingPlans = ({setOpen}:props) => {
             $1200 <span className="text-[17px] font-normal">/ Project</span>
           </h3>
           <p className="mt-4 text-[28px] text-[#231D4F] leading-[100%] font-normal">
-            Base
+            Base <span className="ml-[19px] text-[15px] tracking-[0px] leading-[100%] text-[#AA253D]">15-day delivery</span>
           </p>
           <p className="text-[15px] text-[#848199] mt-[14px] mb-[24px] font-medium w-[253px] h-[54px]" >
           best for Growing businesses needing a more robust and interactive website with some dynamic elements.
           </p>
           <ul className="space-y-[15px] text-[15px] text-[#848199] leading-[100%] tracking-[0px]">
-            <li className="flex items-start space-x-[10.65px] h-[22.5px]">
+            <li className="flex items-center space-x-[10.65px] h-[22.5px]">
               <Image src={active} alt="" />
               <span>Up to 20 static content pages</span>
             </li>
-            <li className="flex items-start space-x-[10.65px] h-[22.5px]">
+            <li className="flex items-center space-x-[10.65px] h-[22.5px]">
               <Image src={active} alt="" />
               <span>Content management system </span>
             </li>
-            <li className="flex items-start space-x-[10.65px] h-[22.5px]">
+            <li className="flex items-center space-x-[10.65px] h-[22.5px]">
               <Image src={active} alt="" />
               <span>Integration with basic analytics</span>
             </li>
-            <li className="flex items-start space-x-[10.65px] h-[22.5px]">
+            <li className="flex items-center space-x-[10.65px] h-[22.5px]">
               <Image src={active} alt="" />
               <span className=" text-gray-400">Image galleries or slideshows.</span>
             </li>
-            <li className="flex items-start space-x-[10.65px] h-[22.5px]">
+            <li className="flex items-center space-x-[10.65px] h-[22.5px]">
               <Image src={active} alt="" />
               <span>2 reruns on the design</span>
             </li>
-            <li className="flex items-start space-x-[10.65px] h-[22.5px]">
+            <li className="flex items-center space-x-[10.65px] h-[22.5px]">
               <Image src={active} alt="" />
               <span>Basic security setup.</span>
             </li>
-            <li className="flex items-start space-x-[10.65px] h-[22.5px]">
+            <li className="flex items-center space-x-[10.65px] h-[22.5px]">
               <Image src={active} alt="" />
               <span>Social media link integration</span>
             </li>
@@ -104,7 +104,7 @@ const PricingPlans = ({setOpen}:props) => {
           <h3 className="text-[36px] leading-[46px] tracking-[0px]">
             $1800 <span className="text-[17px] font-normal">/ Project</span>
           </h3>
-          <p className="mt-4 text-[28px]">Pro</p>
+          <p className="mt-4 text-[28px]">Pro <span className="ml-[19px] text-[15px] tracking-[0px] leading-[100%] text-white">25-day delivery</span></p>
           <p className="text-[15px] text-white mt-[14px] mb-[22px] font-medium w-[284px]">
           Established organizations needing fully customized websites with advanced features and third-party integrations.
           </p>

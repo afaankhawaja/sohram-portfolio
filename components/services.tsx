@@ -39,7 +39,7 @@ export default function Services() {
   const router=useRouter()
   return (
     <div
-      className="relative w-full max-w-[1440px] min-h-full max-md:w-[95%]"
+      className="relative w-full mx-auto max-w-[1440px] min-h-full max-md:w-[95%]"
       id="Service"
     >
       <Image
@@ -53,7 +53,7 @@ export default function Services() {
         Our <span className="text-[#C30052]">Services</span>
       </h2>
       <p className="text-white text-[12px] md:text-[20px] font-medium leading-[100%] -tracking-[1.5%] lg:mt-[97px] max-w-[675px] relative">
-      We deliver exceptional user experiences for web, web applications, and mobile. Our expert UI/UX design seamlessly integrates with full-stack development for both web and mobile platforms, creating powerful and intuitive digital solutions.
+      We deliver exceptional user experiences for web, web applications, and mobile applications. Our expert UI/UX design seamlessly integrates with full-stack development for both web and mobile platforms, creating powerful and intuitive digital solutions.
       </p>
      </div>
 

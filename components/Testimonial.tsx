@@ -10,7 +10,7 @@ import card from "@/assets/cards/testimonial1.svg"
 
 const Testimonial = () => {
   return (
-    <div className="relative max-w-[1440px] max-md:w-[95%] rounded-[50%] bg-black w-full min-h-full max-md:pb-10 md:h-[863px]" id="Testimonials">
+    <div className="relative mx-auto max-w-[1440px] max-md:w-[95%] rounded-[50%] bg-black w-full min-h-full max-md:pb-10 md:h-[863px]" id="Testimonials">
       <Image
         src={bg}
         alt=""
@@ -41,7 +41,7 @@ const Testimonial = () => {
           <h2 className="relative text-[32px] md:text-[48px] -tracking-[1.5%] leading-[100%] mt-10 font-medium text-white md:mb-4 mb-16 md:max-w-[430px] mx-auto">
             Testimonials That{" "}
             <span className="inline-block">
-              Speak to <span className="text-rose-500">our Results</span>
+              Speak to <span className="text-[#AA253D]">our Results</span>
             </span>
             <Image src={vector} alt="" className="absolute -top-5 -right-5"/>
           </h2>
@@ -54,10 +54,10 @@ const Testimonial = () => {
         </div>
 
         {/* Testimonials */}
-        <div className="max-md:flex-col gap-y-6 max-md:pl-5 flex gap-x-6 w-full md:min-w-full md:min-h-[262px] md:items-center  overflow-x-scroll hidden-scrollbar">
-          <Image src={card} alt="" className="w-full h-full bg-[#FFFFFF24] rounded-[24px]"/>
-          <Image src={card} alt="" className="h-full w-full bg-[#FFFFFF24] rounded-[24px]"/>
-          <Image src={card} alt="" className="h-full w-full bg-[#FFFFFF24] rounded-[24px]"/>
+        <div className="max-md:flex-col gap-y-6 max-md:pl-5 flex gap-x-6 w-full md:min-w-full md:min-h-[264.84px] md:items-center  overflow-x-scroll hidden-scrollbar">
+          <Image src={card} alt="" className="w-full object-cover h-full bg-[#FFFFFF24] rounded-[24px]"/>
+          <Image src={card} alt="" className="h-full object-contain w-full bg-[#FFFFFF24] rounded-[24px]"/>
+          <Image src={card} alt="" className="h-full object-cover w-full bg-[#FFFFFF24] rounded-[24px]"/>
           {/* First testimonial */}
           {/* <div className="bg-gray-800 bg-opacity-70 px-[21px] pt-[12px]  relative min-w-[500px] lg:min-w-[784px]  min-h-[262px] rounded-[24px]">
             <div className="flex items-center justify-between mb-[14px]  ">

@@ -17,29 +17,29 @@ const PricingPlans = ({setOpen}:props) => {
             $200 <span className="text-[17px]">/ Project</span>
           </h3>
           <p className="mt-4 text-[28px] text-[#231D4F] leading-[100%] font-normal">
-            Intro
+            Intro <span className="ml-[19px] text-[15px] tracking-[0px] leading-[100%] text-[#AA253D]">3-day delivery</span>
           </p>
           <p className="text-[15px] text-[#848199] mt-[14px] mb-[24px] font-medium">
             For most businesses that want to optimize web queries
           </p>
           <ul className="space-y-[15px] text-[15px] text-[#848199] leading-[100%] tracking-[0px]">
-            <li className="flex items-start space-x-[10.65px] h-[22.5px]">
+            <li className="flex items-center space-x-[10.65px] h-[22.5px]">
               <Image src={active} alt="" />
               <span>2 Reruns</span>
             </li>
-            <li className="flex items-start space-x-[10.65px] h-[22.5px]">
+            <li className="flex items-center space-x-[10.65px] h-[22.5px]">
               <Image src={inactive} alt="" />{" "}
               <span className=" text-gray-400">Basic Prototyping</span>
             </li>
-            <li className="flex items-start space-x-[10.65px] h-[22.5px]">
+            <li className="flex items-center space-x-[10.65px] h-[22.5px]">
               <Image src={active} alt="" />
               <span>10 screens</span>
             </li>
-            <li className="flex items-start space-x-[10.65px] h-[22.5px]">
+            <li className="flex items-center space-x-[10.65px] h-[22.5px]">
               <Image src={inactive} alt="" />
               <span className=" text-gray-400">Chat Support</span>
             </li>
-            <li className="flex items-start space-x-[10.65px] h-[22.5px]">
+            <li className="flex items-center space-x-[10.65px] h-[22.5px]">
               <Image src={active} alt="" />
               <span>Responsive Design</span>
             </li>
@@ -55,29 +55,29 @@ const PricingPlans = ({setOpen}:props) => {
             $312 <span className="text-[17px] font-normal">/ Project</span>
           </h3>
           <p className="mt-4 text-[28px] text-[#231D4F] leading-[100%] font-normal">
-            Base
+            Base <span className="ml-[19px] text-[15px] tracking-[0px] leading-[100%] text-[#AA253D]">7-day delivery</span>
           </p>
           <p className="text-[15px] text-[#848199] mt-[14px] mb-[24px] font-medium">
             For most businesses that want to optimize web queries
           </p>
           <ul className="space-y-[15px] text-[15px] text-[#848199] leading-[100%] tracking-[0px]">
-            <li className="flex items-start space-x-[10.65px] h-[22.5px]">
+            <li className="flex items-center space-x-[10.65px] h-[22.5px]">
               <Image src={active} alt="" />
               <span>3 Reruns + 1 Resend</span>
             </li>
-            <li className="flex items-start space-x-[10.65px] h-[22.5px]">
+            <li className="flex items-center space-x-[10.65px] h-[22.5px]">
               <Image src={active} alt="" />
               <span>Basic Prototyping</span>
             </li>
-            <li className="flex items-start space-x-[10.65px] h-[22.5px]">
+            <li className="flex items-center space-x-[10.65px] h-[22.5px]">
               <Image src={active} alt="" />
               <span>15 screens</span>
             </li>
-            <li className="flex items-start space-x-[10.65px] h-[22.5px]">
+            <li className="flex items-center space-x-[10.65px] h-[22.5px]">
               <Image src={inactive} alt="" />
               <span className=" text-gray-400">Chat Support</span>
             </li>
-            <li className="flex items-start space-x-[10.65px] h-[22.5px]">
+            <li className="flex items-center space-x-[10.65px] h-[22.5px]">
               <Image src={active} alt="" />
               <span>Responsive Design</span>
             </li>
@@ -97,7 +97,7 @@ const PricingPlans = ({setOpen}:props) => {
           <h3 className="text-[36px] leading-[46px] tracking-[0px]">
             $650 <span className="text-[17px] font-normal">/ Project</span>
           </h3>
-          <p className="mt-4 text-[28px]">Pro</p>
+          <p className="mt-4 text-[28px]">Pro <span className="ml-[19px] text-[15px] tracking-[0px] leading-[100%] text-white">12-day delivery</span></p>
           <p className="text-[15px] text-white mt-[14px] mb-[22px] font-medium">
             For most businesses that want to optimize web queries
           </p>
@@ -108,25 +108,25 @@ const PricingPlans = ({setOpen}:props) => {
               </span>
               <span>7 Reruns + 1 Resend</span>
             </li>
-            <li className="flex items-start space-x-[10.65px] h-[22.5px]">
+            <li className="flex items-center space-x-[10.65px] h-[22.5px]">
               <span className="w-[21.3px] h-[21.3px] bg-[#0000001A] rounded-[50%] content-center">
                 <Image src={check} alt="" className="flex mx-auto" />
               </span>
               <span>Advanced Prototyping</span>
             </li>
-            <li className="flex items-start space-x-[10.65px] h-[22.5px]">
+            <li className="flex items-center space-x-[10.65px] h-[22.5px]">
               <span className="w-[21.3px] h-[21.3px] bg-[#0000001A] rounded-[50%] content-center">
                 <Image src={check} alt="" className="flex mx-auto" />
               </span>
               <span>20 screens</span>
             </li>
-            <li className="flex items-start space-x-[10.65px] h-[22.5px]">
+            <li className="flex items-center space-x-[10.65px] h-[22.5px]">
               <span className="w-[21.3px] h-[21.3px] bg-[#0000001A] rounded-[50%] content-center">
                 <Image src={check} alt="" className="flex mx-auto" />
               </span>
               <span>Chat Support</span>
             </li>
-            <li className="flex items-start space-x-[10.65px] h-[22.5px]">
+            <li className="flex items-center space-x-[10.65px] h-[22.5px]">
               <span className="w-[21.3px] h-[21.3px] bg-[#0000001A] rounded-[50%] content-center">
                 <Image src={check} alt="" className="flex mx-auto" />
               </span>
@@ -145,7 +145,7 @@ const PricingPlans = ({setOpen}:props) => {
           $1200 <span className="text-[17px] font-normal">/ Project</span>
         </h3>
         <p className="mt-4 text-[28px] text-[#231D4F] leading-[100%] font-normal">
-          Enterprise
+          Enterprise <span className="ml-[19px] text-[15px] tracking-[0px] leading-[100%] text-[#AA253D]">14-day delivery</span>
         </p>
         <p className="text-[15px] text-[#848199] mt-[14px] mb-[24px] font-medium">
           For most businesses that want to optimize web queries

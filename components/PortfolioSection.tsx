@@ -5,23 +5,23 @@ import { ArrowUpRight } from "lucide-react";
 export default function PortfolioSection() {
   return (
     <section
-      className="max-w-[1298px] max-md:w-[95%]  w-full mx-auto mt-[97px] mb-[141px] max-lg:px-5"
+      className="max-w-[1298px] max-md:w-[95%]  w-full mx-auto mt-[97px] mb-[69px] max-lg:px-5"
       id="Portfolio"
     >
-      <div className="flex max-md:flex-col justify-between gap-y-5 w-full md:items-center mb-[92px]">
-        <h2 className="text-[40px] md:text-[64px] md:w-[643px] -tracking-[1.5%] leading-[100%] md:text-5xl font-bold text-slate-800">
+      <div className="flex max-md:flex-col max-md:w-[90%] max-md:mx-auto justify-between gap-y-5 w-full md:items-center mb-[92px]">
+        <h2 className="text-[40px] md:text-[64px]  md:w-[643px] -tracking-[1.5%] leading-[100%] md:text-5xl font-bold text-slate-800">
           Lets have a look at our{" "}
           <span className="text-[#AA253D]">Portfolio</span>
         </h2>
         <Link
           href="#"
-          className="bg-[#AA253D] hover:bg-[#94273b] text-white px-6 py-3 text-center rounded-full text-nowrap transition-colors"
+          className="bg-[#AA253D] max-md:w-fit hover:bg-[#94273b] text-white px-6 py-3 text-center rounded-full text-nowrap transition-colors"
         >
           See All
         </Link>
       </div>
 
-      <div className="flex max-md:flex-col gap-6 mb-12 ">
+      <div className="flex max-md:flex-col gap-6 mb-12 max-lg:items-center ">
         {[1, 2, 3].map((item) => (
           <div
             key={item}
@@ -62,7 +62,7 @@ export default function PortfolioSection() {
           </h3>
 
         </div>
-        <p className="text-[#344054] font-normal text-[14px] md:text-[20px] leading-[100%] -tracking-[1.5%]">
+        <p className="text-[#344054] font-normal text-[14px] md:text-[20px] leading-[100%] -tracking-[1.5%] max-w-[742px] h-[143px]">
         We pour our hearts into every project at our agency. we're a team of  passionate UI/UX designers and full-stack developers dedicated to crafting impactful digital solutions. We believe in thoughtful design and meticulous coding to build meaningful user interfaces and seamless user journeys for exceptional web and mobile experiences. Let's bring your vision to life with heart and expertise.
         </p>
       </div>

@@ -35,11 +35,7 @@ const UIAndUX = ({setOpen}:props) => {
         </div>
       </div>
       <div className="flex text-[14px] md:text-[20px] leading-[100%] mt-[23px] mb-[21px] -tracking-[1.5%] text-[#98A2B3]">
-        As a Lead UI/UX Designer, I manage the full product design lifecycle,
-        including rigorous Design QA, functionality, and bug testing. I've led
-        mobile app design for sensitive areas (ClearMinds w/ RAG AI) and
-        contributed to AI platforms (Medianest). I deliver impactful,
-        user-centered products from concept to completion.
+      Select the UI/UX plan that best fits your needs. Our design expertise focuses on creating intuitive and engaging user experiences for your web and mobile applications. Choose a plan to elevate your product's usability and visual appeal.
       </div>
       <PricingPlans setOpen={setOpen}/>
       <div  className="flex w-full justify-end">

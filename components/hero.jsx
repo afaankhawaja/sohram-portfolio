@@ -40,14 +40,12 @@ export default function Hero() {
         <div className="lg:flex max-lg:flex-col max-lg:space-y-4 max-lg:mx-auto lg:justify-between w-full mt-[25px]">
           <div className="md:w-[531px]">
             <div className="lg:text-[80px] text-[60px] font-semibold leading-[100%] -tracking-[0%] md:w-[531px] mb-5 h-full w-full lg:h-[384px]">
-              A Design that delights &{" "}
-              <span className="text-[#C30052]">a code that performs.</span>
+            A Design that delights & {" "}
+              <span className="text-[#C30052]">a Code that performs.</span>
               <br />
             </div>
             <div className="text-[12px] md:text-[22px] md:leading-[37px] text-black max-md:mb-5 max-w-screen">
-              Our Design agency helps businesses grow and succeed through a
-              range of services including development services for web and
-              applications .
+            Our Design agency helps businesses grow and succeed  through a range of services including development services for web and applications .
             </div>
           </div>
 
@@ -69,9 +67,9 @@ export default function Hero() {
                 }}
                 className={clsx(
                   buttonClasses("Portfolio"),
-                  `md:min-w-[135px] md:px-8 text-white rounded-full h-[62px] flex items-center justify-center gap-2 transition-all duration-300  text-nowrap hover:w-[208px] max-md:hover::w-fit${
-                    activeTab === "Portfolio" && "w-[208px] max-md:w-[135px]"
-                  } ${hoverTab === "Hire me" && "w-[135px] max-md:w-fit"}`,
+                  `md:min-w-[135px] max-md:w-[45%] md:px-8 text-white rounded-full h-[62px] flex items-center justify-center gap-2 transition-all duration-300  text-nowrap hover:w-[208px] max-md:hover::w-[45%]${
+                    activeTab === "Portfolio" && "w-[208px] max-md:w-[45%]"
+                  } ${hoverTab === "Hire me" && "w-[135px] max-md:w-[45%]"}`,
                 )}
               >
                 Portfolio
@@ -91,9 +89,9 @@ export default function Hero() {
                 }}
                 className={clsx(
                   buttonClasses("Hire me"),
-                  `md:min-w-[129px] text-white rounded-full h-[62px] flex items-center justify-center gap-2 transition-all duration-300  text-nowrap hover:w-[202px] max-md:hover::w-fit${
-                    activeTab === "Hire me" && "w-[202px] max-md:w-fit"
-                  } ${hoverTab === "Portfolio" && "w-[129px] max-md:w-fit"}`,
+                  `md:min-w-[129px] max-md:w-[45%] text-white rounded-full h-[62px] flex items-center justify-center gap-2 transition-all duration-300  text-nowrap hover:w-[202px] max-md:hover::w-[45%]${
+                    activeTab === "Hire me" && "w-[202px] max-md:w-[45%]"
+                  } ${hoverTab === "Portfolio" && "w-[129px] max-md:w-[45%]"}`,
                 )}
               >
                 Hire me

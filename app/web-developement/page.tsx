@@ -1,10 +1,10 @@
 import React from 'react'
-import WebDevelopement from "@/components/WebDevelopement"
+// import WebDevelopement from "@/components/WebDevelopement"
 
 const page = () => {
   return (
     <div>
-    <WebDevelopement/>
+    {/* <WebDevelopement/> */}
     </div>
   )
 }
