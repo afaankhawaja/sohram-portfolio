@@ -1,12 +1,18 @@
+'use client'
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowUpRight } from "lucide-react"
+import arow from "@/assets/up right.svg";
+
 import port1 from "@/assets/cards/portfolio1.png"
 import port2 from "@/assets/cards/portfolio2.png"
 import port3 from "@/assets/cards/portfolio3.png"
+import { useRouter } from "next/navigation";
+import { useState } from "react";
 
 
 export default function PortfolioSection() {
+   const [hover, setHover] = useState(false);  
+    const router=useRouter()
   return (
     <section
       className="max-w-[1298px] max-md:w-[95%]  w-full mx-auto mt-[97px] mb-[69px] max-lg:px-5"
@@ -17,12 +23,20 @@ export default function PortfolioSection() {
           Lets have a look at our{" "}
           <span className="text-[#AA253D]">Portfolio</span>
         </h2>
-        <Link
-          href="#"
-          className="bg-[#AA253D] max-md:w-fit hover:bg-[#94273b] text-white px-6 py-3 text-center rounded-full text-nowrap transition-colors"
-        >
-          See All
-        </Link>
+        <div
+                      onMouseEnter={() => setHover(true)}
+                      onMouseLeave={() =>  setHover(false) }
+                      onClick={()=>router.push(`/hire-us`)}
+                      
+                      className="bg-[#AA253D] cursor-pointer text-[26px] md:text-[26px] leading-[100%] text-nowrap -tracking-[1.5%] hover:bg-[#94273b] text-white px-[10px] md:px-[43px] py-2 md:py-3 justify-center rounded-full flex items-center gap-2 transition-all duration-200"
+                    >   
+                        Hire us
+                      <Image
+                        className={`md:h-[42px] md:w-[42px]   ${hover && "rotate-[45deg]"}`}
+                        src={arow}
+                        alt=""
+                      />
+                    </div>
       </div>
 
       <div className="flex max-md:flex-col gap-6 mb-12 max-lg:items-center ">
