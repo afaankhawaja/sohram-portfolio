@@ -10,7 +10,7 @@ import logo from "@/assets/cards/A.svg"
 const navItems = [
   { name: "Home", href: "/" },
   { name: "About", href: "#about" },
-  { name: "Service", href: "#Service" },
+  { name: "Services", href: "#Service" },
   { name: "The Apex UI", href: "/", highlight: true },
   { name: "Testimonials", href: "#Testimonials" },
   { name: "Introduction", href: "#Introduction" },
@@ -49,7 +49,7 @@ export default function Navbar() {
 
                   {item.highlight
                    && hover ? (
-                     <> <div><div className="text-[12px] text-gray-500">Designed by</div>Our Team</div></>):
+                     <> <div><div className="text-[12px] text-white">Designed by</div>Our Team</div></>):
                     <div>{item.name}</div>
                    }
                 </div>
