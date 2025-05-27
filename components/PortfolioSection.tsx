@@ -1,6 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react"
+import port1 from "@/assets/cards/portfolio1.png"
+import port2 from "@/assets/cards/portfolio2.png"
+import port3 from "@/assets/cards/portfolio3.png"
+
 
 export default function PortfolioSection() {
   return (
@@ -22,13 +26,13 @@ export default function PortfolioSection() {
       </div>
 
       <div className="flex max-md:flex-col gap-6 mb-12 max-lg:items-center ">
-        {[1, 2, 3].map((item) => (
+        {[port1, port2, port3].map((item,i) => (
           <div
-            key={item}
+            key={i}
             className="bg-gray-200 max-w-[415px] rounded-[16px] max-h-[302px] overflow-hidden"
           >
             <Image
-              src="/placeholder.svg?height=300&width=400"
+              src={item}
               alt={`Portfolio item ${item}`}
               width={400}
               height={300}

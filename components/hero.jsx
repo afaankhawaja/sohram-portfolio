@@ -94,7 +94,7 @@ export default function Hero() {
                   } ${hoverTab === "Portfolio" && "w-[129px] max-md:w-[45%]"}`,
                 )}
               >
-                Hire me
+                Hire us
                 {activeTab === "Hire me"
                   ? (hoverTab === "Hire me" || hoverTab == null) && (
                       <Image src={arow} alt="" />

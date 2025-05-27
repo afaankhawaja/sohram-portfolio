@@ -73,7 +73,7 @@ export default function Services() {
                 src={service.image || "/placeholder.svg"}
                 alt={service.alt}
                 fill
-                className="object-cover  transition-all duration-200 hover:scale-105"
+                className="object-cover  transition-all duration-200"
               />
               <div className="relative z-10 text-[32px] leading-[100%] -tracking-[1.5%] text-white mt-[44px] mx-auto pl-[37px]">
                 {service.title}

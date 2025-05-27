@@ -5,12 +5,13 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import icon from "@/assets/Ellipse 17576.svg";
+import logo from "@/assets/cards/A.svg"
 
 const navItems = [
   { name: "Home", href: "/" },
   { name: "About", href: "#about" },
   { name: "Service", href: "#Service" },
-  { name: "RedSpark Tech", href: "/", highlight: true },
+  { name: "The Apex UI", href: "/", highlight: true },
   { name: "Testimonials", href: "#Testimonials" },
   { name: "Introduction", href: "#Introduction" },
   { name: "Lets connect", href: "/", icon: true },
@@ -37,8 +38,9 @@ export default function Navbar() {
                   )}
                 >
                   {item.highlight && (
-                    <div className="w-[46px] h-[46px] content-center bg-[#AA253D] px-[10px] flex items-center justify-center py-[5px] text-white mr-[10.5px] rounded-[50px] text-[20px] -tracking-[1.5%]">
-                      SM
+                    <div className="min-w-[46px] h-[46px]  bg-[#AA253D] flex items-center justify-center text-white mr-[10.5px] rounded-[50px] ">
+                      <Image className="object-cover" src={logo} alt="logo"/>
+                      
                     </div>
                   )}
                   {item.icon && (
@@ -47,7 +49,7 @@ export default function Navbar() {
 
                   {item.highlight
                    && hover ? (
-                     <> <div><div className="text-[12px] text-gray-500">Designed by</div>Sohram Malik</div></>):
+                     <> <div><div className="text-[12px] text-gray-500">Designed by</div>Our Team</div></>):
                     <div>{item.name}</div>
                    }
                 </div>

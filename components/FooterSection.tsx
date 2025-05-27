@@ -6,9 +6,12 @@ import logo2 from "@/assets/mdi_linkedin.svg";
 import linkedin from "@/assets/mdi_linkedin 2.svg";
 import arow from "@/assets/up right.svg";
 import { useState } from "react";
+import logo from "@/assets/cards/A.svg"
 
 export default function FooterSection() {
-  const [hover, setHover] = useState(false);
+  const [hover, setHover] = useState(false);  
+  const [hoverlog,setHoverLogo]=useState(false)
+
   return (
     <footer className="w-full max-md:mx-auto max-md:w-[95%] mt-5">
       <div className="bg-[#272727] text-white py-12 rounded-t-[24px] max-lg:px-5 ">
@@ -19,20 +22,14 @@ export default function FooterSection() {
               Lets Connect there
             </h2>
             <div
-              onMouseEnter={() => {
-                setHover(true);
-              }}
-              onMouseLeave={() => {
-                setHover(false);
-              }}
+              onMouseEnter={() => setHover(true)}
+              onMouseLeave={() =>  setHover(false) }
               
-              className="bg-[#AA253D] cursor-pointer hover:bg-[#94273b] text-white px-[10px] md:px-[43px] py-2 md:py-3 justify-center rounded-full flex items-center gap-2 transition-all duration-200"
-            >
-              <div className="text-[26px] md:text-[26px] leading-[100%] text-nowrap -tracking-[1.5%]">
+              className="bg-[#AA253D] cursor-pointer text-[26px] md:text-[26px] leading-[100%] text-nowrap -tracking-[1.5%] hover:bg-[#94273b] text-white px-[10px] md:px-[43px] py-2 md:py-3 justify-center rounded-full flex items-center gap-2 transition-all duration-200"
+            >   
                 Hire us
-              </div>
               <Image
-                className={`md:h-[42px] md:w-[42px] rotate-45  ${hover && "rotate-2"}`}
+                className={`md:h-[42px] md:w-[42px]   ${hover && "rotate-[45deg]"}`}
                 src={arow}
                 alt=""
               />
@@ -47,11 +44,16 @@ export default function FooterSection() {
             {/* Left column */}
             <div>
               {/* Logo and name */}
-              <div className="flex items-center gap-3 mb-[34px] text-[20px] leading-[100%] -tracking-[1.5%] h-[86px]">
-                <div className="bg-[#AA253D] text-white  rounded-full w-[46px] h-[46px] flex items-center justify-center font-bold">
-                  RS
-                </div>
-                <span className="text-xl font-semibold">RedSpark Digital</span>
+  <div className="flex items-center gap-3 mb-[34px] text-[20px] leading-[100%] -tracking-[1.5%] h-[86px]">
+ 
+              <div  className="min-w-[46px] h-[46px]  bg-[#AA253D] flex items-center justify-center text-white mr-[4.5px] rounded-[50px] ">
+                      <Image className="object-cover" src={logo} alt="logo"/>
+                      
+                    </div>
+                    <div onMouseEnter={()=>setHoverLogo(false)} onMouseOut={()=>setHoverLogo(true)} onMouseLeave={()=>setHoverLogo(true)} className="flex items-center min-h-[60px] transition-all duration-200 cursor-pointer">
+                 {   hoverlog ?  <span className="text-xl font-semibold">The Apex UI</span> :
+              <div onMouseLeave={()=>setHoverLogo(true)} onMouseEnter={()=>setHoverLogo(false)} className="flex flex-col gap-[-2px]"><div className="text-[14px] text-gray-500">Designed by</div>Our Team</div>}       
+              </div>
               </div>
 
               {/* Description */}
