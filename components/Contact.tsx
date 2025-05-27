@@ -16,7 +16,7 @@ const Contact = () => {
       </div>
       <div className="flex justify-center gap-x-[34px] mt-[30px]">
         <div className="w-[78px] h-[78px] flex justify-center items-center rounded-full bg-[#AA253D] hover:bg-[#94273b]">
-        <a href="mailto:sohrammalik@gmail.com?body=My custom mail body" target="_blank"
+        <a href="mailto:sohrammalik@gmail.com" target="_blank"
         rel="noopener noreferrer" >
           <Image src={logo1} alt="" />
           </a>  
