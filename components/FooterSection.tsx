@@ -11,7 +11,7 @@ import { useRouter } from "next/navigation";
 
 export default function FooterSection() {
   const [hover, setHover] = useState(false);  
-  const [hoverlog,setHoverLogo]=useState(false)
+  const [hoverlog,setHoverLogo]=useState(true)
   const router=useRouter()
 
   return (
