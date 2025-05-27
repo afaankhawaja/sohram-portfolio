@@ -7,10 +7,12 @@ import linkedin from "@/assets/mdi_linkedin 2.svg";
 import arow from "@/assets/up right.svg";
 import { useState } from "react";
 import logo from "@/assets/cards/A.svg"
+import { useRouter } from "next/navigation";
 
 export default function FooterSection() {
   const [hover, setHover] = useState(false);  
   const [hoverlog,setHoverLogo]=useState(false)
+  const router=useRouter()
 
   return (
     <footer className="w-full max-md:mx-auto max-md:w-[95%] mt-5">
@@ -24,6 +26,7 @@ export default function FooterSection() {
             <div
               onMouseEnter={() => setHover(true)}
               onMouseLeave={() =>  setHover(false) }
+              onClick={()=>router.push(`/hire-us`)}
               
               className="bg-[#AA253D] cursor-pointer text-[26px] md:text-[26px] leading-[100%] text-nowrap -tracking-[1.5%] hover:bg-[#94273b] text-white px-[10px] md:px-[43px] py-2 md:py-3 justify-center rounded-full flex items-center gap-2 transition-all duration-200"
             >   
