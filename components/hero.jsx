@@ -11,6 +11,7 @@ import clsx from "clsx";
 import arow from "@/assets/up right.svg";
 import { useRouter } from "next/navigation";
 import bg from "@/assets/hero-image.png";
+import ai from "@/assets/cards/ailogo.svg"
 
 export default function Hero() {
   const [activeTab, setActiveTab] = useState("Portfolio");
@@ -37,8 +38,8 @@ export default function Hero() {
 
         {/* Main heading */}
 
-        <div className="lg:flex max-lg:flex-col max-lg:space-y-4 max-lg:mx-auto lg:justify-between w-full mt-[25px]">
-          <div className="md:w-[531px]">
+        <div className="lg:flex max-lg:flex-col max-lg:space-y-4 max-lg:mx-auto w-[100%] lg:justify-between mt-[25px]">
+          <div className="md:w-[531px] max-lg:mb-20">
             <div className="lg:text-[80px] text-[60px] font-semibold leading-[100%] -tracking-[0%] md:w-[531px] mb-5 h-full w-full lg:h-[384px]">
             A Design that delights & {" "}
               <span className="text-[#C30052]">a Code that performs.</span>
@@ -49,7 +50,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="relative mb-[74px] mx-auto  md:max-w-[627px]">
+          <div className="relative mb-[74px] max-lg:mx-auto  md:max-w-[627px] ">
             <Image
               src={bg}
               alt="Sohram"
@@ -57,7 +58,8 @@ export default function Hero() {
               height={524}
               className="md:w-[627px] max-lg:mb-5 "
             />
-            <div className="absolute bottom-[38px] justify-center items-center flex right-7 md:right-32  gap-x-[10px] backdrop-blur-[15px] mt-8 border-[2px]  text-[14px] md:text-[26px] font-medium leading-[100%] -tracking-[1.5%] border-[#C9C9C9] rounded-[50px] md:p-[10px] md:h-[82px] md:w-[367px] max-md:w-[80%]  transition-all duration-300">
+            <Image className="absolute -top-16 -translate-x-[50%] left-[50%] " src={ai} alt=""/>
+            <div className="absolute bottom-[38px] justify-center items-center flex left-[50%] -translate-x-[50%]  gap-x-[10px] backdrop-blur-[15px] mt-8 border-[2px]  text-[14px] md:text-[26px] font-medium leading-[100%] -tracking-[1.5%] border-[#C9C9C9] rounded-[50px] md:p-[10px] md:h-[82px] md:w-[367px] max-md:w-[80%]  transition-all duration-300">
               <button
                 onMouseEnter={() => setHoverTab("Portfolio")}
                 onMouseLeave={() => setHoverTab(null)}

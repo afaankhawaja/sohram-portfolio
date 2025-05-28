@@ -39,7 +39,7 @@ export default function Services() {
   const router=useRouter()
   return (
     <div
-      className="relative w-full mx-auto max-w-[1440px] min-h-full max-md:w-[95%]"
+      className="relative w-full mx-auto max-w-[1440px] min-h-full max-md:min-h-[100%] max-md:w-[95%]"
       id="Service"
     >
       <Image
@@ -57,11 +57,11 @@ export default function Services() {
       </p>
      </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 h-full pb-10 md:pr-10">
+      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 min-h-full min-w-full pb-10 md:pr-10">
         {services.map((service, index) => (
           <div
             key={index}
-            className="relative rounded-2xl flex flex-col md:max-w-[416px] lg:w-full md:min-w-[370px] max-md:h-[400px] h-[508px] w-[100%] mx-auto"
+            className="relative rounded-2xl flex flex-col max-lg:max-w-[416px] md:min-w-[370px] max-md:h-[508px] min-h-[508px] w-[100%] mx-auto"
           >
             <div className={`relative flex-grow  rounded-[35px] overflow-hidden h-[30%]`}
             onClick={()=>{router.push(service.path)}}
@@ -82,7 +82,7 @@ export default function Services() {
             </div>
             <div
             onClick={()=>{router.push(service.path)}}
-             className={`absolute md:w-[114px] w-[60px] flex justify-center items-center h-[60px] md:h-[114px] z-20 md:bottom-0 bottom-3 md:right-1 -right-5  rounded-[57px] bg-[#1D2939] hover:bg-[#AA253D] ${hover===index && "bg-[#AA253D]"}`}>
+             className={`absolute top-[100%] lg:w-[114px] w-[60px] flex justify-center items-center h-[60px] lg:h-[114px] z-20 left-[100%] -translate-x-[40px] lg:-translate-x-[100px] -translate-y-[70px] lg:-translate-y-[110px]  rounded-[57px] bg-[#1D2939] hover:bg-[#AA253D] ${hover===index && "bg-[#AA253D]"}`}>
               <svg
                 id="noName"
                 width="114"

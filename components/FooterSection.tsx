@@ -49,13 +49,13 @@ export default function FooterSection() {
               {/* Logo and name */}
   <div className="flex items-center gap-3 mb-[34px] text-[20px] leading-[100%] -tracking-[1.5%] h-[86px]">
  
-              <div  className="min-w-[46px] h-[46px]  bg-[#AA253D] flex items-center justify-center text-white mr-[4.5px] rounded-[50px] ">
+              <div  className={`min-w-[46px] h-[46px] ${!hoverlog && 'outline outline-white'} bg-[#AA253D] flex items-center justify-center text-white mr-[4.5px] rounded-[50px] `}>
                       <Image className="object-cover" src={logo} alt="logo"/>
                       
                     </div>
                     <div onMouseEnter={()=>setHoverLogo(false)} onMouseOut={()=>setHoverLogo(true)} onMouseLeave={()=>setHoverLogo(true)} className="flex items-center min-h-[60px] transition-all duration-200 cursor-pointer">
                  {   hoverlog ?  <span className="text-xl font-semibold">The Apex UI</span> :
-              <div onMouseLeave={()=>setHoverLogo(true)} onMouseEnter={()=>setHoverLogo(false)} className="flex flex-col gap-[-2px]"><div className="text-[14px] text-gray-500">Designed by</div>Our Team</div>}       
+              <div onMouseLeave={()=>setHoverLogo(true)} onMouseEnter={()=>setHoverLogo(false)} className="flex flex-col gap-[-2px]"><div className="text-[14px] text-white">Designed by</div>Our Team</div>}       
               </div>
               </div>
 

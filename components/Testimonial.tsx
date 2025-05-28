@@ -10,7 +10,7 @@ import card from "@/assets/cards/testimonial1.svg"
 
 const Testimonial = () => {
   return (
-    <div className="relative mx-auto max-w-[1440px] max-md:w-[95%] rounded-[50%] bg-black w-full min-h-full max-md:pb-10 md:h-[863px]" id="Testimonials">
+    <div className="relative mx-auto max-w-[1440px] max-md:w-[95%] rounded-[50px] bg-black w-full min-h-full max-md:pb-10 md:h-[863px]" id="Testimonials">
       <Image
         src={bg}
         alt=""
@@ -54,7 +54,7 @@ const Testimonial = () => {
         </div>
 
         {/* Testimonials */}
-        <div className="max-md:flex-col gap-y-6 max-md:pl-5 flex gap-x-6 w-full md:min-w-full md:min-h-[264.84px] md:items-center  overflow-x-scroll hidden-scrollbar">
+        <div className="max-md:flex-col gap-y-6 flex gap-x-6 w-full md:min-w-full md:min-h-[264.84px] md:items-center  overflow-x-scroll hidden-scrollbar">
           <Image src={card} alt="" className="w-full object-cover h-full bg-[#FFFFFF24] rounded-[24px]"/>
           <Image src={card} alt="" className="h-full object-contain w-full bg-[#FFFFFF24] rounded-[24px]"/>
           <Image src={card} alt="" className="h-full object-cover w-full bg-[#FFFFFF24] rounded-[24px]"/>
