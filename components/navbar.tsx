@@ -111,8 +111,8 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {mobileOpen && (
-        <div className="md:hidden bg-black border-t border-white">
-          <ul className="py-2 px-4 space-y-2">
+        <div className="md:hidden bg-black border-t h-[calc(100vh-80px)] hidden-scrollbar  overflow-scroll border-white">
+          <ul className="py-2 px-4 space-y-2 h-[100%]">
             {navItems.map((item) => (
               <li key={item.name}>
                 <Link 
