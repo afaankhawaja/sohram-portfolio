@@ -3,6 +3,7 @@ import Image from "next/image";
 import active from "@/assets/check-circle-1.svg";
 import check from "@/assets/Path.svg";
 import frame from "@/assets/cards/custom-card.svg"
+import ai from "@/assets/cards/Ai powered 1.svg"
 interface props{
   setOpen:(e:boolean)=>void;
 }
@@ -164,8 +165,9 @@ const PricingPlans = ({setOpen}:props) => {
         <h3 className="mt-[17px] text-[28px] text-[#231D4F] leading-[100%]">
           Custom quote  <span className="text-[17px] font-normal">/ Project</span>
         </h3>
-        <p className="mt-4 text-[28px] text-[#231D4F] leading-[100%] font-normal">
-        Enterprise
+        <p className="mt-4 text-[28px] text-[#231D4F] leading-[100%] flex gap-5 items-center font-normal">
+          Enterprise
+          <Image src={ai} alt="" className=""/>
         </p>
         <p className="text-[15px] text-[#848199] mt-[14px] mb-[35px] font-medium md:w-[253px] h-[72px] ">
         Advanced & Scalable Web Solutions: Expertly built for complex, high-impact projects with significant growth potential.
