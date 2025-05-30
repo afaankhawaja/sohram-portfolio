@@ -3,10 +3,11 @@ import Image from "next/image";
 import active from "@/assets/check-circle-1.svg";
 import inactive from "@/assets/check-circle-2.svg";
 import check from "@/assets/Path.svg";
-interface props{
-  setOpen:(e:boolean)=>void;
+interface props {
+  setOpen: (e: boolean) => void;
+  setMessage: (e: string) => void;
 }
-const PricingPlans = ({setOpen}:props) => {
+const PricingPlans = ({ setOpen, setMessage }: props) => {
   return (
     <div className="w-full max-w-[1246px] mx-auto py-10 flex flex-col xl:flex-row justify-between items-end">
       {/* Left 2 Cards: Intro + Base (merged container) */}
@@ -17,7 +18,10 @@ const PricingPlans = ({setOpen}:props) => {
             $200 <span className="text-[17px]">/ Project</span>
           </h3>
           <p className="mt-4 text-[28px] text-[#231D4F] leading-[100%] font-normal">
-            Intro <span className="ml-[19px] text-[15px] tracking-[0px] leading-[100%] text-[#AA253D]">3-day delivery</span>
+            Intro{" "}
+            <span className="ml-[19px] text-[15px] tracking-[0px] leading-[100%] text-[#AA253D]">
+              3-day delivery
+            </span>
           </p>
           <p className="text-[15px] text-[#848199] mt-[14px] mb-[24px] font-medium">
             For most businesses that want to optimize web queries
@@ -44,7 +48,13 @@ const PricingPlans = ({setOpen}:props) => {
               <span>Responsive Design</span>
             </li>
           </ul>
-          <button onClick={()=>setOpen(true)} className="mt-[34px] mb-[35px] w-full md:w-[220px] mx-auto py-3 rounded-full bg-[#AA253D] text-white hover:bg-[#94273b] transition-all duration-200">
+          <button
+            onClick={() => {
+              setOpen(true);
+              setMessage("UI UX Design Intro Package");
+            }}
+            className="mt-[34px] mb-[35px] w-full md:w-[220px] mx-auto py-3 rounded-full bg-[#AA253D] text-white hover:bg-[#94273b] transition-all duration-200"
+          >
             Choose plan
           </button>
         </div>
@@ -55,7 +65,10 @@ const PricingPlans = ({setOpen}:props) => {
             $312 <span className="text-[17px] font-normal">/ Project</span>
           </h3>
           <p className="mt-4 text-[28px] text-[#231D4F] leading-[100%] font-normal">
-            Base <span className="ml-[19px] text-[15px] tracking-[0px] leading-[100%] text-[#AA253D]">7-day delivery</span>
+            Base{" "}
+            <span className="ml-[19px] text-[15px] tracking-[0px] leading-[100%] text-[#AA253D]">
+              7-day delivery
+            </span>
           </p>
           <p className="text-[15px] text-[#848199] mt-[14px] mb-[24px] font-medium">
             For most businesses that want to optimize web queries
@@ -82,7 +95,13 @@ const PricingPlans = ({setOpen}:props) => {
               <span>Responsive Design</span>
             </li>
           </ul>
-          <button onClick={()=>setOpen(true)} className="mt-[34px] w-full md:w-[220px] mx-auto mb-[35px] py-3 rounded-full bg-[#AA253D] text-white hover:bg-[#94273b] transition-all duration-200">
+          <button
+            onClick={() => {
+              setOpen(true);
+              setMessage("UI UX Design Base Package");
+            }}
+            className="mt-[34px] w-full md:w-[220px] mx-auto mb-[35px] py-3 rounded-full bg-[#AA253D] text-white hover:bg-[#94273b] transition-all duration-200"
+          >
             Choose plan
           </button>
         </div>
@@ -97,7 +116,12 @@ const PricingPlans = ({setOpen}:props) => {
           <h3 className="text-[36px] leading-[46px] tracking-[0px]">
             $650 <span className="text-[17px] font-normal">/ Project</span>
           </h3>
-          <p className="mt-4 text-[28px]">Pro <span className="ml-[19px] text-[15px] tracking-[0px] leading-[100%] text-white">12-day delivery</span></p>
+          <p className="mt-4 text-[28px]">
+            Pro{" "}
+            <span className="ml-[19px] text-[15px] tracking-[0px] leading-[100%] text-white">
+              12-day delivery
+            </span>
+          </p>
           <p className="text-[15px] text-white mt-[14px] mb-[22px] font-medium">
             For most businesses that want to optimize web queries
           </p>
@@ -134,7 +158,13 @@ const PricingPlans = ({setOpen}:props) => {
             </li>
           </ul>
         </div>
-        <button onClick={()=>setOpen(true)} className="mt-[54px] w-full md:w-[220px] max-xl:w-full mx-auto md:-mb-[10px] max-md:mb-10  py-3 rounded-full text-[15px] font-normal border-white border text-white hover:border-[2px] transition-all duration-100 hover:bg-gradient-to-r from-[#dc2430] to-[#7b4397]">
+        <button
+          onClick={() => {
+            setOpen(true);
+            setMessage("UI UX Design Pro Package");
+          }}
+          className="mt-[54px] w-full md:w-[220px] max-xl:w-full mx-auto md:-mb-[10px] max-md:mb-10  py-3 rounded-full text-[15px] font-normal border-white border text-white hover:border-[2px] transition-all duration-100 hover:bg-gradient-to-r from-[#dc2430] to-[#7b4397]"
+        >
           Choose plan
         </button>
       </div>
@@ -145,7 +175,10 @@ const PricingPlans = ({setOpen}:props) => {
           $1200 <span className="text-[17px] font-normal">/ Project</span>
         </h3>
         <p className="mt-4 text-[28px] text-[#231D4F] leading-[100%] font-normal">
-          Enterprise <span className="ml-[19px] text-[15px] tracking-[0px] leading-[100%] text-[#AA253D]">14-day delivery</span>
+          Enterprise{" "}
+          <span className="ml-[19px] text-[15px] tracking-[0px] leading-[100%] text-[#AA253D]">
+            14-day delivery
+          </span>
         </p>
         <p className="text-[15px] text-[#848199] mt-[14px] mb-[24px] font-medium">
           For most businesses that want to optimize web queries
@@ -174,7 +207,13 @@ const PricingPlans = ({setOpen}:props) => {
             </span>
           </li>
         </ul>
-        <button onClick={()=>setOpen(true)} className="mt-[20px] w-full md:w-[220px] max-xl:w-full max-xl:mx-auto ml-[24px]  mb-[35px] max-md:mt-10 max-md:pb-[10px] py-3 rounded-full bg-[#AA253D] text-white hover:bg-[#94273b] transition-all duration-200">
+        <button
+          onClick={() => {
+            setOpen(true);
+            setMessage("UI UX Design Enterprise Package");
+          }}
+          className="mt-[20px] w-full md:w-[220px] max-xl:w-full max-xl:mx-auto ml-[24px]  mb-[35px] max-md:mt-10 max-md:pb-[10px] py-3 rounded-full bg-[#AA253D] text-white hover:bg-[#94273b] transition-all duration-200"
+        >
           Choose plan
         </button>
       </div>
