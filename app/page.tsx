@@ -13,7 +13,7 @@ import Motion from "@/components/Motion";
 
 export default function Home() {
   return (
-    <main className=" md:w-screen w-screen min-h-screen  items-center max-xl:px-4">
+    <main className=" md:w-dvh w-dvh min-h-screen  items-center max-xl:px-4">
       {/* <Navbar /> */}
       <div className="sticky  top-1 z-50 w-full h-full">
         <Navbar />
