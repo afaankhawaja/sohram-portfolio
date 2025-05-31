@@ -15,7 +15,7 @@ export default function FooterSection() {
   const router=useRouter()
 
   return (
-    <footer className="w-full max-md:mx-auto max-md:w-[95%] mt-5">
+    <footer className="w-full max-md:mx-auto max-md:w-[95%] mt-1">
       <div className="bg-[#272727] text-white py-12 rounded-t-[24px] max-lg:px-5 ">
         <div className=" md:max-w-[1298px] mx-auto">
           {/* Top section with heading and hire button */}

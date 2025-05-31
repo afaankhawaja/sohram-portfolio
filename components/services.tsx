@@ -39,7 +39,7 @@ export default function Services() {
   const router=useRouter()
   return (
     <div
-      className="relative w-full mx-auto max-w-[1440px] min-h-full max-md:min-h-[100%] max-md:w-[95%]"
+      className="relative pb-5 w-full mx-auto max-w-[1440px] min-h-full max-md:min-h-[100%] max-md:w-[95%]"
       id="Service"
     >
       <Image
