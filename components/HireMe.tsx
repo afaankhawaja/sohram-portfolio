@@ -9,20 +9,20 @@ const HireMe = () => {
   return (
     <section
       id="Introduction"
-      className="w-full mx-auto max-w-[1440px] max-md:w-[100%] h-full md:mt-20"
+      className="w-full mx-auto max-w-[1440px] max-md:w-[100%] h-full mt-3 max-md:mt-20"
     >
       <div className="lg:h-[806px] bg-[#F2F4F7] rounded-[50px] w-[100%] mx-auto flex flex-row-reverse max-lg:flex-col max-lg:gap-y-5 justify-center items-center gap-x-2">
         {/* <Image width={603} height={600} src={logo} alt=''/> */}
 
-        <div className="flex w-[80%] h-[60%] lg:w-[630px] md:h-[448px] rounded-lg max-lg:mt-10">
+        <div className="flex mx-auto w-[80%] h-[60%] lg:w-[630px] md:h-[448px] rounded-lg max-lg:mt-10">
           <video
             poster="/assets/poster-image.png"
             controls
-            className="rounded-[20px] lg:h-[448px] w-[630px]"
+            className="rounded-[20px] mx-auto lg:h-[448px] w-[630px]"
           ></video>
         </div>
-        <div className="flex flex-col max-md:w-[80%] -mt-2 md:max-w-[696px] max-lg:mt-10 max-lg:mb-10 px-5">
-          <div className="md:text-[64px] text-[28px] font-bold  max-w-[800px] -tracking-[1.5%] leading-[100%] text-left">
+        <div className="flex flex-col max-md:w-[80%] mx-auto -mt-2 lg:max-w-[696px] max-lg:mt-10 max-lg:mb-10 px-5">
+          <div className="md:text-[64px] text-[28px] font-bold  md:max-w-[800px] -tracking-[1.5%] leading-[100%] text-left">
             Our <span className="text-[#AA253D]">Introduction</span>
           </div>
           <p className="mt-[26px] mb-[50px] text-[14px] md:text-[20px] text-[#98A2B3] -tracking-[1.5%] leading-[100%]">
