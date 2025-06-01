@@ -211,9 +211,9 @@ const PricingPlans = ({ setOpen, setMessage }: props) => {
           Custom quote{" "}
           <span className="text-[17px] font-normal">/ Project</span>
         </h3>
-        <p className="mt-4 text-[28px] text-[#231D4F] leading-[100%] flex gap-5 items-center font-normal">
+        <p className="mt-4 text-[28px] text-[#231D4F] leading-[100%] md:flex gap-5 items-center font-normal">
           Enterprise
-          <Image src={ai} alt="" className="" />
+          <Image src={ai} alt="" className="max-md:mt-3" />
         </p>
         <p className="text-[15px] text-[#848199] mt-[14px] mb-[35px] font-medium md:w-[253px] h-[72px] ">
           Advanced & Scalable Web Solutions: Expertly built for complex,

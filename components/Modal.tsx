@@ -13,7 +13,7 @@ interface props {
 }
 export default function Modal({ open, setOpen, message }: props) {
   return (
-    <Dialog open={open} onClose={setOpen} className="absolute z-10 bg-black/70">
+    <Dialog open={open} onClose={setOpen} className="fixed w-dvw h-dvh z-10 bg-black/70">
       <DialogBackdrop
         transition
         className="fixed inset-0 bg-black/80 transition-opacity data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in"
