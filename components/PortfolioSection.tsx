@@ -286,7 +286,7 @@ export default function PortfolioSection() {
             </button>
 
             {/* Main Image */}
-            <div className="relative bg-white rounded-[35px] overflow-hidden shadow-2xl">
+            <div className="relative bg-white lg:rounded-[35px] overflow-hidden shadow-2xl">
               <Image
                 src={carouselImages[currentImageIndex]}
                 alt={`Portfolio detail ${currentImageIndex + 1}`}
