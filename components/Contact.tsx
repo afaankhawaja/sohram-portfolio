@@ -11,7 +11,7 @@ const Contact = () => {
   return (
     <section className="max-w-[1440px] mx-auto max-md:w-[95%]">
       <div className="mt-[98px] text-[42px] md:text-[64px] max-w-[800px] -tracking-[1.5%] leading-[100%] text-center mx-auto">
-        Have an Awsome Project Idea?{" "}
+        Have an Awesome Project Idea?{" "}
         <span className="text-[#AA253D]">Let’s Discuss </span>
       </div>
       <div className="flex justify-center gap-x-[34px] mt-[30px]">

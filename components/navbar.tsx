@@ -91,8 +91,8 @@ export default function Navbar() {
       {/* Mobile Navbar */}
       <div className="md:hidden  w-full px-4 py-3 flex justify-between items-center bg-black border-b border-white">
         <div className="flex items-center">
-          <div className="w-10 h-10 bg-[#AA253D] flex items-center justify-center rounded-full mr-3">
-            <Image className="object-cover w-6 h-6" src={logo} alt="logo" />
+          <div className="min-w-[46px] min-h-[46px] bg-[#AA253D] flex items-center justify-center rounded-full mr-3">
+            <Image className="object-cover" src={logo} alt="logo" />
           </div>
           <span className="text-white font-bold">The Apex UI</span>
         </div>
@@ -131,8 +131,8 @@ export default function Navbar() {
                     )}
                     {item.highlight ? (
                       <div className="flex items-center">
-                        <div className="w-8 h-8 bg-[#AA253D] flex items-center justify-center rounded-full mr-3">
-                          <Image className="object-cover w-4 h-4" src={logo} alt="logo"/>
+                        <div className="min-w-[46px] min-h-[46px] bg-[#AA253D] flex items-center justify-center rounded-full mr-3">
+                          <Image className="object-cover" src={logo} alt="logo"/>
                         </div>
                         <span>{item.name}</span>
                       </div>

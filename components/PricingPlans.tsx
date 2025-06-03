@@ -33,7 +33,7 @@ const PricingPlans = ({ setOpen, setMessage }: props) => {
             </li>
             <li className="flex items-center space-x-[10.65px] h-[22.5px]">
               <Image src={inactive} alt="" />{" "}
-              <span className=" text-gray-400">Basic Prototyping</span>
+              <span className=" text-[#848199]">Basic Prototyping</span>
             </li>
             <li className="flex items-center space-x-[10.65px] h-[22.5px]">
               <Image src={active} alt="" />
@@ -41,7 +41,7 @@ const PricingPlans = ({ setOpen, setMessage }: props) => {
             </li>
             <li className="flex items-center space-x-[10.65px] h-[22.5px]">
               <Image src={inactive} alt="" />
-              <span className=" text-gray-400">Chat Support</span>
+              <span className=" text-[#848199]">Chat Support</span>
             </li>
             <li className="flex items-center space-x-[10.65px] h-[22.5px]">
               <Image src={active} alt="" />
@@ -88,7 +88,7 @@ const PricingPlans = ({ setOpen, setMessage }: props) => {
             </li>
             <li className="flex items-center space-x-[10.65px] h-[22.5px]">
               <Image src={inactive} alt="" />
-              <span className=" text-gray-400">Chat Support</span>
+              <span className=" text-[#848199]">Chat Support</span>
             </li>
             <li className="flex items-center space-x-[10.65px] h-[22.5px]">
               <Image src={active} alt="" />

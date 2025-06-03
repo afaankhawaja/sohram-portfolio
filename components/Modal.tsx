@@ -32,7 +32,7 @@ export default function Modal({ open, setOpen, message }: props) {
               </div>
 
               <a
-                href={`mailto:sohrammalik@gmail.com?${message}`}
+                href={`mailto:sohrammalik@gmail.com?${`subject=${`${message}`}&body=${`I am interested in ${message}`}`}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >

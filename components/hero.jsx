@@ -58,8 +58,12 @@ export default function Hero() {
               height={524}
               className="md:w-[627px] max-lg:mb-5 "
             />
-            <Image className="absolute -top-16 -translate-x-[50%] left-[50%] " src={ai} alt=""/>
-            <div className="absolute bottom-[38px] justify-center items-center flex left-[50%] -translate-x-[50%]  gap-x-[10px] backdrop-blur-[15px] mt-8 border-[2px]  text-[14px] md:text-[26px] font-medium leading-[100%] -tracking-[1.5%] border-[#C9C9C9] rounded-[50px] md:p-[10px] md:h-[82px] md:w-[367px] max-md:w-[80%]  transition-all duration-300">
+            <Image
+              className="absolute -top-16 -translate-x-[50%] left-[50%] "
+              src={ai}
+              alt=""
+            />
+            <div className="absolute bottom-[38px] justify-center items-center flex left-[50%] -translate-x-[50%]  gap-x-[10px] backdrop-blur-[15px] mt-8 border-[2px]  text-[14px] md:text-[26px] font-medium leading-[100%] -tracking-[1.5%] border-[#C9C9C9] rounded-[50px] max-md:py-2 md:p-[10px] h-[60px] md:h-[82px] md:w-[367px] max-md:w-[70%]  transition-all duration-300">
               <button
                 onMouseEnter={() => setHoverTab("Portfolio")}
                 onMouseLeave={() => setHoverTab(null)}
@@ -69,9 +73,10 @@ export default function Hero() {
                 }}
                 className={clsx(
                   buttonClasses("Portfolio"),
-                  `md:min-w-[135px] max-md:w-[45%] md:px-8 text-white rounded-full h-[62px] flex items-center justify-center gap-2 transition-all duration-300  text-nowrap hover:w-[208px] max-md:hover::w-[45%]${
-                    activeTab === "Portfolio" && "w-[208px] max-md:w-[45%]"
-                  } ${hoverTab === "Hire me" && "w-[135px] max-md:w-[45%]"}`,
+                  `md:min-w-[135px] max-md:w-[45%] md:px-8 text-white rounded-full max-md:h-[50px] md:h-[62px] flex items-center justify-center gap-2 transition-all duration-300  text-nowrap hover:w-[208px] max-md:hover::w-[45%]${
+                    activeTab === "Portfolio" &&
+                    "w-[208px] max-md:ml-[3px] max-md:w-[55%]"
+                  } ${hoverTab === "Hire me" && "w-[135px] max-md:w-[45%]"}`
                 )}
               >
                 Portfolio
@@ -91,9 +96,13 @@ export default function Hero() {
                 }}
                 className={clsx(
                   buttonClasses("Hire me"),
-                  `md:min-w-[129px] max-md:w-[45%] text-white rounded-full h-[62px] flex items-center justify-center gap-2 transition-all duration-300  text-nowrap hover:w-[202px] max-md:hover::w-[45%]${
-                    activeTab === "Hire me" && "w-[202px] max-md:w-[45%]"
-                  } ${hoverTab === "Portfolio" && "w-[129px] max-md:w-[45%]"}`,
+                  `md:min-w-[129px] max-md:w-[45%] text-white rounded-full max-md:mx-[3px] max-md:h-[50px] md:h-[62px] flex items-center justify-center gap-2 transition-all duration-300  text-nowrap hover:w-[202px] max-md:hover::w-[45%]${
+                    activeTab === "Hire me" &&
+                    "w-[202px] max-md:mr-[5px] max-md:w-[45%]"
+                  } ${
+                    hoverTab === "Portfolio" &&
+                    "w-[129px] max-md:mr-[20px]  max-md:w-[45%]"
+                  }`
                 )}
               >
                 Hire us
@@ -101,45 +110,14 @@ export default function Hero() {
                   ? (hoverTab === "Hire me" || hoverTab == null) && (
                       <Image src={arow} alt="" />
                     )
-                  : hoverTab === "Hire me" && <Image src={arow} alt="" className="max-md:hidden"/>}
+                  : hoverTab === "Hire me" && (
+                      <Image src={arow} alt="" className="max-md:hidden" />
+                    )}
               </button>
             </div>
           </div>
         </div>
 
-        {/* Left side decoration */}
-        {/* <div className="absolute z-10 left-4 xl:left-[71px] h-full translate-y-1/2">
-          <div className="flex flex-col items-start gap-6 w-[368px]">
-            <Image src={comma} alt=""/>
-            <p className="text-[20px] font-medium text-[#344054] max-w-[380px]">
-            Crafting intuitive and meaningful experiences
-            that connect users with technology
-              <br />
-              Highly Recommended!
-            </p>
-          </div>
-        </div> */}
-
-        {/* Profile image with circular background */}
-
-        {/* Right side rating */}
-        {/* <div className="absolute right-4 xl:right-[71px] h-full translate-y-1/2">
-          <Image
-          src={stars}
-          alt=""
-          />
-
-        </div> */}
-
-        {/* Action buttons */}
-        {/* <div className="absolute bottom-10 flex gap-x-[10px] backdrop-blur-[15px] mt-8 border-[2px] border-[#C9C9C9] rounded-[50px] p-[10px] h-[82px] items-center transition-all duration-300">
-          <button onClick={()=>setActiveTab('Portfolio')} className={`${activeTab ==="Portfolio" && 'bg-[#C30052]' } text-white rounded-full h-[62px] w-[208px] flex items-center justify-center gap-2`}>
-            Portfolio <ArrowRight size={16} className={`${activeTab ==="Portfolio" && '-rotate-45 transition-all duration-200'} `} />
-          </button>
-          <button onClick={()=>setActiveTab('Hire me')} className={`${activeTab ==="Hire me" && 'bg-[#C30052]' } text-white backdrop-blur-[15px] rounded-full h-[62px] w-[129px] flex items-center justify-center gap-2 `}>
-            Hire me 
-          </button>
-        </div> */}
       </div>
     </div>
   );
