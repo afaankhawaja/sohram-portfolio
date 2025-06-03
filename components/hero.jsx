@@ -63,7 +63,7 @@ export default function Hero() {
               src={ai}
               alt=""
             />
-            <div className="absolute bottom-[38px] justify-center items-center flex left-[50%] -translate-x-[50%]  gap-x-[10px] backdrop-blur-[15px] mt-8 border-[2px]  text-[14px] md:text-[26px] font-medium leading-[100%] -tracking-[1.5%] border-[#C9C9C9] rounded-[50px] max-md:py-2 md:p-[10px] h-[60px] md:h-[82px] md:w-[367px] max-md:w-[70%]  transition-all duration-300">
+            <div className="absolute bottom-[38px] justify-center items-center flex left-[50%] -translate-x-[50%]  gap-x-[10px] backdrop-blur-[15px] mt-8 border-[2px]  text-[14px] md:text-[26px] font-medium leading-[100%] -tracking-[1.5%] border-[#C9C9C9] rounded-[50px] md:p-[10px] h-[60.5px] md:h-[82px] md:w-[367px] max-md:w-[70%]  transition-all duration-300">
               <button
                 onMouseEnter={() => setHoverTab("Portfolio")}
                 onMouseLeave={() => setHoverTab(null)}
