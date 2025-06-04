@@ -47,10 +47,12 @@ const Contact = () => {
         </div>
       </div>
       <div className="flex justify-center mb-[16px] max-h-[168px] max-w-[327px] mx-auto items-center ">
-        <HandLoaderAnimation
-          loop={true} // The animation will loop
-          autoplay={true} // The animation will play automatically
-        />
+        <div className="ml-[33px]">
+          <HandLoaderAnimation
+            loop={true} // The animation will loop
+            autoplay={true} // The animation will play automatically
+          />
+        </div>
       </div>
     </section>
   );
