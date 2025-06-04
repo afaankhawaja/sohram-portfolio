@@ -78,7 +78,7 @@ const navItems = [
   { name: "The Apex UI", href: "/", highlight: true },
   { name: "Testimonials", href: "#Testimonials" },
   { name: "Introduction", href: "#Introduction" },
-  { name: "Lets connect", href: "/", icon: true },
+  { name: "Lets connect", href: "#contact", icon: true },
 ];
 
 export default function Navbar() {

@@ -24,7 +24,7 @@ export default function Modal({ open, setOpen, message }: props) {
           <div className="absolute transform overflow-hidden min-w-full w-[100%] rounded-lg bottom-0 bg-black px-4 pt-5 pb-4 text-left shadow-xl transition-all duration-500 data-closed:translate-y-4 data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in sm:my-8 sm:w-full sm:max-w-lg sm:p-6 data-closed:sm:translate-y-0 data-closed:sm:scale-95">
             <div className="flex flex-col items-center w-full justify-center">
               <div className="h-[12px] bg-[#222222] rounded-[100px] mb-[32px] w-[140px]"></div>
-              <div className="mx-auto flex  items-center justify-center text-white  text-[20px] leading-[100%] tracking-[0px] mb-[10px]">
+              <div className="mx-auto max-md:text-center flex  items-center justify-center text-white  text-[20px] leading-[100%] tracking-[0px] mb-[10px]">
                 {message}
               </div>
               <div className="text-[#8B8B8B] mx-auto flex  items-center justify-center text-[17px] leading-[100%] tracking-[0px] mb-[22px]">
