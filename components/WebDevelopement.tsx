@@ -43,7 +43,7 @@ const WebDevelopement = ({ setOpen, setMessage }: props) => {
         contributing to your business objectives.
       </div>
       <PricingPlans setOpen={setOpen} setMessage={setMessage} />
-      <div onClick={() => Router.push("#")} className="flex w-full justify-end">
+      <div onClick={() => Router.push("#app")} className="flex w-full justify-end">
         <Image src={svg1} alt="" className="mt-[43px]" />
       </div>
     </section>

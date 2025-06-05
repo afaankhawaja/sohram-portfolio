@@ -21,6 +21,7 @@
 
 // export default page;
 "use client";
+import AppDevelopement from "@/components/AppDevelopement";
 import Modal from "@/components/Modal";
 import UIAndUX from "@/components/UIAndUX";
 import WebDevelopement from "@/components/WebDevelopement";
@@ -68,6 +69,7 @@ const page = () => {
     <div>
       <UIAndUX setOpen={setOpen} setMessage={setMessage} />
       <WebDevelopement setOpen={setOpen} setMessage={setMessage} />
+      <AppDevelopement setOpen={setOpen} setMessage={setMessage}/>
       <Modal open={open} setOpen={setOpen} message={message} />
     </div>
   );

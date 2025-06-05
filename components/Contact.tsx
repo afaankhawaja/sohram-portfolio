@@ -11,7 +11,7 @@ import HandLoaderAnimation from "@/components/HandLoaderAnimation"
 const Contact = () => {
   return (
     <section id="contact" className="max-w-[1440px] mx-auto max-md:w-[95%]">
-      <div className="mt-[98px] text-[42px] md:text-[64px] max-w-[800px] -tracking-[1.5%] leading-[100%] text-center mx-auto">
+      <div className="mt-[98px] text-[42px] md:text-[64px] max-w-[800px] h-[150px] -tracking-[1.5%] leading-[100%] text-center mx-auto">
         Have an Awesome Project Idea?{" "}
         <span className="text-[#AA253D]">Let’s Discuss </span>
       </div>
@@ -36,7 +36,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="flex gap-x-[37px] mt-[50px] justify-center mb-[21px] max-md:px-5">
+      <div className="flex gap-x-[37px] mt-[50px] justify-center mb-[21px] max-w-[446px] mx-auto pl-[2px] max-md:px-5">
         <div className="md:flex gap-x-1">
           <Image src={star} alt="" />
           <span>4.9/5 Average Ratings</span>
@@ -46,8 +46,8 @@ const Contact = () => {
           <span>Certified Product Designer</span>
         </div>
       </div>
-      <div className="flex justify-center mb-[16px] max-h-[168px] max-w-[327px] mx-auto items-center ">
-        <div className="ml-[33px]">
+      <div className="flex justify-center mb-[16px] lg:ml-[33px] max-h-[168px] mx-auto w-full  items-center ">
+        <div className=" flex justify-center items-center h-full content-center mx-auto  max-w-[302px]">
           <HandLoaderAnimation
             loop={true} // The animation will loop
             autoplay={true} // The animation will play automatically

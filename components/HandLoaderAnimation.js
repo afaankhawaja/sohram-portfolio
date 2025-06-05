@@ -28,7 +28,7 @@ const HandLoaderAnimation = ({ loop = true, autoplay = true }) => {
       animationData={animationData}
       loop={loop}
       autoplay={autoplay}
-      style={{height:'100%',width:'100%'}} // Pass in custom styles for width/height
+      // style={{height:'1080px',width:'100%'}} // Pass in custom styles for width/height
     />
   );
 };
