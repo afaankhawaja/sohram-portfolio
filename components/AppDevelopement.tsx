@@ -29,10 +29,10 @@ const AppDevelopement = ({ setOpen, setMessage }: props) => {
       </button>
 
       <div className="flex justify-between max-xl:flex-col max-md:mb-4">
-        <div className="lg:text-[95.57px] text-[40px] leading-[100%] mt-[68px] -tracking-[1.5%] md:w-[523px] md:text-nowrap">
+        <div className="lg:text-[95.57px] text-[40px] leading-[100%] mt-[89px] -tracking-[1.5%] md:w-[523px] md:text-nowrap">
           App <span className="text-[#AA253D]">Development</span>
         </div>
-        <div className="flex mt-[22px] gap-x-[26px] max-xl:justify-end max-md:flex-col gap-y-[23px]">
+        <div className="flex mt-[10px] lg:-mt-[22px] gap-x-[26px] max-xl:justify-end max-md:flex-col gap-y-[23px]">
           <Image src={svg2} alt="" />
         </div>
       </div>
