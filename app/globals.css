@@ -25,58 +25,6 @@ body {
 
 /* Add to your global CSS file */
 
-/* Prevent layout shift when modal opens */
-.modal-open {
-  overflow: hidden;
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  top: 0;
-  left: 0;
-}
-
-/* Modal overlay styling */
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  /* Prevent iOS Safari issues */
-  -webkit-overflow-scrolling: touch;
-  transform: translateZ(0);
-}
-
-/* Modal content */
-.modal-content {
-  position: relative;
-  background: white;
-  border-radius: 0.5rem;
-  max-width: 90vw;
-  max-height: 90vh;
-  overflow-y: auto;
-  /* Prevent content from being cut off */
-  transform: translateZ(0);
-}
-
-/* Prevent text selection issues on mobile */
-.modal-overlay * {
-  -webkit-tap-highlight-color: transparent;
-}
-
-/* Fix for iOS viewport issues */
-@supports (-webkit-appearance: none) {
-  .modal-overlay {
-    /* iOS Safari fix */
-    height: -webkit-fill-available;
-  }
-}
 
 /* globals.css */
 
