@@ -46,7 +46,7 @@ const Contact = () => {
           <span>Certified Product Designer</span>
         </div>
       </div>
-      <div className="flex justify-center mb-[16px] lg:ml-[33px] max-h-[168px] mx-auto w-full  items-center ">
+      <div className="flex justify-center mb-[16px] lg:ml-[33px] max-h-[168px] mx-auto  items-center ">
         <div className=" flex justify-center items-center h-full content-center mx-auto  max-w-[302px]">
           <HandLoaderAnimation
             loop={true} // The animation will loop
