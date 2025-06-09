@@ -25,14 +25,15 @@ export default function FooterSection() {
             </h2>
             <div
               onMouseEnter={() => setHover(true)}
-              onMouseLeave={() =>  setHover(false) }
-              onClick={()=>router.push(`/hire-us`)}
-              
+              onMouseLeave={() => setHover(false)}
+              onClick={() => router.push(`/hire-us`)}
               className="bg-[#AA253D] cursor-pointer text-[26px] md:text-[26px] leading-[100%] text-nowrap -tracking-[1.5%] hover:bg-[#94273b] text-white px-[10px] md:px-[43px] py-2 md:py-3 justify-center rounded-full flex items-center gap-2 transition-all duration-200"
-            >   
-                Hire us
+            >
+              Hire us
               <Image
-                className={`md:h-[42px] md:w-[42px]   ${hover && "rotate-[45deg]"}`}
+                className={`md:h-[42px] md:w-[42px]   ${
+                  hover && "rotate-[45deg]"
+                }`}
                 src={arow}
                 alt=""
               />
@@ -47,24 +48,42 @@ export default function FooterSection() {
             {/* Left column */}
             <div>
               {/* Logo and name */}
-  <div className="flex items-center gap-3 mb-[34px] text-[20px] leading-[100%] -tracking-[1.5%] h-[86px]">
- 
-              <div  className={`min-w-[46px] h-[46px] ${!hoverlog && 'outline outline-white'} bg-[#AA253D] flex items-center justify-center text-white mr-[4.5px] rounded-[50px] `}>
-                      <Image className="object-cover" src={logo} alt="logo"/>
-                      
+              <div className="flex items-center gap-3 mb-[34px] text-[20px] leading-[100%] -tracking-[1.5%] h-[86px]">
+                <div
+                  className={`min-w-[46px] h-[46px] ${
+                    !hoverlog && "outline outline-white"
+                  } bg-[#AA253D] flex items-center justify-center text-white mr-[4.5px] rounded-[50px] `}
+                >
+                  <Image className="object-cover" src={logo} alt="logo" />
+                </div>
+                <div
+                  onMouseEnter={() => setHoverLogo(false)}
+                  onMouseOut={() => setHoverLogo(true)}
+                  onMouseLeave={() => setHoverLogo(true)}
+                  className="flex items-center min-h-[60px] transition-all duration-200 cursor-pointer"
+                >
+                  {hoverlog ? (
+                    <span className="text-xl font-semibold">The Apex UI</span>
+                  ) : (
+                    <div
+                      onMouseLeave={() => setHoverLogo(true)}
+                      onMouseEnter={() => setHoverLogo(false)}
+                      className="flex flex-col gap-[-2px]"
+                    >
+                      <div className="text-[14px] text-white">Designed by</div>
+                      Our Team
                     </div>
-                    <div onMouseEnter={()=>setHoverLogo(false)} onMouseOut={()=>setHoverLogo(true)} onMouseLeave={()=>setHoverLogo(true)} className="flex items-center min-h-[60px] transition-all duration-200 cursor-pointer">
-                 {   hoverlog ?  <span className="text-xl font-semibold">The Apex UI</span> :
-              <div onMouseLeave={()=>setHoverLogo(true)} onMouseEnter={()=>setHoverLogo(false)} className="flex flex-col gap-[-2px]"><div className="text-[14px] text-white">Designed by</div>Our Team</div>}       
-              </div>
+                  )}
+                </div>
               </div>
 
               {/* Description */}
               <p className="text-[#FCFCFD] text-[20px] leading-[100%] -tracking-[1.5%]">
-              Follow our work and updates on our 
-              
+                Follow our work and updates on our
               </p>
-              <p className="mb-8 text-[#FCFCFD] text-[20px] leading-[100%] -tracking-[1.5%]">LinkedIn and X accounts.</p>
+              <p className="mb-8 text-[#FCFCFD] text-[20px] leading-[100%] -tracking-[1.5%]">
+                LinkedIn and X accounts.
+              </p>
 
               {/* Social icons */}
               <div className="flex gap-x-[13px]">
@@ -87,7 +106,7 @@ export default function FooterSection() {
                 </h3>
                 <ul className="space-y-4 text-[#FCFCFD] text-[16px] leading-[100%] -tracking-[1.5%]">
                   <li>+92 333 0542400</li>
-                  <li>sohrammalik@gmail.com</li>
+                  <li>contact@theapexui.com</li>
                 </ul>
               </div>
             </div>

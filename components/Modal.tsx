@@ -37,14 +37,14 @@ export default function Modal({ open, setOpen, message }: props) {
     <Dialog open={open} onClose={setOpen} className="relative z-50">
       <DialogBackdrop
         transition
-        className="fixed inset-0 bg-black/80 transition-opacity data-[closed]:opacity-0 data-[enter]:duration-300 data-[enter]:ease-out data-[leave]:duration-200 data-[leave]:ease-in"
+        className="fixed inset-0 bg-black/65 transition-opacity data-[closed]:opacity-0 data-[enter]:duration-300 data-[enter]:ease-out data-[leave]:duration-200 data-[leave]:ease-in"
       />
 
       <div className="fixed flex flex-col-reverse inset-0 z-50  overflow-y-auto">
-        <div className="flex bg-black items-end justify-center pb-5 px-4">
+        <div className="flex bg-black pb-[6px] max-h-[361px] items-end justify-center px-4">
           <DialogPanel
             transition
-            className="relative transform overflow-hidden min-w-dvw max-w-md w-[100%] rounded-lg  px-4 pt-5 pb-4 text-left shadow-xl transition-all data-[closed]:translate-y-4 data-[closed]:opacity-0 data-[enter]:duration-300 data-[enter]:ease-out data-[leave]:duration-200 data-[leave]:ease-in data-[closed]:sm:translate-y-0 data-[closed]:sm:scale-95"
+            className="relative transform max-h-[361px] overflow-hidden min-w-dvw max-w-md w-[100%] rounded-lg  px-4 pt-5 pb-4 text-left shadow-xl transition-all data-[closed]:translate-y-4 data-[closed]:opacity-0 data-[enter]:duration-300 data-[enter]:ease-out data-[leave]:duration-200 data-[leave]:ease-in data-[closed]:sm:translate-y-0 data-[closed]:sm:scale-95"
           >
             <div className="flex flex-col items-center w-full justify-center">
               <div className="h-[12px] bg-[#222222] rounded-[100px] mb-[32px] w-[140px]"></div>
@@ -56,14 +56,14 @@ export default function Modal({ open, setOpen, message }: props) {
               </div>
 
               <a
-                href={`mailto:sohrammalik@gmail.com?${`subject=${`${message}`}&body=${`I am interested in ${message}`}`}`}
+                href={`mailto:contact@theapexui.com?${`subject=${`${message}`}&body=${`I am interested in ${message}`}`}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full max-w-[466px]"
               >
                 <button className="border border-[#8E8D8D] h-[51px] w-full rounded-[100px] mb-[17px] text-white hover:bg-[#AA253D] text-[20px] leading-[100%] tracking-[0px] flex justify-center items-center gap-x-[18px]">
                   <Image src={icon2} alt="" />
-                  <span>Email us</span>
+                  <span>Email Us</span>
                 </button>
               </a>
 
@@ -75,7 +75,7 @@ export default function Modal({ open, setOpen, message }: props) {
               >
                 <button className="border border-[#8E8D8D] h-[51px] w-full rounded-[100px] text-white hover:bg-[#AA253D] text-[20px] leading-[100%] tracking-[0px] flex justify-center items-center gap-x-[18px] mb-[35px]">
                   <Image src={icon1} alt="" />
-                  <span>Whatsapp us</span>
+                  <span>WhatsApp Us</span>
                 </button>
               </a>
             </div>
