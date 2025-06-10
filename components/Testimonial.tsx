@@ -2,7 +2,10 @@
 import React, { useRef, useState, useCallback, useEffect } from "react";
 import Image from "next/image";
 import bg from "@/assets/testimonial.jpg";
-import card from "@/assets/cards/testimonial1.svg";
+import card1 from "@/assets/cards/the cards/Component 13 (1).svg";
+import card2 from "@/assets/cards/the cards/Component 12.svg";
+import card3 from "@/assets/cards/the cards/Component 10.svg";
+
 import vector from "@/assets/cards/Vector 1.svg";
 import star1 from "@/assets/cards/Vector (1).svg";
 import star2 from "@/assets/cards/Vector.svg";
@@ -205,19 +208,19 @@ const Testimonial: React.FC = () => {
           }}
         >
           <Image
-            src={card}
+            src={card1}
             alt=""
             className="w-full object-cover h-full bg-[#FFFFFF24] rounded-[24px] pointer-events-none"
             draggable={false}
           />
           <Image
-            src={card}
+            src={card2}
             alt=""
             className="h-full object-contain w-full bg-[#FFFFFF24] rounded-[24px] pointer-events-none"
             draggable={false}
           />
           <Image
-            src={card}
+            src={card3}
             alt=""
             className="h-full object-cover w-full bg-[#FFFFFF24] rounded-[24px] pointer-events-none"
             draggable={false}
