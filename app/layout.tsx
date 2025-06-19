@@ -16,9 +16,10 @@ const urbanist = Urbanist({
 });
 
 export const metadata: Metadata = {
-  title: "Sohram's Portfolio | UI UX Designer",
+  title: "The Apex UI | Web, App, and UI/UX Development Services",
   description:
-    "Portfolio website for Sohram, a UI UX Designer with 5 years of experience",
+    "The Apex UI offers top-notch web, app, and UI/UX development services to elevate your digital presence.",
+  keywords: "web development, app development, UI/UX design, digital services, software development, The Apex UI",
   generator: "v0.dev",
 };
 
