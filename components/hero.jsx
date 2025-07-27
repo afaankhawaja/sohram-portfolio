@@ -11,7 +11,7 @@ import clsx from "clsx";
 import arow from "@/assets/up right.svg";
 import { useRouter } from "next/navigation";
 import bg from "@/assets/hero-image.png";
-import ai from "@/assets/cards/ailogo.svg"
+import ai from "@/assets/cards/ailogo.svg";
 
 export default function Hero() {
   const [activeTab, setActiveTab] = useState("Portfolio");
@@ -41,12 +41,14 @@ export default function Hero() {
         <div className="lg:flex max-lg:flex-col max-lg:space-y-4 max-lg:mx-auto w-[100%] lg:justify-between mt-[25px]">
           <div className="md:w-[531px] max-lg:mb-20">
             <div className="lg:text-[80px] text-[60px] font-semibold leading-[100%] -tracking-[0%] md:w-[531px] mb-5 h-full w-full lg:h-[384px]">
-            A Design that delights & {" "}
+              A Design that delights &{" "}
               <span className="text-[#C30052]">a Code that performs.</span>
               <br />
             </div>
             <div className="text-[12px] md:text-[22px] md:leading-[37px] text-black max-md:mb-5 max-w-screen">
-            Our Design agency helps businesses grow and succeed  through a range of services including development services for web and applications .
+              Our Design agency helps businesses grow and succeed through a
+              range of services including development services for web and
+              applications .
             </div>
           </div>
 
@@ -76,7 +78,7 @@ export default function Hero() {
                   `md:min-w-[135px] max-md:w-[45%] md:px-8 text-white rounded-full max-md:h-[50px] md:h-[62px] flex items-center justify-center gap-2 transition-all duration-300  text-nowrap hover:w-[208px] max-md:hover::w-[45%]${
                     activeTab === "Portfolio" &&
                     "w-[208px] max-md:ml-[3px] max-md:w-[55%]"
-                  } ${hoverTab === "Hire me" && "w-[135px] max-md:w-[45%]"}`
+                  } ${hoverTab === "Hire me" && "w-[135px] max-md:w-[45%]"}`,
                 )}
               >
                 Portfolio
@@ -102,7 +104,7 @@ export default function Hero() {
                   } ${
                     hoverTab === "Portfolio" &&
                     "w-[129px] max-md:mr-[20px]  max-md:w-[45%]"
-                  }`
+                  }`,
                 )}
               >
                 Hire us
@@ -117,7 +119,6 @@ export default function Hero() {
             </div>
           </div>
         </div>
-
       </div>
     </div>
   );

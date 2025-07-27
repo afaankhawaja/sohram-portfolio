@@ -5,8 +5,7 @@ import logo2 from "@/assets/whatsapp.svg";
 import Image from "next/image";
 import star from "@/assets/star.svg";
 import tick from "@/assets/shield-tick.svg";
-import HandLoaderAnimation from "@/components/HandLoaderAnimation"
-
+import HandLoaderAnimation from "@/components/HandLoaderAnimation";
 
 const Contact = () => {
   return (

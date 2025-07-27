@@ -11,8 +11,6 @@
 // import bg from "@/assets/testimonial.jpg";
 // import { useRouter } from 'next/navigation'
 
-
-
 // const services = [
 //   {
 //     title: "UI UX Design",
@@ -38,7 +36,7 @@
 //     id:2,
 //     path:"/hire-us/#app",
 //   },
- 
+
 // ];
 
 // export default function Services() {
@@ -74,7 +72,7 @@
 //             onClick={()=>{router.push(service.path)}}
 //             onMouseEnter={()=>setHover(service.id)}
 //             onMouseLeave={()=>setHover(null)}>
-              
+
 //               <Image
 //                 src={hover===index? service.hoverImage: service.image || "/placeholder.svg"}
 //                 alt={service.alt}
@@ -87,7 +85,6 @@
 //         ))}
 //       </div>
 //       </div>
-     
 
 //     </div>
 //   );

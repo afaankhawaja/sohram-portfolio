@@ -1,8 +1,8 @@
-'use client'
-import React from 'react'
+"use client";
+import React from "react";
 import { motion } from "framer-motion";
 import loop1 from "@/assets/loop.png";
-import Image from 'next/image';
+import Image from "next/image";
 
 const Motion = () => {
   return (
@@ -26,6 +26,6 @@ const Motion = () => {
       </motion.div>
     </div>
   );
-}
+};
 
-export default Motion
+export default Motion;

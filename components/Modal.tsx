@@ -15,9 +15,27 @@ interface props {
   open: boolean;
   setOpen: (e: boolean) => void;
   message: string;
+  form: {
+    firstName: string;
+    lastName: string;
+    email: string;
+    phone: string;
+  }
 }
 
-export default function Modal({ open, setOpen, message }: props) {
+export default function Modal({ open, setOpen, message, form }: props) {
+  const { firstName, email, phone } = form;
+
+  const subject = encodeURIComponent(message);
+  const body = encodeURIComponent(
+    `I am interested in ${message}\n\nName: ${firstName}\nEmail: ${email}\nPhone: ${phone}`
+  );
+
+  const whatsappMessage = encodeURIComponent(
+    `I am interested in ${message}\nName: ${firstName}\nEmail: ${email}\nPhone: ${phone}`
+  );
+
+  const whatsappNumber = "923330542400";
   // Prevent body scroll when modal is open
   useEffect(() => {
     if (open) {
@@ -56,7 +74,7 @@ export default function Modal({ open, setOpen, message }: props) {
               </div>
 
               <a
-                href={`mailto:contact@theapexui.com?${`subject=${`${message}`}&body=${`I am interested in ${message}`}`}`}
+                href={`mailto:contact@theapexui.com?subject=${subject}&body=${body}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full max-w-[466px]"
@@ -68,7 +86,7 @@ export default function Modal({ open, setOpen, message }: props) {
               </a>
 
               <a
-                href="https://wa.me/923330542400"
+                href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full max-w-[466px]"

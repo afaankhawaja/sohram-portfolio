@@ -15,9 +15,8 @@
 // import port1img4 from "@/assets/cards/the cards/portfolio/ai design/4.png"
 // import port1img5 from "@/assets/cards/the cards/portfolio/ai design/5.png";
 
-
 // export default function PortfolioSection() {
-//    const [hover, setHover] = useState(false);  
+//    const [hover, setHover] = useState(false);
 //     const router=useRouter()
 //   return (
 //     <section
@@ -33,9 +32,9 @@
 //                       onMouseEnter={() => setHover(true)}
 //                       onMouseLeave={() =>  setHover(false) }
 //                       onClick={()=>router.push(`/hire-us`)}
-                      
+
 //                       className="bg-[#AA253D] cursor-pointer text-[26px] md:text-[26px] leading-[100%] text-nowrap -tracking-[1.5%] hover:bg-[#94273b] text-white px-[10px] md:px-[43px] py-2 md:py-3 justify-center rounded-full flex items-center gap-2 transition-all duration-200"
-//                     >   
+//                     >
 //                         Hire us
 //                       <Image
 //                         className={`md:h-[42px] md:w-[42px]   ${hover && "rotate-[45deg]"}`}
@@ -118,8 +117,6 @@ import port1img10 from "@/assets/cards/the cards/portfolio/ice cream delivery/10
 import port1img11 from "@/assets/cards/the cards/portfolio/ice cream delivery/11.png";
 import port1img12 from "@/assets/cards/the cards/portfolio/ice cream delivery/12.png";
 
-
-
 import port2img1 from "@/assets/cards/the cards/portfolio/streaming/1.png";
 import port2img2 from "@/assets/cards/the cards/portfolio/streaming/2.png";
 import port2img3 from "@/assets/cards/the cards/portfolio/streaming/3.png";
@@ -131,7 +128,6 @@ import port3img2 from "@/assets/cards/the cards/portfolio/ai design/2.png";
 import port3img3 from "@/assets/cards/the cards/portfolio/ai design/3.png";
 import port3img4 from "@/assets/cards/the cards/portfolio/ai design/4.png";
 import port3img5 from "@/assets/cards/the cards/portfolio/ai design/5.png";
-
 
 export default function PortfolioSection() {
   const [hover, setHover] = useState(false);
@@ -161,7 +157,7 @@ export default function PortfolioSection() {
   ];
   const carouselImages = portfolioImages[selectedPortfolio];
 
-  const openModal = (portfolioIndex:number) => {
+  const openModal = (portfolioIndex: number) => {
     setSelectedPortfolio(portfolioIndex);
     setCurrentImageIndex(0);
     setIsModalOpen(true);
@@ -177,11 +173,11 @@ export default function PortfolioSection() {
 
   const prevImage = () => {
     setCurrentImageIndex(
-      (prev) => (prev - 1 + carouselImages.length) % carouselImages.length
+      (prev) => (prev - 1 + carouselImages.length) % carouselImages.length,
     );
   };
 
-  const goToImage = (index:number) => {
+  const goToImage = (index: number) => {
     setCurrentImageIndex(index);
   };
 

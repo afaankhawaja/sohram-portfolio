@@ -1,13 +1,13 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import svg from "@/assets/cards/down-circle.svg"
+import svg from "@/assets/cards/down-circle.svg";
 import svg1 from "@/assets/Frame (1).svg";
 import svg2 from "@/assets/Frame.svg";
 import PricingPlans from "./PricingPlans";
 import { useRouter } from "next/navigation";
-import back from "@/assets/cards/ep_back.svg"
-interface props{
+import back from "@/assets/cards/ep_back.svg";
+interface props {
   setOpen: (e: boolean) => void;
   setMessage: (e: string) => void;
 }

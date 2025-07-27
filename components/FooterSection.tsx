@@ -1,22 +1,19 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import logo1 from "@/assets/cards/x.svg";
-import logo2 from "@/assets/mdi_linkedin.svg";
-import linkedin from "@/assets/mdi_linkedin 2.svg";
 import arow from "@/assets/up right.svg";
 import { useState } from "react";
-import logo from "@/assets/cards/A.svg"
+import logo from "@/assets/cards/A.svg";
 import { useRouter } from "next/navigation";
 
 export default function FooterSection() {
-  const [hover, setHover] = useState(false);  
-  const [hoverlog,setHoverLogo]=useState(true)
-  const router=useRouter()
+  const [hover, setHover] = useState(false);
+  const [hoverlog, setHoverLogo] = useState(true);
+  const router = useRouter();
 
   return (
     <footer className="w-full max-md:mx-auto max-md:w-[95%] mt-1">
-      <div className="bg-[#272727] text-white py-12 rounded-t-[24px] max-lg:px-5 ">
+      <div className="bg-[#171717] text-white py-12 rounded-t-[24px] max-lg:px-5 ">
         <div className=" md:max-w-[1298px] mx-auto">
           {/* Top section with heading and hire button */}
           <div className="md:flex justify-between items-center mb-8">
@@ -41,7 +38,7 @@ export default function FooterSection() {
           </div>
 
           {/* Divider */}
-          <div className="border-t-[2px] border-[#475467] my-[55px]"></div>
+          <div className="border-t-[2px] border-gray-600 my-[55px]"></div>
 
           {/* Main footer content */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -51,8 +48,8 @@ export default function FooterSection() {
               <div className="flex items-center gap-3 mb-[34px] text-[20px] leading-[100%] -tracking-[1.5%] h-[86px]">
                 <div
                   className={`min-w-[46px] h-[46px] ${
-                    !hoverlog && "outline outline-white"
-                  } bg-[#AA253D] flex items-center justify-center text-white mr-[4.5px] rounded-[50px] `}
+                    !hoverlog && ""
+                  }  flex items-center justify-center text-white mr-[4.5px] rounded-[50px] `}
                 >
                   <Image className="object-cover" src={logo} alt="logo" />
                 </div>
@@ -82,51 +79,92 @@ export default function FooterSection() {
                 Follow our work and updates on our
               </p>
               <p className="mb-8 text-[#FCFCFD] text-[20px] leading-[100%] -tracking-[1.5%]">
-                social media accounts.
+                Social media.
               </p>
 
               {/* Social icons */}
               <div className="flex gap-x-[13px]">
-                <Link href="#" aria-label="WhatsApp">
-                  {/* <MessageCircle className="w-5 h-5" /> */}
-                  <Image src={logo1} alt={""} />
-                </Link>
-                <Link href="#" aria-label="LinkedIn">
-                  {/* <Linkedin className="w-5 h-5" /> */}
-                  <Image src={logo2} alt={""} />
-                </Link>
-                <Link href="#">
+                <Link href="#" aria-label="x">
                   <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    x="0px"
-                    y="0px"
-                    width="25"
-                    height="25"
-                    viewBox="0 0 48 48"
                   >
-                    <path d="M44,24H4c0,0.338,0,1.662,0,2c0,11.028,8.972,20,20,20s20-8.972,20-20C44,25.662,44,24.338,44,24z"></path>
-                    <circle cx="24" cy="24" r="19" fill="#fff"></circle>
-                    <path d="M24,44C12.972,44,4,35.028,4,24S12.972,4,24,4s20,8.972,20,20S35.028,44,24,44z M24,6C14.075,6,6,14.075,6,24	s8.075,18,18,18s18-8.075,18-18S33.925,6,24,6z"></path>
-                    <path d="M26.573,29.038h4.921l0.765-4.993h-5.686V21.31c0-2.078,0.675-3.913,2.618-3.913h3.122v-4.363	c-0.549-0.072-1.709-0.234-3.895-0.234c-4.579,0-7.26,2.411-7.26,7.917v3.329h-4.696v4.993h4.696v13.728	C22.093,42.901,23.028,43,24,43c0.873,0,1.727-0.081,2.573-0.198V29.038z"></path>
+                    <mask
+                      id="mask0_55331_1391"
+                      // style={ "mask-type:luminance"}
+                      maskUnits="userSpaceOnUse"
+                      x="0"
+                      y="0"
+                      width="24"
+                      height="24"
+                    >
+                      <path d="M0 0H24V24H0V0Z" fill="white" />
+                    </mask>
+                    <g mask="url(#mask0_55331_1391)">
+                      <path
+                        d="M18.9 1.125H22.5806L14.5406 10.3376L24 22.8759H16.5943L10.7897 15.273L4.15543 22.8759H0.471429L9.07029 13.0187L0 1.12671H7.59429L12.8331 8.07471L18.9 1.125ZM17.6057 20.6679H19.6457L6.48 3.21814H4.29257L17.6057 20.6679Z"
+                        fill="white"
+                      />
+                    </g>
                   </svg>
                 </Link>
-                <Link href="#">
+                <Link href="#" aria-label="LinkedIn">
                   <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    x="0px"
-                    y="0px"
-                    width="25"
-                    height="25"
-                    viewBox="0 0 48 48"
                   >
-                    <path d="M17,43h14c5.523,0,10-4.477,10-10v-2H7v2C7,38.523,11.477,43,17,43z"></path>
                     <path
-                      fill="#fff"
-                      d="M32,40H16c-4.418,0-8-3.582-8-8V16c0-4.418,3.582-8,8-8h16c4.418,0,8,3.582,8,8v16	C40,36.418,36.418,40,32,40z"
-                    ></path>
-                    <path d="M32,41H16c-4.962,0-9-4.038-9-9V16c0-4.962,4.038-9,9-9h16c4.962,0,9,4.038,9,9v16C41,36.962,36.962,41,32,41z M16,9	c-3.86,0-7,3.14-7,7v16c0,3.86,3.14,7,7,7h16c3.86,0,7-3.14,7-7V16c0-3.86-3.14-7-7-7H16z"></path>
-                    <path d="M24,15c-4.962,0-9,4.038-9,9s4.038,9,9,9s9-4.038,9-9S28.962,15,24,15z M24,31c-3.86,0-7-3.14-7-7s3.14-7,7-7s7,3.14,7,7	S27.86,31,24,31z"></path>
-                    <circle cx="33.5" cy="14.5" r="1.5"></circle>
+                      d="M21.3333 0C22.0406 0 22.7189 0.280951 23.219 0.781048C23.719 1.28115 24 1.95942 24 2.66667V21.3333C24 22.0406 23.719 22.7189 23.219 23.219C22.7189 23.719 22.0406 24 21.3333 24H2.66667C1.95942 24 1.28115 23.719 0.781048 23.219C0.280951 22.7189 0 22.0406 0 21.3333V2.66667C0 1.95942 0.280951 1.28115 0.781048 0.781048C1.28115 0.280951 1.95942 0 2.66667 0H21.3333ZM20.6667 20.6667V13.6C20.6667 12.4472 20.2087 11.3416 19.3936 10.5264C18.5784 9.71128 17.4728 9.25333 16.32 9.25333C15.1867 9.25333 13.8667 9.94667 13.2267 10.9867V9.50667H9.50667V20.6667H13.2267V14.0933C13.2267 13.0667 14.0533 12.2267 15.08 12.2267C15.5751 12.2267 16.0499 12.4233 16.3999 12.7734C16.75 13.1235 16.9467 13.5983 16.9467 14.0933V20.6667H20.6667ZM5.17333 7.41333C5.76742 7.41333 6.33717 7.17733 6.75725 6.75725C7.17733 6.33717 7.41333 5.76742 7.41333 5.17333C7.41333 3.93333 6.41333 2.92 5.17333 2.92C4.57571 2.92 4.00257 3.1574 3.57999 3.57999C3.1574 4.00257 2.92 4.57571 2.92 5.17333C2.92 6.41333 3.93333 7.41333 5.17333 7.41333ZM7.02667 20.6667V9.50667H3.33333V20.6667H7.02667Z"
+                      fill="white"
+                    />
+                  </svg>
+                </Link>
+                <Link href="#" aria-label="facebook">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 0C5.39999 0 0 5.40964 0 12.0723C0 18.0964 4.39199 23.0964 10.128 24V15.5663H7.07999V12.0723H10.128V9.40964C10.128 6.38554 11.916 4.72289 14.664 4.72289C15.972 4.72289 17.34 4.95181 17.34 4.95181V7.92771H15.828C14.34 7.92771 13.872 8.85542 13.872 9.80723V12.0723H17.208L16.668 15.5663H13.872V24C16.6997 23.5516 19.2746 22.103 21.1319 19.9157C22.9892 17.7284 24.0064 14.9466 24 12.0723C24 5.40964 18.6 0 12 0Z"
+                      fill="white"
+                    />
+                  </svg>
+                </Link>
+                <Link href="#" aria-label="instagram">
+                  <svg
+                    width="26"
+                    height="26"
+                    viewBox="0 0 26 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.6667 4.83301C20.4952 4.83301 21.1667 5.50458 21.1667 6.33301C21.1667 7.16144 20.4952 7.83301 19.6667 7.83301C18.8383 7.83301 18.1667 7.16144 18.1667 6.33301C18.1667 5.50458 18.8383 4.83301 19.6667 4.83301Z"
+                      stroke="white"
+                    />
+                    <path
+                      d="M18.3333 1C22.0133 1 25 3.98667 25 7.66667V18.3333C25 22.0133 22.0133 25 18.3333 25H7.66667C3.98667 25 1 22.0133 1 18.3333V7.66667C1 3.98667 3.98667 1 7.66667 1H13H18.3333Z"
+                      stroke="white"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M13.0001 7.66699C15.9467 7.66699 18.3334 10.0537 18.3334 13.0003C18.3334 15.947 15.9467 18.3337 13.0001 18.3337C10.0534 18.3337 7.66675 15.947 7.66675 13.0003C7.66675 10.0537 10.0534 7.66699 13.0001 7.66699Z"
+                      stroke="white"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
                   </svg>
                 </Link>
               </div>
@@ -147,11 +185,8 @@ export default function FooterSection() {
           </div>
 
           {/* Bottom divider */}
-          <div className="border-t-[2px] border-[#475467] mt-12"></div>
+          <div className="border-t-[2px] border-gray-600 mt-12"></div>
         </div>
-      </div>
-      <div className="h-[120px] flex justify-center bg-white">
-        {/* <Image src={linkedin} alt="linkedin" /> */}
       </div>
     </footer>
   );

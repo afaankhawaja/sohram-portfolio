@@ -5,7 +5,7 @@ import svg1 from "@/assets/cards/down-circle.svg";
 import svg2 from "@/assets/cards/Frame.svg";
 import PricingPlans from "@/app/web-developement/components/PricingPlans";
 import { useRouter } from "next/navigation";
-import back from "@/assets/cards/ep_back.svg"
+import back from "@/assets/cards/ep_back.svg";
 interface props {
   setOpen: (e: boolean) => void;
   setMessage: (e: string) => void;
@@ -43,11 +43,14 @@ const WebDevelopement = ({ setOpen, setMessage }: props) => {
         contributing to your business objectives.
       </div>
       <PricingPlans setOpen={setOpen} setMessage={setMessage} />
-      <div onClick={() => Router.push("#app")} className="flex w-full justify-end">
+      <div
+        onClick={() => Router.push("#app")}
+        className="flex w-full justify-end"
+      >
         <Image src={svg1} alt="" className="mt-[43px]" />
       </div>
     </section>
   );
 };
 
-export default WebDevelopement
+export default WebDevelopement;

@@ -5,7 +5,7 @@ import svg1 from "@/assets/cards/down-circle.svg";
 import svg2 from "@/assets/appdev.png";
 import PricingPlans from "@/components/AppPricingPlan";
 import { useRouter } from "next/navigation";
-import back from "@/assets/cards/ep_back.svg"
+import back from "@/assets/cards/ep_back.svg";
 interface props {
   setOpen: (e: boolean) => void;
   setMessage: (e: string) => void;
@@ -43,11 +43,14 @@ const AppDevelopement = ({ setOpen, setMessage }: props) => {
         tangible progress towards your business objectives.
       </div>
       <PricingPlans setOpen={setOpen} setMessage={setMessage} />
-      <div onClick={() => Router.push("#uiux")} className="flex w-full justify-end">
+      <div
+        onClick={() => Router.push("#uiux")}
+        className="flex w-full justify-end"
+      >
         <Image src={svg1} alt="" className="mt-[43px] rotate-180" />
       </div>
     </section>
   );
 };
 
-export default AppDevelopement
+export default AppDevelopement;

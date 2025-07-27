@@ -2,8 +2,8 @@ import React from "react";
 import Image from "next/image";
 import active from "@/assets/check-circle-1.svg";
 import check from "@/assets/Path.svg";
-import frame from "@/assets/cards/custom-card.svg"
-import ai from "@/assets/cards/Ai powered 1.svg"
+import frame from "@/assets/cards/custom-card.svg";
+import ai from "@/assets/cards/Ai powered 1.svg";
 interface props {
   setOpen: (e: boolean) => void;
   setMessage: (e: string) => void;
@@ -217,7 +217,11 @@ const AppPricingPlan = ({ setOpen, setMessage }: props) => {
           highly customized, high-performance solution with ongoing strategic
           partnership.
         </p>
-        <Image className="max-md:mb-20 max-w-[214px] max-h-[185px]" src={frame} alt="" />
+        <Image
+          className="max-md:mb-20 max-w-[214px] max-h-[185px]"
+          src={frame}
+          alt=""
+        />
         <button
           onClick={() => {
             setOpen(true);
