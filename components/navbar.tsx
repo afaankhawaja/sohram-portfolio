@@ -76,7 +76,7 @@ export default function Navbar() {
                     )}
                     {item.highlight ? (
                       <div className="flex items-center">
-                        <div className="min-w-[46px] min-h-[46px] bg-[#AA253D] flex items-center justify-center rounded-full mr-3">
+                        <div className="min-w-[46px] min-h-[46px]  flex items-center justify-center rounded-full mr-3">
                           <Image
                             className="object-cover"
                             src={logo}

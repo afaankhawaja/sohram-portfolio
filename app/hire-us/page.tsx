@@ -31,10 +31,10 @@ export default function HireUsPage() {
   });
   const [open, setOpen] = useState(false);
   const router = useRouter();
-const handleSubmit = (event:any) => {
-  event.preventDefault();
-  setOpen(true);
-};
+  const handleSubmit = (event: any) => {
+    event.preventDefault();
+    setOpen(true);
+  };
 
   const SelectedIcon = () => (
     <svg
@@ -97,7 +97,7 @@ const handleSubmit = (event:any) => {
   return (
     <div className="min-h-fit bg-[#fafafb] flex flex-col items-center px-2 py-10 md:py-20">
       {/* Header */}
-      <div className="flex items-center w-full max-w-[1196px] mb-[79px]">
+      <div className="flex items-center w-full max-w-[1196px] mb-[79px]  ">
         <button
           onClick={() => router.push("/")}
           className="mr-4 p-2 rounded-full hover:bg-gray-100 transition"
@@ -116,7 +116,7 @@ const handleSubmit = (event:any) => {
             />
           </svg>
         </button>
-        <h1 className="text-3xl md:text-[64px] font-medium text-center w-full">
+        <h1 className="text-xl md:text-[64px] font-medium md:text-center w-full">
           Get a quote <span className="text-[#AA253D]">from us.</span>
         </h1>
       </div>
@@ -193,7 +193,7 @@ const handleSubmit = (event:any) => {
         <div className="flex-1 flex items-start justify-center p-6 sm:p-10">
           <form
             onSubmit={handleSubmit}
-            className="w-full grid grid-cols-1 md:grid-cols-2 gap-x-4 sm:gap-x-8 gap-y-10 bg-white"
+            className="w-full  max-md:space-y-5 md:grid grid-cols-1 md:grid-cols-2 gap-x-4 sm:gap-x-8 gap-y-10 bg-white"
           >
             {/* Inputs */}
             {fields.map(({ id, label, placeholder, type }) => (
@@ -204,7 +204,7 @@ const handleSubmit = (event:any) => {
                     id === "firstName" || id === "email"
                       ? "text-[#8D8D8D]"
                       : "text-[#171717]"
-                  } text-[12px] mb-1`}
+                  } text-[12px] mb-1 max-md:text-[#171717]`}
                 >
                   {label}
                 </label>
@@ -237,7 +237,7 @@ const handleSubmit = (event:any) => {
                     <label
                       key={option}
                       onClick={() => setService(option)}
-                      className={`flex items-center gap-[10px] cursor-pointer p-3 rounded-lg transition-all duration-200 ease-in-out ${
+                      className={`flex items-center min-w-fit gap-[10px] cursor-pointer p-3 rounded-lg transition-all duration-200 ease-in-out ${
                         service === option
                           ? "text-[#AA253D]"
                           : "hover:bg-gray-50"
@@ -250,7 +250,7 @@ const handleSubmit = (event:any) => {
                       )}
                       <span>{option}</span>
                     </label>
-                  )
+                  ),
                 )}
               </div>
             </div>
@@ -261,7 +261,7 @@ const handleSubmit = (event:any) => {
               {/* Adjusted mt and kept pb */}
               <button
                 onClick={() => setOpen(true)}
-                className="rounded-[60px] bg-[#AA253D] text-white max-md:text-[14px] text-[26px] font-medium px-[48px] py-[15px] shadow-lg hover:bg-[#c30052] transition-all"
+                className="rounded-[60px] bg-[#AA253D] text-white max-md:text-[14px] text-[26px] font-medium px-[48px] py-[15px] shadow-lg hover:bg-[#c30052] transition-all max-md:mx-auto"
               >
                 Send Message / Email
               </button>

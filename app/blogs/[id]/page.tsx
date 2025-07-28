@@ -145,10 +145,10 @@ Ready to future-proof your digital presence? Let's discuss how these trends can 
         subSections: [
           {
             title: "Key Elements:",
-            content: `Purposeful hover states that provide instant feedback
-Loading animations that inform rather than just entertain
-Transition effects that maintain context during navigation
-Subtle visual cues that guide user attention naturally
+            content: `Purposeful hover states that provide instant feedback. 
+Loading animations that inform rather than just entertain. 
+Transition effects that maintain context during navigation. 
+Subtle visual cues that guide user attention naturally. 
 Business Impact: Well-designed micro-interactions can increase user engagement by up to 40% and significantly reduce user confusion during complex tasks.`,
           },
           {
@@ -164,10 +164,10 @@ Business Impact: Well-designed micro-interactions can increase user engagement b
           {
             title: "Core Focus Areas:",
             content: `
-              Color contrast ratios that exceed WCAG 2.2 standards
-Keyboard navigation that feels as intuitive as mouse interaction
-Screen reader optimization that doesn't compromise visual design
-Voice interface integration for hands-free interaction
+              Color contrast ratios that exceed WCAG 2.2 standards. 
+Keyboard navigation that feels as intuitive as mouse interaction. 
+Screen reader optimization that doesn't compromise visual design. 
+Voice interface integration for hands-free interaction. 
 Strategic Advantage: Companies that prioritize accessibility from the start avoid costly retrofitting and tap into the $8 trillion disability market while creating better experiences for all users.`,
           },
         ],
@@ -179,21 +179,21 @@ Strategic Advantage: Companies that prioritize accessibility from the start avoi
           {
             title: "Practical Applications:",
             content: `
-              Product visualization that allows users to interact with items before purchase
-Spatial navigation that makes complex information hierarchies more understandable
-Layered interfaces that provide visual depth without overwhelming users
-AR integration that bridges digital and physical experiences
-Performance Considerations: Successful 3D implementation requires careful optimization to ensure fast loading times and smooth performance across all devices.
- Sustainable and Ethical Design Patterns
+              Product visualization that allows users to interact with items before purchase. 
+Spatial navigation that makes complex information hierarchies more understandable. 
+Layered interfaces that provide visual depth without overwhelming users. 
+AR integration that bridges digital and physical experiences. 
+Performance Considerations: Successful 3D implementation requires careful optimization to ensure fast loading times and smooth performance across all devices. 
+5 Sustainable and Ethical Design Patterns
 The growing awareness of technology's environmental and social impact is driving a trend toward more responsible design practices. This includes optimizing for energy efficiency, respecting user privacy, and creating transparent, honest interfaces.`,
           },
           {
             title: "Key Principles:",
             content: `
-              Dark mode options that reduce screen energy consumption
-Optimized images and code that minimize data usage
-Clear privacy controls that put users in charge of their data
-Honest design patterns that avoid manipulation
+              Dark mode options that reduce screen energy consumption. 
+Optimized images and code that minimize data usage. 
+Clear privacy controls that put users in charge of their data. 
+Honest design patterns that avoid manipulation. 
 Long-term Benefits: Sustainable design practices not only reduce environmental impact but also create faster, more efficient user experiences that users trust and prefer.`,
           },
           {
@@ -230,35 +230,35 @@ Industry Benchmarks and Statistics`,
       },
       {
         title: "E-commerce $Impact:",
-        content: `Amazon's one-click purchasing feature reportedly increases conversions by 10-15%
-A 0.1-second improvement in site speed can increase conversion rates by 8-10%
+        content: `Amazon's one-click purchasing feature reportedly increases conversions by 10-15%. 
+A 0.1-second improvement in site speed can increase conversion rates by 8-10%. 
 Proper mobile optimization can increase mobile conversion rates by up to 64%`,
       },
       {
         title: "SaaS and $B2B Applications:",
-        content: `Well-designed onboarding processes can improve user activation rates by 25-50%
-Intuitive interfaces reduce training costs by an average of 35%
+        content: `Well-designed onboarding processes can improve user activation rates by 25-50%. 
+Intuitive interfaces reduce training costs by an average of 35%. 
 Good UX design can decrease user churn by up to 23%`,
       },
       {
         title: "Content and $Media:",
-        content: `Improved navigation and content organization can increase page views by 20-40%
-Better search functionality can improve user engagement by 30-50%
-Streamlined subscription processes can increase conversion rates by 35%
+        content: `Improved navigation and content organization can increase page views by 20-40%. 
+Better search functionality can improve user engagement by 30-50%. 
+Streamlined subscription processes can increase conversion rates by 35%. 
 Key Performance Indicators (KPIs) for Design Success`,
       },
       {
         title: "User Experience $Metrics",
-        content: `Task Completion Rate: Measures how many users successfully complete intended actions.
-Target: 80%+ for critical user journeys
-Impact: Each 10% improvement typically correlates with 5-15% revenue increase
-Time to Task Completion: How quickly users can accomplish their goals.
-Target: Reduce by 20-30% with each design iteration
+        content: `Task Completion Rate: Measures how many users successfully complete intended actions. 
+Target: 80%+ for critical user journeys. 
+Impact: Each 10% improvement typically correlates with 5-15% revenue increase. 
+Time to Task Completion: How quickly users can accomplish their goals. 
+Target: Reduce by 20-30% with each design iteration. 
 Impact: Faster task completion often leads to higher user satisfaction and increased usage
-Error Rate: Frequency of user mistakes or failed attempts.
-Target: Less than 5% for primary workflows
+Error Rate: Frequency of user mistakes or failed attempts. 
+Target: Less than 5% for primary workflows. 
 Impact: Lower error rates reduce support costs and improve user confidence
-System Usability Scale (SUS) Score: Standardized measure of perceived usability.
+System Usability Scale (SUS) Score: Standardized measure of perceived usability. 
 Target: 68+ (above average), 80+ (excellent)
 Impact: Higher SUS scores correlate with increased user retention and recommendation rates.`,
       },
@@ -266,90 +266,90 @@ Impact: Higher SUS scores correlate with increased user retention and recommenda
         title: "Business $Impact Metrics",
         content: `Conversion Rate: Percentage of visitors who complete desired actions.
 Measurement: Track across different user journeys and device types
-Optimization: A/B testing can identify design changes that improve conversions by 10-50%
-Customer Acquisition Cost (CAC): Cost to acquire new customers.
-Impact: Better UX can reduce CAC by improving conversion rates and increasing referrals
-Measurement: Track changes in CAC following major design improvements
-Customer Lifetime Value (CLV): Total value a customer brings over their relationship with your company.
-Impact: Good UX increases CLV through improved retention and increased usage
-Measurement: Monitor CLV trends following UX improvements
-Net Promoter Score (NPS): Measures user willingness to recommend your product.
-Target: 50+ is excellent, 70+ is world-class
-Impact: Each 10-point increase in NPS typically correlates with 10-15% revenue growth
+Optimization: A/B testing can identify design changes that improve conversions by 10-50%. 
+Customer Acquisition Cost (CAC): Cost to acquire new customers. 
+Impact: Better UX can reduce CAC by improving conversion rates and increasing referrals. 
+Measurement: Track changes in CAC following major design improvements. 
+Customer Lifetime Value (CLV): Total value a customer brings over their relationship with your company. 
+Impact: Good UX increases CLV through improved retention and increased usage. 
+Measurement: Monitor CLV trends following UX improvements. 
+Net Promoter Score (NPS): Measures user willingness to recommend your product. 
+Target: 50+ is excellent, 70+ is world-class. 
+Impact: Each 10-point increase in NPS typically correlates with 10-15% revenue growth. 
 Design Impact Across Different Business Models`,
       },
       {
         title: "E-commerce $and Retail",
         content: `
           Case Study: Checkout Process Optimization A major retail client came to us with a 68% cart abandonment rate. Through user research, we identified key friction points:
-Complex multi-step checkout process
-Mandatory account creation
-Limited payment options
-Poor mobile experience
+Complex multi-step checkout process. 
+Mandatory account creation. 
+Limited payment options. 
+Poor mobile experience. 
 Our Solution:
-Simplified single-page checkout with guest option
-Multiple payment methods including digital wallets
-Clear progress indicators and security badges
+Simplified single-page checkout with guest option. 
+Multiple payment methods including digital wallets. 
+Clear progress indicators and security badges. 
 Mobile-optimized interface with one-thumb operation`,
       },
       {
         title: "$Results:",
         content: `
-          Cart abandonment reduced from 68% to 41%
-Mobile conversion rate increased by 89%
-Overall revenue increased by 34% within six months
-Customer support inquiries related to checkout decreased by 52%
-SaaS and B2B Applications
+          Cart abandonment reduced from 68% to 41%. 
+Mobile conversion rate increased by 89%. 
+Overall revenue increased by 34% within six months. 
+Customer support inquiries related to checkout decreased by 52%. 
+SaaS and B2B Applications.
 Case Study: Onboarding Redesign A B2B software company was losing 45% of new users within the first week due to poor onboarding experience.`,
       },
       {
         title: "Our $Approach:",
-        content: `Conducted user interviews to understand activation barriers
-Created progressive onboarding that focused on core value demonstration
-Implemented contextual help and guided tours
-Designed empty states that motivated action rather than confusion
+        content: `Conducted user interviews to understand activation barriers. 
+Created progressive onboarding that focused on core value demonstration. 
+Implemented contextual help and guided tours. 
+Designed empty states that motivated action rather than confusion. 
           `,
       },
       {
         title: "$Results",
         content: `
           
-Week-1 retention improved from 55% to 78%
-Time to first value decreased from 7 days to 2 days
-Trial-to-paid conversion rate increased by 41%
-Customer success team efficiency improved by 30%
+Week-1 retention improved from 55% to 78%. 
+Time to first value decreased from 7 days to 2 days. 
+Trial-to-paid conversion rate increased by 41%. 
+Customer success team efficiency improved by 30%. 
 Content and Media Platforms
 Case Study: Navigation and Content Discovery A digital media company was struggling with low engagement and high bounce rates.`,
       },
       {
         title: "Our $Strategy:",
         content: `
-          Redesigned information architecture based on user behavior data
-Implemented personalized content recommendations
-Created clear content categorization and filtering
+          Redesigned information architecture based on user behavior data. 
+Implemented personalized content recommendations. 
+Created clear content categorization and filtering. 
 Optimized for both discovery and deep engagement`,
       },
       {
         title: "$Results",
         content: `
-          Average session duration increased by 67%
-Page views per session improved by 45%
-Bounce rate decreased from 58% to 32%
-Ad revenue increased by 28% due to higher engagement
-Measuring Long-Term Business Impact
-Brand Value and Market Position
-Brand Perception Studies: Regular surveys to measure how design changes affect brand perception.
-Metrics: Brand recognition, perceived quality, purchase intent
-Impact: Strong design can increase brand value by 10-20%
-Competitive Advantage: Design leadership can create sustainable competitive advantages.
-Measurement: Compare user satisfaction scores against competitors
-Impact: Design leaders often command premium pricing and market share
+          Average session duration increased by 67%. 
+Page views per session improved by 45%. 
+Bounce rate decreased from 58% to 32%. 
+Ad revenue increased by 28% due to higher engagement. 
+Measuring Long-Term Business Impact. 
+Brand Value and Market Position. 
+Brand Perception Studies: Regular surveys to measure how design changes affect brand perception. 
+Metrics: Brand recognition, perceived quality, purchase intent. 
+Impact: Strong design can increase brand value by 10-20%. 
+Competitive Advantage: Design leadership can create sustainable competitive advantages. 
+Measurement: Compare user satisfaction scores against competitors. 
+Impact: Design leaders often command premium pricing and market share. 
 Employee and Stakeholder Impact.
-Internal Tool Design: Good design isn't just for customer-facing products.
-Impact: Well-designed internal tools increase employee productivity by 15-25%
-Measurement: Task completion times, error rates, employee satisfaction
-Stakeholder Confidence: Professional, polished interfaces increase investor and partner confidence.
-Impact: Better design can influence funding decisions and partnership opportunities
+Internal Tool Design: Good design isn't just for customer-facing products. 
+Impact: Well-designed internal tools increase employee productivity by 15-25%. 
+Measurement: Task completion times, error rates, employee satisfaction. 
+Stakeholder Confidence: Professional, polished interfaces increase investor and partner confidence. 
+Impact: Better design can influence funding decisions and partnership opportunities. 
 Measurement: Stakeholder feedback, partnership conversion rates.`,
       },
       {
@@ -362,55 +362,55 @@ Cross-Functional Collaboration: Include design considerations in product plannin
       },
       {
         title: "Scaling $Design Impact",
-        content: `Design System Implementation: Create scalable design systems that ensure consistency while reducing development time.
-ROI: Design systems can reduce development time by 25-40%
-Impact: Consistent experiences improve user trust and reduce support costs
-User-Centered Decision Making: Integrate UX research into business strategy and product roadmap planning.
-Process: Regular user testing, analytics review, and feedback collection
-Impact: Data-driven design decisions reduce risk and improve outcomes
-Continuous Optimization: Establish processes for ongoing design improvement and testing.
-Methods: A/B testing, user feedback collection, analytics monitoring
-Impact: Continuous optimization can improve key metrics by 5-15% annually
+        content: `Design System Implementation: Create scalable design systems that ensure consistency while reducing development time. 
+ROI: Design systems can reduce development time by 25-40%. 
+Impact: Consistent experiences improve user trust and reduce support costs. 
+User-Centered Decision Making: Integrate UX research into business strategy and product roadmap planning. 
+Process: Regular user testing, analytics review, and feedback collection. 
+Impact: Data-driven design decisions reduce risk and improve outcomes. 
+Continuous Optimization: Establish processes for ongoing design improvement and testing. 
+Methods: A/B testing, user feedback collection, analytics monitoring. 
+Impact: Continuous optimization can improve key metrics by 5-15% annually. 
 Common Pitfalls and How to Avoid Them.`,
       },
       {
         title: "Measurement $Challenges",
         content: `
-          Correlation vs. Causation: Ensure that measured improvements are actually due to design changes.
-Solution: Use controlled testing and isolate variables when possible
-Short-Term vs. Long-Term Impact: Some design benefits take time to materialize.
-Solution: Track both immediate metrics and longer-term trends
-Attribution Issues: Design impact can be difficult to separate from other business changes.
+          Correlation vs. Causation: Ensure that measured improvements are actually due to design changes. 
+Solution: Use controlled testing and isolate variables when possible. 
+Short-Term vs. Long-Term Impact: Some design benefits take time to materialize. 
+Solution: Track both immediate metrics and longer-term trends. 
+Attribution Issues: Design impact can be difficult to separate from other business changes. 
 Solution: Use comprehensive analytics and clear testing protocols`,
       },
       {
         title: `Implementation $Obstacles`,
-        content: `Resistance to Change: Users and stakeholders may resist design changes initially.
-Solution: Involve users in the design process and communicate benefits clearly
-Resource Constraints: Design improvements require time and budget investment.
-Solution: Prioritize high-impact changes and phase implementation strategically
-Technical Limitations: Existing systems may constrain design possibilities.
-Solution: Work closely with development teams to find creative solutions within constraints
+        content: `Resistance to Change: Users and stakeholders may resist design changes initially. 
+Solution: Involve users in the design process and communicate benefits clearly. 
+Resource Constraints: Design improvements require time and budget investment. 
+Solution: Prioritize high-impact changes and phase implementation strategically. 
+Technical Limitations: Existing systems may constrain design possibilities. 
+Solution: Work closely with development teams to find creative solutions within constraints. 
 Future Trends in Design ROI`,
       },
       {
         title: "AI and $Personalization Impact",
         content: `
-          Predictive Design: AI-powered interfaces that adapt to user behavior in real-time.
-Expected Impact: 20-40% improvement in user engagement and conversion rates
-Measurement: Personalization effectiveness, user satisfaction with recommendations
-Automated Optimization: Machine learning systems that continuously optimize interface elements.
-Expected Impact: Ongoing incremental improvements without manual intervention
+          Predictive Design: AI-powered interfaces that adapt to user behavior in real-time. 
+Expected Impact: 20-40% improvement in user engagement and conversion rates. 
+Measurement: Personalization effectiveness, user satisfaction with recommendations. 
+Automated Optimization: Machine learning systems that continuously optimize interface elements. 
+Expected Impact: Ongoing incremental improvements without manual intervention. 
 Measurement: Automated A/B testing results, performance trend analysis`,
       },
       {
         title: "Accessibility and $Inclusion Returns",
         content: `
-          Market Expansion: Accessible design opens products to users with disabilities.
-Market Size: 15% of global population has some form of disability
-Impact: Accessible design can expand addressable market by 10-15%
-Legal Compliance: Proactive accessibility prevents costly legal issues.
-Risk Mitigation: Accessibility lawsuits have increased 320% in recent years
+          Market Expansion: Accessible design opens products to users with disabilities. 
+Market Size: 15% of global population has some form of disability. 
+Impact: Accessible design can expand addressable market by 10-15%. 
+Legal Compliance: Proactive accessibility prevents costly legal issues. 
+Risk Mitigation: Accessibility lawsuits have increased 320% in recent years. 
 Impact: Compliance costs are 70% lower when built in from the start`,
       },
       {
@@ -531,7 +531,7 @@ export default function BlogDetailPage() {
   return (
     <div className="container text-center mx-auto mt-[120px]">
       {/* Default Blog Display */}
-      <div className="bg-white max-lg:px-2 flex flex-col items-center">
+      <div className="bg-white max-lg:px-3 flex flex-col items-center">
         <div className="flex items-center justify-center text-[16px]  leading-[150%] mb-[48px]">
           <span className=" font-bold text-black ">{defaultBlog.tag}</span>
           <span className="mx-2 font-medium text-[#999999]">•</span>
@@ -577,18 +577,27 @@ export default function BlogDetailPage() {
                 </span>
               </h3>
               <p className="text-black mb-6 max-lg:text-[16px] leading-[50px]">
-                {section.content}
+                {defaultBlog.id === "3" && section.title !== "Conclusion"
+                  ? section.content
+                      .split(". ")
+                      .map(
+                        (item, i) =>
+                          item.trim() && <li key={i}>{item.trim()}</li>,
+                      )
+                  : section.content}
               </p>
               {section.subSections?.map((sub, subIndex) => (
                 <div key={subIndex} className="ml-4 mb-6">
                   <h4 className="text-lg font-medium">{sub.title}</h4>
                   <ul className="list-disc leading-[50px] list-inside text-black">
-                    {sub.content
-                      .split(". ")
-                      .map(
-                        (item, i) =>
-                          item.trim() && <li key={i}>{item.trim()}</li>
-                      )}
+                    {sub.title !== "Conclusion"
+                      ? sub.content
+                          .split(". ")
+                          .map(
+                            (item, i) =>
+                              item.trim() && <li key={i}>{item.trim()}</li>,
+                          )
+                      : sub.content}
                   </ul>
                 </div>
               ))}

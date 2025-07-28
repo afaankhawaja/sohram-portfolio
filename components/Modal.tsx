@@ -20,7 +20,7 @@ interface props {
     lastName: string;
     email: string;
     phone: string;
-  }
+  };
 }
 
 export default function Modal({ open, setOpen, message, form }: props) {
@@ -28,11 +28,11 @@ export default function Modal({ open, setOpen, message, form }: props) {
 
   const subject = encodeURIComponent(message);
   const body = encodeURIComponent(
-    `I am interested in ${message}\n\nName: ${firstName}\nEmail: ${email}\nPhone: ${phone}`
+    `I am interested in ${message}\n\nName: ${firstName}\nEmail: ${email}\nPhone: ${phone}`,
   );
 
   const whatsappMessage = encodeURIComponent(
-    `I am interested in ${message}\nName: ${firstName}\nEmail: ${email}\nPhone: ${phone}`
+    `I am interested in ${message}\nName: ${firstName}\nEmail: ${email}\nPhone: ${phone}`,
   );
 
   const whatsappNumber = "923330542400";

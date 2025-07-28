@@ -51,10 +51,10 @@ The era of one-size-fits-all interfaces is rapidly ending. In 2025, we're witnes
         subSections: [
           {
             title: "Key Elements:",
-            content: `Purposeful hover states that provide instant feedback
-Loading animations that inform rather than just entertain
-Transition effects that maintain context during navigation
-Subtle visual cues that guide user attention naturally
+            content: `Purposeful hover states that provide instant feedback.
+Loading animations that inform rather than just entertain. 
+Transition effects that maintain context during navigation. 
+Subtle visual cues that guide user attention naturally. 
 Business Impact: Well-designed micro-interactions can increase user engagement by up to 40% and significantly reduce user confusion during complex tasks.`,
           },
           {
@@ -71,10 +71,10 @@ Business Impact: Well-designed micro-interactions can increase user engagement b
         subSections: [
           {
             title: "Core Focus Areas:",
-            content: `Color contrast ratios that exceed WCAG 2.2 standards
-Keyboard navigation that feels as intuitive as mouse interaction
-Screen reader optimization that doesn't compromise visual design
-Voice interface integration for hands-free interaction
+            content: `Color contrast ratios that exceed WCAG 2.2 standards. 
+Keyboard navigation that feels as intuitive as mouse interaction. 
+Screen reader optimization that doesn't compromise visual design. 
+Voice interface integration for hands-free interaction. 
 Strategic Advantage: Companies that prioritize accessibility from the start avoid costly retrofitting and tap into the $8 trillion disability market while creating better experiences for all users.`,
           },
         ],
@@ -87,27 +87,27 @@ Strategic Advantage: Companies that prioritize accessibility from the start avoi
           {
             title: "Practical Applications:",
             content: `
-            Product visualization that allows users to interact with items before purchase
-Spatial navigation that makes complex information hierarchies more understandable
-Layered interfaces that provide visual depth without overwhelming users
-AR integration that bridges digital and physical experiences
-Performance Considerations: Successful 3D implementation requires careful optimization to ensure fast loading times and smooth performance across all devices.
-. Sustainable and Ethical Design Patterns
+            Product visualization that allows users to interact with items before purchase. 
+Spatial navigation that makes complex information hierarchies more understandable. 
+Layered interfaces that provide visual depth without overwhelming users. 
+AR integration that bridges digital and physical experiences. 
+Performance Considerations: Successful 3D implementation requires careful optimization to ensure fast loading times and smooth performance across all devices. 
+ Sustainable and Ethical Design Patterns
 The growing awareness of technology's environmental and social impact is driving a trend toward more responsible design practices. This includes optimizing for energy efficiency, respecting user privacy, and creating transparent, honest interfaces.`,
           },
           {
             title: "Key Principles:",
             content: `
-            Dark mode options that reduce screen energy consumption
-Optimized images and code that minimize data usage
-Clear privacy controls that put users in charge of their data
-Honest design patterns that avoid manipulation
+            Dark mode options that reduce screen energy consumption. 
+Optimized images and code that minimize data usage. 
+Clear privacy controls that put users in charge of their data. 
+Honest design patterns that avoid manipulation. 
 Long-term Benefits: Sustainable design practices not only reduce environmental impact but also create faster, more efficient user experiences that users trust and prefer.`,
           },
           {
             title: "Conclusion",
-            content: `These trends represent more than visual preferences—they reflect fundamental shifts in how users interact with technology and what they expect from digital experiences. At The Apex UI, we help businesses navigate these trends strategically, implementing changes that enhance user satisfaction while driving business results.
-The key to success in 2025 isn't following every trend, but selecting the approaches that best serve your users and business objectives. By focusing on AI-driven personalization, meaningful minimalism, accessibility-first design, thoughtful 3D implementation, and sustainable practices, you can create digital experiences that not only look great but perform exceptionally.
+            content: `These trends represent more than visual preferences—they reflect fundamental shifts in how users interact with technology and what they expect from digital experiences.At The Apex UI, we help businesses navigate these trends strategically, implementing changes that enhance user satisfaction while driving business results.
+The key to success in 2025 isn't following every trend, but selecting the approaches that best serve your users and business objectives.By focusing on AI-driven personalization, meaningful minimalism, accessibility-first design, thoughtful 3D implementation, and sustainable practices, you can create digital experiences that not only look great but perform exceptionally.
 Ready to future-proof your digital presence? Let's discuss how these trends can transform your user experience and business outcomes.`,
           },
         ],
@@ -273,116 +273,123 @@ export default function BlogsPage() {
     //   </div>
     // </div>
     <div className="container text-center mx-auto mt-[120px]">
-          {/* Default Blog Display */}
-          <div className="bg-white max-lg:px-2 flex flex-col items-center">
-            <div className="flex items-center justify-center text-[16px]  leading-[150%] mb-[48px]">
-              <span className=" font-bold text-black ">{defaultBlog.tag}</span>
-              <span className="mx-2 font-medium text-[#999999]">•</span>
-              <span>{defaultBlog.uploadDate}</span>
-            </div>
-            <h1 className="text-[64px] max-lg:text-[30px] max-w-[1264px] font-bold mb-[83px]">
-              <span className="text-black">
-                {defaultBlog.heading.split("$")[0]}
-              </span>
-              <span className="text-red-600">
-                {defaultBlog.heading.split("$").slice(1).join(" ")}
-              </span>
-            </h1>
-            <Image
-              src={defaultBlog.image1}
-              alt={defaultBlog.heading}
-              width={1232}
-              height={608}
-              className="rounded-[60px] mb-[62px]"
-            />
-            <div className="bg-gray-100 rounded-[50px] w-[calc(100vw-16px)] text-center flex flex-col items-center min-w-full">
-              <h2 className="text-[45px] max-lg:text-[30px] leading-[180%] text-black font-bold mb-2 pt-6">
-                Introduction
-              </h2>
-              <p className="text-black mx-auto text-center text-[20px] max-lg:text-[16px] leading-[50px] mb-5 max-w-[1024px]">
-                {defaultBlog.introduction}
-              </p>
-              <Image
-                src={defaultBlog.image2}
-                alt={defaultBlog.heading}
-                width={1232}
-                height={376}
-                className="rounded-[60px] mb-[78px] mt-8"
-              />
-              {defaultBlog.sections.map((section, index) => (
-                <div key={index} className="mb-20 max-w-[1104px]">
-                  <h3 className="text-[30px] max-lg:text-[20px] leading-[50px] font-semibold mb-6">
-                    <span className="text-black">
-                      {section.title.split("$")[0]}
-                    </span>
-                    <span className="text-red-600 max-lg:text-[20px]">
-                      {section.title.split("$").slice(1).join(" ")}
-                    </span>
-                  </h3>
-                  <p className="text-black mb-6 max-lg:text-[16px] leading-[50px]">
-                    {section.content}
-                  </p>
-                  {section.subSections?.map((sub, subIndex) => (
-                    <div key={subIndex} className="ml-4 mb-6">
-                      <h4 className="text-lg font-medium">{sub.title}</h4>
-                      <ul className="list-disc leading-[50px] list-inside text-black">
-                        {sub.content
-                          .split(". ")
-                          .map(
-                            (item, i) =>
-                              item.trim() && <li key={i}>{item.trim()}</li>
-                          )}
-                      </ul>
-                    </div>
-                  ))}
-                </div>
-              ))}
-            </div>
-          </div>
-    
-          {/* Popular Blogs Section */}
-          <div className="text-[64px] max-lg:text-[30px]  font-bold leading-[64px] mt-[102px] mb-[119px]">
-            {" "}
-            Popular <span className="text-[#AA253D]">Blogs</span>
-          </div>
-          <div className="grid grid-cols-1 max-md:place-items-center md:grid-cols-3 gap-6 mb-[74px] max-lg:px-2">
-            {blogs
-              .filter((blog) => blog.id !== defaultBlog.id)
-              .map((blog) => (
-                <div
-                  key={blog.id}
-                  className=" max-w-[402px] cursor-pointer"
-                  onClick={() => handleReadMore(blog.id)}
-                >
-                  <Image
-                    src={blog.image1}
-                    alt={blog.heading}
-                    width={400}
-                    height={360}
-                    className="rounded-[16px] mb-10"
-                  />
-                  <div className="flex items-center text-gray-500 gap-2 text-sm mb-2">
-                    <span className="text-[12px] text-[#333333] font-bold leading-[150%]">
-                      {blog.tag}
-                    </span>
-                    <span className="text-[#999999] leading-[150%] text-[12px]">
-                      {blog.uploadDate}
-                    </span>
-                  </div>
-                  <h3 className="text-lg text-left font-semibold mb-3 mt-4">
-                    <span className="text-black text-[24px] max-lg:text-[20px] leading-8 font-bold">
-                      {blog.heading}
-                    </span>
-                  </h3>
-                  <p className="text-[#666666] text-left leading-[150%] text-[16px] max-lg:text-[12px] mb-2 line-clamp-3">
-                    {blog.introduction}
-                  </p>
-                  <button className="text-[#AA253D] text-[18px] flex justify-start leading-[150%] font-bold">
-                    Read More...
-                  </button>
-                </div>
-              ))}
-          </div>
+      {/* Default Blog Display */}
+      <div className="bg-white max-lg:px-3 flex flex-col items-center">
+        <div className="flex items-center justify-center text-[16px]  leading-[150%] mb-[48px]">
+          <span className=" font-bold text-black ">{defaultBlog.tag}</span>
+          <span className="mx-2 font-medium text-[#999999]">•</span>
+          <span>{defaultBlog.uploadDate}</span>
         </div>
+        <h1 className="text-[64px] max-lg:text-[30px] max-w-[1264px] font-bold mb-[83px]">
+          <span className="text-black">
+            {defaultBlog.heading.split("$")[0]}
+          </span>
+          <span className="text-red-600">
+            {defaultBlog.heading.split("$").slice(1).join(" ")}
+          </span>
+        </h1>
+        <Image
+          src={defaultBlog.image1}
+          alt={defaultBlog.heading}
+          width={1232}
+          height={608}
+          className="rounded-[60px] mb-[62px]"
+        />
+        <div className="bg-gray-100 rounded-[50px] w-[calc(100vw-16px)] text-center flex flex-col items-center min-w-full">
+          <h2 className="text-[45px] max-lg:text-[30px] leading-[180%] text-black font-bold mb-2 pt-6">
+            Introduction
+          </h2>
+          <p className="text-black mx-auto text-center text-[20px] max-lg:text-[16px] leading-[50px] mb-5 max-w-[1024px]">
+            {defaultBlog.introduction}
+          </p>
+          <Image
+            src={defaultBlog.image2}
+            alt={defaultBlog.heading}
+            width={1232}
+            height={376}
+            className="rounded-[60px] mb-[78px] mt-8"
+          />
+          {defaultBlog.sections.map((section, index) => (
+            <div key={index} className="mb-20 max-w-[1104px]">
+              <h3 className="text-[30px] max-lg:text-[20px] leading-[50px] font-semibold mb-6">
+                <span className="text-black">
+                  {section.title.split("$")[0]}
+                </span>
+                <span className="text-red-600 max-lg:text-[20px]">
+                  {section.title.split("$").slice(1).join(" ")}
+                </span>
+              </h3>
+              <p className="text-black mb-6 max-lg:text-[16px] leading-[50px]">
+                {defaultBlog.id === "3"
+                  ? section.content
+                      .split(". ")
+                      .map(
+                        (item, i) =>
+                          item.trim() && <li key={i}>{item.trim()}</li>,
+                      )
+                  : section.content}
+              </p>
+              {section.subSections?.map((sub, subIndex) => (
+                <div key={subIndex} className="ml-4 mb-6">
+                  <h4 className="text-lg font-medium">{sub.title}</h4>
+                  <ul className="list-disc leading-[50px] list-inside text-black">
+                    {sub.content
+                      .split(". ")
+                      .map(
+                        (item, i) =>
+                          item.trim() && <li key={i}>{item.trim()}</li>,
+                      )}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Popular Blogs Section */}
+      <div className="text-[64px] max-lg:text-[30px]  font-bold leading-[64px] mt-[102px] mb-[119px]">
+        {" "}
+        Popular <span className="text-[#AA253D]">Blogs</span>
+      </div>
+      <div className="grid grid-cols-1 max-md:place-items-center md:grid-cols-3 gap-6 mb-[74px] max-lg:px-2">
+        {blogs
+          .filter((blog) => blog.id !== defaultBlog.id)
+          .map((blog) => (
+            <div
+              key={blog.id}
+              className=" max-w-[402px] cursor-pointer"
+              onClick={() => handleReadMore(blog.id)}
+            >
+              <Image
+                src={blog.image1}
+                alt={blog.heading}
+                width={400}
+                height={360}
+                className="rounded-[16px] mb-10"
+              />
+              <div className="flex items-center text-gray-500 gap-2 text-sm mb-2">
+                <span className="text-[12px] text-[#333333] font-bold leading-[150%]">
+                  {blog.tag}
+                </span>
+                <span className="text-[#999999] leading-[150%] text-[12px]">
+                  {blog.uploadDate}
+                </span>
+              </div>
+              <h3 className="text-lg text-left font-semibold mb-3 mt-4">
+                <span className="text-black text-[24px] max-lg:text-[20px] leading-8 font-bold">
+                  {blog.heading}
+                </span>
+              </h3>
+              <p className="text-[#666666] text-left leading-[150%] text-[16px] max-lg:text-[12px] mb-2 line-clamp-3">
+                {blog.introduction}
+              </p>
+              <button className="text-[#AA253D] text-[18px] flex justify-start leading-[150%] font-bold">
+                Read More...
+              </button>
+            </div>
+          ))}
+      </div>
+    </div>
   );
 }

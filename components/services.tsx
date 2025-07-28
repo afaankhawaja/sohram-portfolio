@@ -109,7 +109,7 @@ const services = [
     hoverImage: uiuxhover,
     alt: "User flow and Prototyping illustration",
     id: 0,
-    path: "/hire-us/#UiUx",
+    path: "/hire-us",
   },
   {
     title: "Web Development",
@@ -117,7 +117,7 @@ const services = [
     hoverImage: webdevhover,
     alt: "Web Design illustration",
     id: 1,
-    path: "/hire-us/#web",
+    path: "/hire-us",
   },
   {
     title: "App Development",
@@ -125,7 +125,7 @@ const services = [
     hoverImage: appdevhover,
     alt: "Application Design illustration",
     id: 2,
-    path: "/hire-us/#app",
+    path: "/hire-us",
   },
 ];
 

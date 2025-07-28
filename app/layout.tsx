@@ -25,6 +25,9 @@ export const metadata: Metadata = {
   keywords:
     "web development, app development, UI/UX design, digital services, software development, The Apex UI",
   generator: "v0.dev",
+  icons: {
+    icon: "/assets/A.svg",
+  },
 };
 
 export default function RootLayout({
