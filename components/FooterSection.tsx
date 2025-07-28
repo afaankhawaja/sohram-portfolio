@@ -84,7 +84,12 @@ export default function FooterSection() {
 
               {/* Social icons */}
               <div className="flex gap-x-[13px]">
-                <Link href="#" aria-label="x">
+                <Link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="#"
+                  aria-label="x"
+                >
                   <svg
                     width="24"
                     height="24"
@@ -111,7 +116,12 @@ export default function FooterSection() {
                     </g>
                   </svg>
                 </Link>
-                <Link href="#" aria-label="LinkedIn">
+                <Link
+                  href="https://www.linkedin.com/company/the-apex-ui/"
+                  aria-label="LinkedIn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <svg
                     width="24"
                     height="24"
@@ -125,7 +135,12 @@ export default function FooterSection() {
                     />
                   </svg>
                 </Link>
-                <Link href="#" aria-label="facebook">
+                <Link
+                  href="https://www.facebook.com/share/1B8i4TXhaB/"
+                  aria-label="facebook"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <svg
                     width="24"
                     height="24"
@@ -139,7 +154,12 @@ export default function FooterSection() {
                     />
                   </svg>
                 </Link>
-                <Link href="#" aria-label="instagram">
+                <Link
+                  href="https://www.instagram.com/theapexui?igsh=dmE5MzA3cTZ3dHN4"
+                  aria-label="instagram"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <svg
                     width="26"
                     height="26"
