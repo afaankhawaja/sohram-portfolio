@@ -274,7 +274,7 @@ export default function BlogsPage() {
     // </div>
     <div className="container text-center mx-auto mt-[120px]">
       {/* Default Blog Display */}
-      <div className="bg-white max-lg:px-3 flex flex-col items-center">
+      <div className="bg-white max-lg:px-2 flex flex-col items-center">
         <div className="flex items-center justify-center text-[16px]  leading-[150%] mb-[48px]">
           <span className=" font-bold text-black ">{defaultBlog.tag}</span>
           <span className="mx-2 font-medium text-[#999999]">•</span>
@@ -295,7 +295,7 @@ export default function BlogsPage() {
           height={608}
           className="rounded-[60px] mb-[62px]"
         />
-        <div className="bg-gray-100 rounded-[50px] w-[calc(100vw-16px)] text-center flex flex-col items-center min-w-full">
+        <div className="bg-gray-100 px-2 rounded-[50px] w-[calc(100vw-16px)] text-center flex flex-col items-center min-w-full">
           <h2 className="text-[45px] max-lg:text-[30px] leading-[180%] text-black font-bold mb-2 pt-6">
             Introduction
           </h2>
