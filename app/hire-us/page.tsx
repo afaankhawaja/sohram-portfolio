@@ -31,8 +31,22 @@ export default function HireUsPage() {
   });
   const [open, setOpen] = useState(false);
   const router = useRouter();
-  const handleSubmit = (event: any) => {
+  const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
+
+    const allFieldsFilled = Object.values(form).every(
+      (value) => value.trim() !== "",
+    );
+
+    if (!allFieldsFilled) {
+      alert("Please fill in all the required fields before submitting.");
+      return;
+    }
+
+    if (!service) {
+      alert("Please select a service.");
+      return;
+    }
     setOpen(true);
   };
 
@@ -259,10 +273,7 @@ export default function HireUsPage() {
             <div className="col-span-2 flex justify-end mt-[200px] pb-[30px]">
               {" "}
               {/* Adjusted mt and kept pb */}
-              <button
-                onClick={() => setOpen(true)}
-                className="rounded-[60px] bg-[#AA253D] text-white max-md:text-[14px] text-[26px] font-medium px-[48px] py-[15px] shadow-lg hover:bg-[#c30052] transition-all max-md:mx-auto"
-              >
+              <button className="rounded-[60px] bg-[#AA253D] text-white max-md:text-[14px] text-[26px] font-medium px-[48px] py-[15px] shadow-lg hover:bg-[#c30052] transition-all max-md:mx-auto">
                 Send Message / Email
               </button>
             </div>

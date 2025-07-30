@@ -26,7 +26,7 @@ export default function Navbar() {
   return (
     <>
       {/* Mobile Navbar */}
-      <div className="md:hidden  w-full px-4 py-3 flex justify-between items-center bg-black border-b border-white">
+      <div className="md:hidden  w-full px-4 py-3 flex justify-between items-center bg-[#171717] border-b border-white">
         <div className="flex items-center">
           <div className="min-w-[46px] min-h-[46px] flex items-center justify-center mr-3">
             <Image className="object-cover" src={logo} alt="logo" />
