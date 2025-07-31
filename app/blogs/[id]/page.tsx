@@ -553,10 +553,10 @@ export default function BlogDetailPage() {
           className="rounded-[60px] mb-[62px]"
         />
         <div className="bg-gray-100 px-2 rounded-[50px] w-[calc(100vw-16px)] text-center flex flex-col items-center min-w-full">
-          <h2 className="text-[45px] max-lg:text-[30px] leading-[180%] text-black font-bold mb-2 pt-6">
+          <h2 className="text-[45px] max-lg:text-[30px] leading-[180%] text-black font-bold mb-2 pt-[14px]">
             Introduction
           </h2>
-          <p className="text-black mx-auto text-center text-[20px] max-lg:text-[16px] leading-[50px] mb-5 max-w-[1024px]">
+          <p className="text-black mx-auto text-center text-[20px] max-lg:text-[16px] leading-[40px] max-w-[1024px]">
             {defaultBlog.introduction}
           </p>
           <Image
@@ -567,8 +567,8 @@ export default function BlogDetailPage() {
             className="rounded-[60px] mb-[78px] mt-8"
           />
           {defaultBlog.sections.map((section, index) => (
-            <div key={index} className="mb-20 max-w-[1104px]">
-              <h3 className="text-[30px] max-lg:text-[20px] leading-[50px] font-semibold mb-6">
+            <div key={index} className="mb-10 max-w-[1104px]">
+              <h3 className="text-[30px] max-lg:text-[20px] leading-[40px] font-semibold mb-5">
                 <span className="text-black">
                   {section.title.split("$")[0]}
                 </span>
@@ -576,7 +576,7 @@ export default function BlogDetailPage() {
                   {section.title.split("$").slice(1).join(" ")}
                 </span>
               </h3>
-              <p className="text-black mb-6 max-lg:text-[16px] leading-[50px]">
+              <p className="text-black mb-5 max-lg:text-[16px] leading-[40px]">
                 {defaultBlog.id === "3" && section.title !== "Conclusion"
                   ? section.content
                       .split(". ")
@@ -587,9 +587,9 @@ export default function BlogDetailPage() {
                   : section.content}
               </p>
               {section.subSections?.map((sub, subIndex) => (
-                <div key={subIndex} className="ml-4 mb-6">
+                <div key={subIndex} className="ml-4 mb-5">
                   <h4 className="text-lg font-medium">{sub.title}</h4>
-                  <ul className="list-disc leading-[50px] list-inside text-black">
+                  <ul className="list-disc leading-[40px] list-inside text-black">
                     {sub.title !== "Conclusion"
                       ? sub.content
                           .split(". ")
