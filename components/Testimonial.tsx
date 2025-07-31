@@ -96,7 +96,7 @@ const Testimonial: React.FC = () => {
       lastMoveTime.current = currentTime;
       lastMoveX.current = currentX;
     },
-    [isDragging, startX, scrollLeft],
+    [isDragging, startX, scrollLeft]
   );
 
   // Global mouse events for better drag experience
@@ -198,7 +198,7 @@ const Testimonial: React.FC = () => {
           onMouseLeave={handleMouseLeave}
           onMouseUp={handleMouseUp}
           onMouseMove={handleMouseMove}
-          className="max-md:flex-col gap-y-6 flex gap-x-6 w-full md:min-w-full md:min-h-[264.84px] md:items-center overflow-x-scroll hidden-scrollbar cursor-grab active:cursor-grabbing select-none"
+          className="max-md:flex-col gap-y-6 flex space-x-[24px] w-full md:min-w-full md:min-h-[264.84px] md:items-center overflow-x-scroll hidden-scrollbar cursor-grab active:cursor-grabbing select-none"
           style={{
             scrollBehavior: isDragging ? "auto" : "smooth",
             userSelect: "none",

@@ -40,7 +40,7 @@ export default function Hero() {
 
         <div className="lg:flex max-lg:flex-col max-lg:space-y-4 max-lg:mx-auto w-[100%] lg:justify-between mt-[25px]">
           <div className="md:w-[531px] max-lg:mb-20">
-            <div className="lg:text-[80px] text-[60px] font-semibold leading-[100%] -tracking-[0%] md:w-[531px] mb-5 h-full w-full lg:h-[384px]">
+            <div className="lg:text-[80px] text-[60px] font-semibold leading-[100%] -tracking-[0%] md:w-[531px] pb-5 h-fit w-full">
               A Design that delights &{" "}
               <span className="text-[#C30052]">a Code that performs.</span>
               <br />
