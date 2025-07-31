@@ -35,7 +35,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="flex gap-x-[37px] mt-[50px] justify-center mb-[21px] max-w-[446px] mx-auto pl-[2px] max-md:px-5">
+      <div className="flex gap-x-[37px] lg:space-x-[37px] mt-[50px] justify-center mb-[21px] max-w-[446px] mx-auto pl-[2px] max-md:px-5">
         <div className="md:flex gap-x-1">
           <Image src={star} alt="" />
           <span>4.9/5 Average Ratings</span>

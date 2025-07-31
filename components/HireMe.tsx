@@ -63,7 +63,7 @@ const HireMe = () => {
 
           <button
             onClick={() => router.push(`/hire-us`)}
-            className="max-w-[215px] max-md:min-w-[180px] max-md:mx-auto max-h-[104px] text-[#151515] border border-[#151515] rounded-[32px] mt-[25px] md:text-[32px] font-semibold -tracking-[1.5%] leading-[100%] text-center md:px-[59px] px-[20px] md:py-[33px] py-[15px] hover:bg-[#AA253D] transition-all duration-300 hover:text-white"
+            className="max-w-[215px] text-nowrap max-md:min-w-[180px] max-md:mx-auto max-h-[104px] text-[#151515] border border-[#151515] rounded-[32px] mt-[25px] md:text-[32px] font-semibold -tracking-[1.5%] leading-[100%] text-center md:px-[59px] px-[20px] md:py-[33px] py-[15px] hover:bg-[#AA253D] transition-all duration-300 hover:text-white"
           >
             Hire us
           </button>
