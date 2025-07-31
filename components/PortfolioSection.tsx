@@ -206,7 +206,7 @@ export default function PortfolioSection() {
         </div>
       </div>
 
-      <div className="flex max-md:flex-col space-x-[24px] space-y-[24px] mb-12 max-lg:items-center ">
+      <div className="flex max-md:flex-col space-x-[24px] mb-12 max-lg:items-center ">
         {[port1, port2, port3].map((item, i) => (
           <div
             key={i}
