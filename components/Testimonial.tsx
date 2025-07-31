@@ -96,7 +96,7 @@ const Testimonial: React.FC = () => {
       lastMoveTime.current = currentTime;
       lastMoveX.current = currentX;
     },
-    [isDragging, startX, scrollLeft]
+    [isDragging, startX, scrollLeft],
   );
 
   // Global mouse events for better drag experience

@@ -518,7 +518,7 @@ export default function BlogDetailPage() {
 
   if (!defaultBlog) {
     return (
-      <div className="container mx-auto p-6 text-center text-gray-700">
+      <div className="container mx-auto p-6 text-center text-grey-700">
         Blog not found
       </div>
     );
@@ -541,7 +541,7 @@ export default function BlogDetailPage() {
           <span className="text-black">
             {defaultBlog.heading.split("$")[0]}
           </span>
-          <span className="text-red-600">
+          <span className="text-[#AA253D]">
             {defaultBlog.heading.split("$").slice(1).join(" ")}
           </span>
         </h1>
@@ -572,7 +572,7 @@ export default function BlogDetailPage() {
                 <span className="text-black">
                   {section.title.split("$")[0]}
                 </span>
-                <span className="text-red-600 max-lg:text-[20px]">
+                <span className="text-[#AA253D] max-lg:text-[20px]">
                   {section.title.split("$").slice(1).join(" ")}
                 </span>
               </h3>

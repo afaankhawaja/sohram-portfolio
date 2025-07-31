@@ -161,117 +161,6 @@ export default function BlogsPage() {
   };
 
   return (
-    // <div className="container text-center mx-auto mt-[120px]">
-    //   {/* Default Blog Display */}
-    //   <div className="bg-white flex flex-col items-center">
-    //     <div className="flex items-center justify-center text-[16px]  leading-[150%] mb-[48px]">
-    //       <span className=" font-bold text-black ">{defaultBlog.tag}</span>
-    //       <span className="mx-2 font-medium text-[#999999]">•</span>
-    //       <span>{defaultBlog.uploadDate}</span>
-    //     </div>
-    //     <h1 className="text-[64px] max-w-[1024px] font-bold mb-[83px]">
-    //       <span className="text-black">
-    //         {defaultBlog.heading.split("$")[0]}
-    //       </span>
-    //       <span className="text-red-600">
-    //         {defaultBlog.heading.split("$").slice(1).join(" ")}
-    //       </span>
-    //     </h1>
-    //     <Image
-    //       src={defaultBlog.image1}
-    //       alt={defaultBlog.heading}
-    //       width={1232}
-    //       height={608}
-    //       className="rounded-[60px] mb-[62px]"
-    //     />
-    //     <div className="bg-gray-100 text-center flex flex-col items-center w-[calc(100vw-16px)] rounded-[50px] min-w-full">
-    //       <h2 className="text-[45px] leading-[180%] text-black font-bold mb-2 pt-6">
-    //         Introduction
-    //       </h2>
-    //       <p className="text-black mx-auto text-center text-[20px] leading-[50px] mb-5 max-w-[1024px]">
-    //         {defaultBlog.introduction}
-    //       </p>
-    //       <Image
-    //         src={defaultBlog.image2}
-    //         alt={defaultBlog.heading}
-    //         width={1232}
-    //         height={376}
-    //         className="rounded-[60px] mb-[78px]"
-    //       />
-    //       {defaultBlog.sections.map((section, index) => (
-    //         <div key={index} className="mb-20 max-w-[1104px]">
-    //           <h3 className="text-[30px] leading-[40px] font-semibold mb-6">
-    //             <span className="text-black">
-    //               {section.title.split("$")[0]}
-    //             </span>
-    //             <span className="text-red-600">
-    //               {section.title.split("$").slice(1).join(" ")}
-    //             </span>
-    //           </h3>
-    //           <p className="text-black mb-6 leading-[50px]">
-    //             {section.content}
-    //           </p>
-    //           {section.subSections?.map((sub, subIndex) => (
-    //             <div key={subIndex} className="ml-4 mb-6">
-    //               <h4 className="text-lg font-medium">{sub.title}</h4>
-    //               {/* <p className="text-black leading-[50px]">{sub.content}</p> */}
-    //               <ul className="list-disc leading-[50px] list-inside text-black">
-    //                 {sub.content
-    //                   .split(". ")
-    //                   .map(
-    //                     (item, i) =>
-    //                       item.trim() && <li key={i}>{item.trim()}</li>
-    //                   )}
-    //               </ul>
-    //             </div>
-    //           ))}
-    //         </div>
-    //       ))}
-    //     </div>
-    //   </div>
-
-    //   {/* Popular Blogs Section */}
-    //   <div className="text-[64px] font-bold leading-[64px] mt-[102px] mb-[119px]">
-    //     {" "}
-    //     Popular <span className="text-[#AA253D]">Blogs</span>
-    //   </div>
-    //   <div className="grid grid-cols-1 max-md:place-items-center md:grid-cols-3 gap-6 mb-[74px]">
-    //     {blogs.slice(1).map((blog) => (
-    //       <div
-    //         key={blog.id}
-    //         className=" max-w-[402px] cursor-pointer"
-    //         onClick={() => handleReadMore(blog.id)}
-    //       >
-    //         <Image
-    //           src={blog.image1}
-    //           alt={blog.heading}
-    //           width={400}
-    //           height={360}
-    //           className="rounded-[16px] mb-10"
-    //         />
-    //         <div className="flex items-center text-gray-500 gap-2 text-sm mb-2">
-    //           <span className="text-[12px] text-[#333333] font-bold leading-[150%]">
-    //             {blog.tag}
-    //           </span>
-    //           <span className="text-[#999999] leading-[150%] text-[12px]">
-    //             {blog.uploadDate}
-    //           </span>
-    //         </div>
-    //         <h3 className="text-lg text-left font-semibold mb-3 mt-4">
-    //           <span className="text-black text-[24px] leading-8 font-bold">
-    //             {blog.heading}
-    //           </span>
-    //         </h3>
-    //         <p className="text-[#666666] text-left leading-[150%] text-[16px] mb-2 line-clamp-3">
-    //           {blog.introduction}
-    //         </p>
-    //         <button className="text-[#AA253D] text-[18px] flex justify-start leading-[150%] font-bold">
-    //           Read More...
-    //         </button>
-    //       </div>
-    //     ))}
-    //   </div>
-    // </div>
     <div className="container text-center mx-auto mt-[120px]">
       {/* Default Blog Display */}
       <div className="bg-white max-lg:px-2 flex flex-col items-center">
@@ -284,7 +173,7 @@ export default function BlogsPage() {
           <span className="text-black">
             {defaultBlog.heading.split("$")[0]}
           </span>
-          <span className="text-red-600">
+          <span className="text-[#AA253D]">
             {defaultBlog.heading.split("$").slice(1).join(" ")}
           </span>
         </h1>
@@ -315,7 +204,7 @@ export default function BlogsPage() {
                 <span className="text-black">
                   {section.title.split("$")[0]}
                 </span>
-                <span className="text-red-600 max-lg:text-[20px]">
+                <span className="text-[#AA253D] max-lg:text-[20px]">
                   {section.title.split("$").slice(1).join(" ")}
                 </span>
               </h3>
