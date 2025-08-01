@@ -48,7 +48,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {mobileOpen && (
-        <div className="md:hidden bg-black border-t h-[calc(100vh-80px)] hidden-scrollbar  overflow-scroll border-white">
+        <div className="md:hidden bg-[#171717] border-t h-[calc(100vh-80px)] hidden-scrollbar  overflow-scroll border-white">
           <ul className="py-2 px-4 space-y-2 h-[100%]">
             {navItems.map((item) => (
               <li key={item.name}>
@@ -98,7 +98,7 @@ export default function Navbar() {
 
       {/* Original Desktop Navbar (unchanged) */}
       <div className="hidden mx-auto max-md:w-[95%] max-md:mx-auto overflow-scroll hidden-scrollbar relative items-center md:flex h-[86px] justify-center mt-[15px] px-4 ">
-        <nav className="max-w-[1298px] border-white border-[2px] overflow-x-scroll hidden-scrollbar pl-[10xp] pr-[31px] w-full h-full bg-black rounded-full flex items-center justify-between">
+        <nav className="max-w-[1298px] border-white border-[2px] overflow-x-scroll hidden-scrollbar pl-[10xp] pr-[31px] w-full h-full bg-[#171717] rounded-full flex items-center justify-between">
           <ul className="flex items-center justify-between h-[50px] md:h-[64px] w-full space-x-8 font-inter pl-[10px]">
             {navItems.map((item) => (
               <li key={item.name}>
@@ -119,7 +119,7 @@ export default function Navbar() {
                   >
                     {item.highlight && (
                       <div
-                        className={`min-w-[46px] h-[46px]    flex items-center justify-center text-white mr-[10.5px] rounded-[50px] `}
+                        className={`min-w-[46px] h-[46px] flex items-center justify-center text-white mr-[10.5px] rounded-[50px] `}
                       >
                         <Image className="object-cover" src={logo} alt="logo" />
                       </div>

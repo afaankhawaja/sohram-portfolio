@@ -42,7 +42,7 @@ export default function Hero() {
           <div className="md:w-[531px] max-lg:mb-20">
             <div className="lg:text-[80px] text-[60px] font-semibold leading-[100%] -tracking-[0%] md:w-[531px] pb-5 h-fit w-full">
               A Design that delights &{" "}
-              <span className="text-[#C30052]">a Code that performs.</span>
+              <span className="text-[#AA253D]">a Code that performs.</span>
               <br />
             </div>
             <div className="text-[12px] md:text-[22px] md:leading-[37px] text-black max-md:mb-5 max-w-screen">
