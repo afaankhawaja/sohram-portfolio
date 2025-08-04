@@ -1,108 +1,13 @@
-// 'use client'
-// import Image from "next/image";
-// import Link from "next/link";
-// import arow from "@/assets/up right.svg";
-
-// import port1 from "@/assets/cards/portfolio1.png"
-// import port2 from "@/assets/cards/portfolio2.png"
-// import port3 from "@/assets/cards/portfolio3.png"
-// import { useRouter } from "next/navigation";
-// import { useState } from "react";
-
-// import port1img1 from "@/assets/cards/the cards/portfolio/ai design/1.png"
-// import port1img2 from "@/assets/cards/the cards/portfolio/ai design/2.png";
-// import port1img3 from "@/assets/cards/the cards/portfolio/ai design/3.png";
-// import port1img4 from "@/assets/cards/the cards/portfolio/ai design/4.png"
-// import port1img5 from "@/assets/cards/the cards/portfolio/ai design/5.png";
-
-// export default function PortfolioSection() {
-//    const [hover, setHover] = useState(false);
-//     const router=useRouter()
-//   return (
-//     <section
-//       className="max-w-[1298px] max-md:w-[95%]  w-full mx-auto mt-[97px] mb-[69px] max-lg:px-5"
-//       id="Portfolio"
-//     >
-//       <div className="flex max-md:flex-col max-md:w-[90%] max-md:mx-auto justify-between gap-y-5 w-full md:items-center mb-[92px]">
-//         <h2 className="text-[40px] md:text-[64px]  md:w-[643px] -tracking-[1.5%] leading-[100%] md:text-5xl font-bold text-slate-800">
-//           Lets have a look at our{" "}
-//           <span className="text-[#AA253D]">Portfolio</span>
-//         </h2>
-//         <div
-//                       onMouseEnter={() => setHover(true)}
-//                       onMouseLeave={() =>  setHover(false) }
-//                       onClick={()=>router.push(`/hire-us`)}
-
-//                       className="bg-[#AA253D] cursor-pointer text-[26px] md:text-[26px] leading-[100%] text-nowrap -tracking-[1.5%] hover:bg-[#94273b] text-white px-[10px] md:px-[43px] py-2 md:py-3 justify-center rounded-full flex items-center gap-2 transition-all duration-200"
-//                     >
-//                         Hire us
-//                       <Image
-//                         className={`md:h-[42px] md:w-[42px]   ${hover && "rotate-[45deg]"}`}
-//                         src={arow}
-//                         alt=""
-//                       />
-//                     </div>
-//       </div>
-
-//       <div className="flex max-md:flex-col gap-6 mb-12 max-lg:items-center ">
-//         {[port1, port2, port3].map((item,i) => (
-//           <div
-//             key={i}
-//             className="bg-gray-200 max-w-[415px] rounded-[16px] max-h-[302px] overflow-hidden"
-//           >
-//             <Image
-//               src={item}
-//               alt={`Portfolio item ${item}`}
-//               width={400}
-//               height={300}
-//               className="w-full h-full object-cover"
-//             />
-//           </div>
-//         ))}
-//       </div>
-
-//       <div className="flex flex-wrap justify-center gap-3 mb-16">
-//         {[
-//           "Landing Page",
-//           "Product Design",
-//           "Animation",
-//           "Glassmorphism",
-//           "Cards",
-//         ].map((tag) => (
-//           <button
-//             key={tag}
-//             className="bg-gray-100 hover:bg-gray-200 px-5 py-2 rounded-full text-gray-800 transition-colors"
-//           >
-//             {tag}
-//           </button>
-//         ))}
-//       </div>
-
-//       <div className="max-w-3xl mx-auto text-center">
-//         <div className="flex justify-center items-center gap-3 mb-4">
-//           <h3 className="text-[#344054] font-bold text-[32px] md:text-[48px] leading-[100%] -tracking-[1.5%]">
-//           Our message
-//           </h3>
-
-//         </div>
-//         <p className="text-[#344054] font-normal text-[14px] md:text-[20px] leading-[100%] -tracking-[1.5%] max-w-[742px] h-[143px]">
-//         We pour our hearts into every project at our agency. we're a team of  passionate UI/UX designers and full-stack developers dedicated to crafting impactful digital solutions. We believe in thoughtful design and meticulous coding to build meaningful user interfaces and seamless user journeys for exceptional web and mobile experiences. Let's bring your vision to life with heart and expertise.
-//         </p>
-//       </div>
-//     </section>
-//   );
-// }
-
 "use client";
 import Image from "next/image";
-import Link from "next/link";
+import Tilt from "react-parallax-tilt";
 import arow from "@/assets/up right.svg";
 
 import port1 from "@/assets/cards/portfolio1.png";
 import port2 from "@/assets/cards/portfolio2.png";
 import port3 from "@/assets/cards/portfolio3.png";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { MouseEvent, useState } from "react";
 
 import port1img1 from "@/assets/cards/the cards/portfolio/ice cream delivery/1.png";
 import port1img2 from "@/assets/cards/the cards/portfolio/ice cream delivery/2.png";
@@ -128,12 +33,14 @@ import port3img2 from "@/assets/cards/the cards/portfolio/ai design/2.png";
 import port3img3 from "@/assets/cards/the cards/portfolio/ai design/3.png";
 import port3img4 from "@/assets/cards/the cards/portfolio/ai design/4.png";
 import port3img5 from "@/assets/cards/the cards/portfolio/ai design/5.png";
+import { Expand } from "lucide-react";
 
 export default function PortfolioSection() {
   const [hover, setHover] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [selectedPortfolio, setSelectedPortfolio] = useState(0);
+  const [hoveredCardIndex, setHoveredCardIndex] = useState<number | null>(null);
   const router = useRouter();
 
   // For now, using the same images for all portfolios - you can replace this later
@@ -208,19 +115,34 @@ export default function PortfolioSection() {
 
       <div className="flex max-md:flex-col lg:space-x-[24px] gap-6 mb-12 max-lg:items-center ">
         {[port1, port2, port3].map((item, i) => (
-          <div
+          <Tilt
             key={i}
-            className="bg-gray-200 max-w-[415px] rounded-[16px] max-h-[302px] overflow-hidden cursor-pointer hover:opacity-90 transition-opacity duration-200"
-            onClick={() => openModal(i)}
+            className="background-stripes parallax-effect"
+            perspective={500}
           >
-            <Image
-              src={item}
-              alt={`Portfolio item ${item}`}
-              width={400}
-              height={300}
-              className="w-full h-full object-cover"
-            />
-          </div>
+            <div
+              key={i}
+              onMouseEnter={() => setHoveredCardIndex(i)}
+              onMouseLeave={() => setHoveredCardIndex(null)}
+              className="relative max-w-[415px] rounded-[16px] max-h-[302px] overflow-hidden cursor-pointer transition-all duration-200"
+              onClick={() => openModal(i)}
+            >
+              <Image
+                src={item}
+                alt={`Portfolio item ${item}`}
+                width={400}
+                height={300}
+                className="w-full h-full object-cover"
+              />
+              <div
+                className={`${
+                  hoveredCardIndex === i ? "block" : "hidden"
+                } absolute z-20 -translate-x-[50%] -translate-y-[50%] top-[50%] left-[50%]`}
+              >
+                <Expand color="#aa253d" size={50} className="shadow-lg z-10" />
+              </div>
+            </div>
+          </Tilt>
         ))}
       </div>
 

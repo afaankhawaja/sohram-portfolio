@@ -1,11 +1,72 @@
 "use client";
-import React from "react";
+import React, { useRef } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import con from "@/assets/cards/con.svg";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { SplitText } from "gsap/SplitText";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+gsap.registerPlugin(SplitText, ScrollTrigger);
 const HireMe = () => {
   const router = useRouter();
+  const clientsRef = useRef<HTMLDivElement>(null);
+  const membersRef = useRef<HTMLDivElement>(null);
+
+  useGSAP(() => {
+    SplitText.create("#introText", {
+      type: "lines",
+      autoSplit: true,
+      onSplit(self) {
+        return gsap.from(self.lines, {
+          scrollTrigger: {
+            trigger: "#Introduction",
+            start: "top 80%",
+            end: "70% 60%",
+            scrub: true,
+          },
+          duration: 1,
+          y: 50,
+          autoAlpha: 0,
+          stagger: 0.05,
+          ease: "elastic.inOut",
+        });
+      },
+    });
+    const clients = { value: 0 };
+    gsap.to(clients, {
+      value: 30,
+      duration: 2,
+      scrollTrigger: {
+        trigger: "#introText",
+        start: "top 60%",
+        end: "100% 35%",
+        scrub: true,
+        markers: true,
+      },
+      onUpdate: () => {
+        if (!clientsRef.current) return;
+        clientsRef.current.innerText = `${Math.round(clients.value)} +`;
+      },
+    });
+    const members = { value: 0 };
+    gsap.to(members, {
+      value: 10,
+      duration: 2,
+      scrollTrigger: {
+        trigger: "#introText",
+        start: "top 60%",
+        end: "100% 35%",
+        scrub: true,
+        markers: true,
+      },
+      onUpdate: () => {
+        if (!membersRef.current) return;
+        membersRef.current.innerText = `${Math.round(members.value)} +`;
+      },
+    });
+  });
 
   return (
     <section
@@ -28,10 +89,16 @@ const HireMe = () => {
 
         {/* TEXT + STATS + BUTTON */}
         <div className="flex flex-col max-md:w-[80%] mx-auto -mt-2 lg:max-w-[696px] max-lg:mt-10 max-lg:mb-10 px-5">
-          <div className="md:text-[64px] text-[28px] font-bold md:max-w-[800px] -tracking-[1.5%] leading-[100%] text-left">
+          <div
+            id="introText"
+            className="md:text-[64px] text-[28px] font-bold md:max-w-[800px] -tracking-[1.5%] leading-[100%] text-left"
+          >
             Our <span className="text-[#AA253D]">Introduction</span>
           </div>
-          <p className="mt-[26px] mb-[50px] text-[14px] md:text-[20px] text-[#98A2B3] -tracking-[1.5%] leading-[100%]">
+          <p
+            id="introText"
+            className="mt-[26px] mb-[50px] text-[14px] md:text-[20px] text-[#98A2B3] -tracking-[1.5%] leading-[100%]"
+          >
             Watch how we craft impactful digital experiences. We are a dedicated
             UI/UX design and full-stack development agency, building intuitive
             web and mobile applications that drive results. See our passion for
@@ -40,7 +107,11 @@ const HireMe = () => {
 
           <div className="flex gap-x-2">
             <div className="flex flex-col gap-5 gap-y-[10px] w-[343px] mt-4">
-              <p className="-tracking-[1.5%] leading-[100%] text-[36px] font-medium text-[#1D2939]">
+              <p
+                id="members"
+                ref={membersRef}
+                className="-tracking-[1.5%] leading-[100%] text-[36px] font-medium text-[#1D2939]"
+              >
                 10+
               </p>
               <p className="-tracking-[1.5%] leading-[100%] text-[14px] md:text-[20px] font-normal text-[#667085]">
@@ -51,7 +122,11 @@ const HireMe = () => {
             <div className="flex flex-col gap-y-[2px]">
               <Image src={con} alt="icon" className="-ml-2" />
               <div className="flex flex-col gap-5 gap-y-[10px]">
-                <p className="-tracking-[1.5%] leading-[100%] text-[36px] font-medium text-[#1D2939]">
+                <p
+                  id="clients"
+                  ref={clientsRef}
+                  className="-tracking-[1.5%] leading-[100%] text-[36px] font-medium text-[#1D2939]"
+                >
                   30+
                 </p>
                 <p className="-tracking-[1.5%] leading-[100%] text-[14px] md:text-[20px] font-normal text-[#667085] md:w-[203px]">
