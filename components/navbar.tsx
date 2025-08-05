@@ -24,12 +24,19 @@ export default function Navbar() {
   const [activeItem, setActiveItem] = useState("Home");
   const [hover, setHover] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  useGSAP(()=>{
-    const timeline=gsap.timeline({})
-    timeline.fromTo('#welcomeText',{y:300},{y:0, opacity:1,duration:1})
-    timeline.fromTo('#heroImage',{right:-200},{right:0, opacity:1,duration:1,delay:1})
-    
-  })
+  useGSAP(() => {
+    const timeline = gsap.timeline({});
+    timeline.fromTo(
+      "#welcomeText",
+      { y: 300 },
+      { y: 0, opacity: 1, duration: 1 },
+    );
+    timeline.fromTo(
+      "#heroImage",
+      { right: -200 },
+      { right: 0, opacity: 1, duration: 1, delay: 1 },
+    );
+  });
 
   return (
     <>
@@ -105,7 +112,10 @@ export default function Navbar() {
       )}
 
       {/* Original Desktop Navbar (unchanged) */}
-      <div id="nav" className="hidden mx-auto max-md:w-[95%] max-md:mx-auto overflow-scroll hidden-scrollbar relative items-center md:flex h-[86px] justify-center mt-[15px] px-4 ">
+      <div
+        id="nav"
+        className="hidden mx-auto max-md:w-[95%] max-md:mx-auto overflow-scroll hidden-scrollbar relative items-center md:flex h-[86px] justify-center mt-[15px] px-4 "
+      >
         <nav className="max-w-[1298px] border-white border-[2px] overflow-x-scroll hidden-scrollbar pl-[10xp] pr-[31px] w-full h-full bg-[#171717] rounded-full flex items-center justify-between">
           <ul className="flex items-center justify-between h-[50px] md:h-[64px] w-full space-x-8 font-inter pl-[10px]">
             {navItems.map((item) => (

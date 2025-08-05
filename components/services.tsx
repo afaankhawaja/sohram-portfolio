@@ -14,7 +14,7 @@ import gsap from "gsap";
 import { SplitText } from "gsap/SplitText";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
-gsap.registerPlugin(ScrollTrigger,SplitText)
+gsap.registerPlugin(ScrollTrigger, SplitText);
 const services = [
   {
     title: "UI UX Design",
@@ -43,24 +43,25 @@ const services = [
 ];
 
 export default function Services() {
-  useGSAP(()=>{
+  useGSAP(() => {
     SplitText.create("#ServiceHeading", {
-  type: "words, chars",
-  onSplit(self) { // runs every time it splits
-    gsap.from(self.chars, {
-      scrollTrigger:{
-        trigger:'#ServiceHeading',
-        start:'top 80%',
-        markers:true,
+      type: "words, chars",
+      onSplit(self) {
+        // runs every time it splits
+        gsap.from(self.chars, {
+          scrollTrigger: {
+            trigger: "#ServiceHeading",
+            start: "top 80%",
+            markers: true,
+          },
+          duration: 1,
+          x: -50,
+          autoAlpha: 0,
+          stagger: 0.05,
+        });
       },
-      duration: 1, 
-      x: -50, 
-      autoAlpha: 0, 
-      stagger: 0.05
     });
-  }
-});
-  })
+  });
 
   const router = useRouter();
 
@@ -84,7 +85,10 @@ export default function Services() {
       <div className="relative z-10 md:px-[60px] px-4 pt-[60px] pb-[60px]">
         {/* Header Section */}
         <div className="flex justify-between max-lg:flex-col max-lg:items-center gap-y-5 mb-8 lg:mb-14">
-          <h2 id="ServiceHeading" className="md:text-[48px] text-[32px] text-white font-bold leading-[100%] -tracking-[1.5%] mt-[56px]">
+          <h2
+            id="ServiceHeading"
+            className="md:text-[48px] text-[32px] text-white font-bold leading-[100%] -tracking-[1.5%] mt-[56px]"
+          >
             Our <span className="text-[#AA253D]">Services</span>
           </h2>
           <p className="text-white text-[14px] md:text-[20px] font-medium leading-[130%] -tracking-[1.5%] max-xl:max-w-[475px] max-w-[675px] lg:mt-[37px]">

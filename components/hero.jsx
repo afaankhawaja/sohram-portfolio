@@ -7,11 +7,11 @@ import arow from "@/assets/up right.svg";
 import { useRouter } from "next/navigation";
 import bg from "@/assets/hero-image.png";
 import ai from "@/assets/cards/ailogo.svg";
-import gsap from 'gsap'
-import { useGSAP } from '@gsap/react'
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 import { SplitText } from "gsap/SplitText";
 
-gsap.registerPlugin(SplitText)
+gsap.registerPlugin(SplitText);
 export default function Hero() {
   const [activeTab, setActiveTab] = useState("Portfolio");
   const [hoverTab, setHoverTab] = useState(null);
@@ -39,12 +39,11 @@ export default function Hero() {
           y: 100,
           autoAlpha: 0,
           stagger: 0.05,
-          ease:'bounce.inOut'
+          ease: "bounce.inOut",
         });
-      }
+      },
     });
-
-  })
+  });
   return (
     <div className="max-w-full w-[1298px] mx-auto max-md:w-[85%] max-md:px-0 flex flex-col items-center mt-[37px]">
       <div className="relative w-full flex flex-col">
@@ -56,8 +55,11 @@ export default function Hero() {
         {/* Main heading */}
 
         <div className="lg:flex max-lg:flex-col max-lg:space-y-4 max-lg:mx-auto w-[100%] lg:justify-between mt-[25px]">
-          <div id='heroText' className="md:w-[531px] max-lg:mb-20">
-            <div id="Text" className="lg:text-[80px] text-[60px] font-semibold leading-[100%] -tracking-[0%] md:w-[531px] pb-5 h-fit w-full">
+          <div id="heroText" className="md:w-[531px] max-lg:mb-20">
+            <div
+              id="Text"
+              className="lg:text-[80px] text-[60px] font-semibold leading-[100%] -tracking-[0%] md:w-[531px] pb-5 h-fit w-full"
+            >
               A Design that delights &{" "}
               <span className="text-[#AA253D]">a Code that performs.</span>
               <br />
@@ -69,7 +71,10 @@ export default function Hero() {
             </div>
           </div>
 
-          <div id="heroImage" className="relative opacity-0 mb-[74px] max-lg:mx-auto  md:max-w-[627px] ">
+          <div
+            id="heroImage"
+            className="relative opacity-0 mb-[74px] max-lg:mx-auto  md:max-w-[627px] "
+          >
             <Image
               src={bg}
               alt="Sohram"
@@ -92,16 +97,17 @@ export default function Hero() {
                 }}
                 className={clsx(
                   buttonClasses("Portfolio"),
-                  `md:min-w-[135px] max-md:w-[45%] md:px-8 text-white rounded-full max-md:h-[50px] md:h-[62px] flex items-center justify-center gap-2 transition-all duration-300  text-nowrap hover:w-[208px] max-md:hover::w-[45%]${activeTab === "Portfolio" &&
-                  "w-[208px] max-md:ml-[3px] max-md:w-[55%]"
+                  `md:min-w-[135px] max-md:w-[45%] md:px-8 text-white rounded-full max-md:h-[50px] md:h-[62px] flex items-center justify-center gap-2 transition-all duration-300  text-nowrap hover:w-[208px] max-md:hover::w-[45%]${
+                    activeTab === "Portfolio" &&
+                    "w-[208px] max-md:ml-[3px] max-md:w-[55%]"
                   } ${hoverTab === "Hire me" && "w-[135px] max-md:w-[45%]"}`,
                 )}
               >
                 Portfolio
                 {activeTab === "Portfolio"
                   ? (hoverTab == "Portfolio" || hoverTab == null) && (
-                    <Image src={arow} alt="" className="max-md:hidden" />
-                  )
+                      <Image src={arow} alt="" className="max-md:hidden" />
+                    )
                   : hoverTab == "Portfolio" && <Image src={arow} alt="" />}
               </button>
 
@@ -114,21 +120,23 @@ export default function Hero() {
                 }}
                 className={clsx(
                   buttonClasses("Hire me"),
-                  `md:min-w-[129px] max-md:w-[45%] text-white rounded-full max-md:mx-[3px] max-md:h-[50px] md:h-[62px] flex items-center justify-center gap-2 transition-all duration-300  text-nowrap hover:w-[202px] max-md:hover::w-[45%]${activeTab === "Hire me" &&
-                  "w-[202px] max-md:mr-[5px] max-md:w-[45%]"
-                  } ${hoverTab === "Portfolio" &&
-                  "w-[129px] max-md:mr-[20px]  max-md:w-[45%]"
+                  `md:min-w-[129px] max-md:w-[45%] text-white rounded-full max-md:mx-[3px] max-md:h-[50px] md:h-[62px] flex items-center justify-center gap-2 transition-all duration-300  text-nowrap hover:w-[202px] max-md:hover::w-[45%]${
+                    activeTab === "Hire me" &&
+                    "w-[202px] max-md:mr-[5px] max-md:w-[45%]"
+                  } ${
+                    hoverTab === "Portfolio" &&
+                    "w-[129px] max-md:mr-[20px]  max-md:w-[45%]"
                   }`,
                 )}
               >
                 Hire us
                 {activeTab === "Hire me"
                   ? (hoverTab === "Hire me" || hoverTab == null) && (
-                    <Image src={arow} alt="" />
-                  )
+                      <Image src={arow} alt="" />
+                    )
                   : hoverTab === "Hire me" && (
-                    <Image src={arow} alt="" className="max-md:hidden" />
-                  )}
+                      <Image src={arow} alt="" className="max-md:hidden" />
+                    )}
               </button>
             </div>
           </div>

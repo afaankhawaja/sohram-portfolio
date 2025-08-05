@@ -5,7 +5,6 @@ import Testimonial from "@/components/Testimonial";
 import Contact from "@/components/Contact";
 import HireMe from "@/components/HireMe";
 
-
 export default function Home() {
   return (
     <main className=" md:w-dvh w-dvh min-h-screen  items-center max-xl:px-4">
