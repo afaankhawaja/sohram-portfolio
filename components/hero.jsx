@@ -34,7 +34,7 @@ export default function Hero() {
       autoSplit: true,
       onSplit(self) {
         return gsap.from(self.words, {
-          delay: 3,
+          delay: 1,
           duration: 2.5,
           y: 100,
           autoAlpha: 0,
@@ -56,7 +56,7 @@ export default function Hero() {
         {/* Main heading */}
 
         <div className="lg:flex max-lg:flex-col max-lg:space-y-4 max-lg:mx-auto w-[100%] lg:justify-between mt-[25px]">
-          <div id='heroText' className="md:w-[531px] max-lg:mb-20 opacity-0">
+          <div id='heroText' className="md:w-[531px] max-lg:mb-20">
             <div id="Text" className="lg:text-[80px] text-[60px] font-semibold leading-[100%] -tracking-[0%] md:w-[531px] pb-5 h-fit w-full">
               A Design that delights &{" "}
               <span className="text-[#AA253D]">a Code that performs.</span>
