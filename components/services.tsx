@@ -68,7 +68,7 @@ export default function Services() {
   return (
     <div
       className="relative pb-5 w-full mx-auto xl:content-center max-w-[1440px] min-h-[100vh] overflow-hidden"
-      id="Service"
+      id="Services"
     >
       {/* Background Image */}
       <div className="absolute inset-0 w-full h-full">

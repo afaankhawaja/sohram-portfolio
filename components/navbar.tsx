@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
@@ -9,11 +9,12 @@ import logo from "@/assets/cards/A.svg";
 import { HiMenu, HiX } from "react-icons/hi";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { usePathname } from "next/navigation";
 
 const navItems = [
   { name: "Home", href: "/" },
   { name: "Blogs", href: "/blogs" },
-  { name: "Services", href: "/#Service" },
+  { name: "Services", href: "/#Services" },
   { name: "The Apex UI", href: "/", highlight: true },
   { name: "Testimonials", href: "/#Testimonials" },
   { name: "Introduction", href: "/#Introduction" },
@@ -24,6 +25,29 @@ export default function Navbar() {
   const [activeItem, setActiveItem] = useState("Home");
   const [hover, setHover] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const pathname = usePathname();
+  useEffect(() => {
+    if (!pathname) return;
+    if (window.location.hash) {
+      const activetab = window.location.hash.slice(1);
+      const finalPath = activetab.charAt(0).toUpperCase() + activetab.slice(1);
+      console.log("activetab", activetab);
+      if (activetab === "contact") {
+        setActiveItem("Lets connect");
+        return;
+      }
+
+      setActiveItem(finalPath);
+    } else {
+      const activetab =
+        pathname.replace("/", "").charAt(0).toUpperCase() + pathname.slice(2);
+      if (pathname === "/") {
+        setActiveItem("Home");
+        return;
+      }
+      setActiveItem(activetab);
+    }
+  }, [pathname]);
   useGSAP(() => {
     const timeline = gsap.timeline({});
     timeline.fromTo(
