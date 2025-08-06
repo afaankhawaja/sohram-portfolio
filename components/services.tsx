@@ -63,7 +63,7 @@ export default function Services() {
         {/* Header Section */}
         <div className="flex justify-between max-lg:flex-col max-lg:items-center gap-y-5 mb-8 lg:mb-14">
           <h2 className="md:text-[48px] text-[32px] text-white font-bold leading-[100%] -tracking-[1.5%] mt-[56px]">
-            Our <span className="text-[#C30052]">Services</span>
+            Our <span className="text-[#aa253d]">Services</span>
           </h2>
           <p className="text-white text-[14px] md:text-[20px] font-medium leading-[130%] -tracking-[1.5%] max-xl:max-w-[475px] max-w-[675px] lg:mt-[37px]">
             We deliver exceptional user experiences for web, web applications,
