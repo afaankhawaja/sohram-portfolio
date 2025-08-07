@@ -43,7 +43,6 @@ const HireMe = () => {
         start: "top 60%",
         end: "100% 35%",
         scrub: true,
-        markers: true,
       },
       onUpdate: () => {
         if (!clientsRef.current) return;
@@ -59,7 +58,6 @@ const HireMe = () => {
         start: "top 60%",
         end: "100% 35%",
         scrub: true,
-        markers: true,
       },
       onUpdate: () => {
         if (!membersRef.current) return;

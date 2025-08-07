@@ -52,7 +52,6 @@ export default function Services() {
           scrollTrigger: {
             trigger: "#ServiceHeading",
             start: "top 80%",
-            markers: true,
           },
           duration: 1,
           x: -50,
