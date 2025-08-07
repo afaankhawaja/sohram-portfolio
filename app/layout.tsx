@@ -39,7 +39,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.variable} ${urbanist.variable} font-urbanist`}>
         <div className="sticky  top-0 z-50 w-full h-full">
-          {/* Use the new ConditionalNavbar here */}
           <ConditionalNavbar />
         </div>
         {children}
